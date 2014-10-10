@@ -1,0 +1,1241 @@
+2014-10-08 21:03:15 Error: [MissingControllerException] Controller class Offcanvas.jsController could not be found.
+Exception Attributes: array (
+  'class' => 'Offcanvas.jsController',
+  'plugin' => NULL,
+)
+Request URL: /public_html/offcanvas.js
+Stack Trace:
+#0 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-08 21:03:15 Error: [MissingControllerException] Controller class GuideController could not be found.
+Exception Attributes: array (
+  'class' => 'GuideController',
+  'plugin' => NULL,
+)
+Request URL: /public_html/guide/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-08 21:03:20 Error: [MissingControllerException] Controller class GuideController could not be found.
+Exception Attributes: array (
+  'class' => 'GuideController',
+  'plugin' => NULL,
+)
+Request URL: /public_html/guide/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-08 21:04:34 Error: [MissingActionException] Action AdminController::admincalendar.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admincalendar.css',
+)
+Request URL: /public_html/admin/admincalendar.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:04:34 Error: [MissingActionException] Action AdminController::thunder.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'thunder.css',
+)
+Request URL: /public_html/admin/thunder.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:04:35 Error: [MissingActionException] Action AdminController::Starck_pattern.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'Starck_pattern.jpg',
+)
+Request URL: /public_html/admin/Starck_pattern.jpg
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:04:35 Error: [MissingActionException] Action AdminController::glyphicons-halflings.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'glyphicons-halflings.png',
+)
+Request URL: /public_html/admin/glyphicons-halflings.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:04:35 Error: [MissingActionException] Action AdminController::glyphicons-halflings-white.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'glyphicons-halflings-white.png',
+)
+Request URL: /public_html/admin/glyphicons-halflings-white.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:04:36 Error: [MissingActionException] Action ArticlesController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => 'img',
+)
+Request URL: /public_html/article/articles/img/favicon.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:05:25 Error: [MissingActionException] Action AdminController::admincalendar.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admincalendar.css',
+)
+Request URL: /public_html/admin/admincalendar.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:05:25 Error: [MissingActionException] Action AdminController::thunder.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'thunder.css',
+)
+Request URL: /public_html/admin/thunder.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:05:26 Error: [MissingActionException] Action AdminController::Starck_pattern.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'Starck_pattern.jpg',
+)
+Request URL: /public_html/admin/Starck_pattern.jpg
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:05:26 Error: [MissingActionException] Action AdminController::glyphicons-halflings.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'glyphicons-halflings.png',
+)
+Request URL: /public_html/admin/glyphicons-halflings.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:05:27 Error: [MissingActionException] Action WebtvsController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'WebtvsController',
+  'action' => 'img',
+)
+Request URL: /public_html/webtv/webtvs/img/favicon.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(WebtvsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:05:31 Error: [MissingActionException] Action AdminController::admincalendar.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admincalendar.css',
+)
+Request URL: /public_html/admin/admincalendar.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:05:32 Error: [MissingActionException] Action AdminController::thunder.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'thunder.css',
+)
+Request URL: /public_html/admin/thunder.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:05:32 Error: [MissingActionException] Action AdminController::Starck_pattern.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'Starck_pattern.jpg',
+)
+Request URL: /public_html/admin/Starck_pattern.jpg
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:05:33 Error: [MissingActionException] Action AdminController::glyphicons-halflings.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'glyphicons-halflings.png',
+)
+Request URL: /public_html/admin/glyphicons-halflings.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:06:09 Error: [MissingActionException] Action AdminController::admincalendar.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admincalendar.css',
+)
+Request URL: /public_html/admin/admincalendar.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:06:10 Error: [MissingActionException] Action AdminController::thunder.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'thunder.css',
+)
+Request URL: /public_html/admin/thunder.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:06:10 Error: [MissingActionException] Action AdminController::Starck_pattern.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'Starck_pattern.jpg',
+)
+Request URL: /public_html/admin/Starck_pattern.jpg
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:06:11 Error: [MissingActionException] Action AdminController::glyphicons-halflings.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'glyphicons-halflings.png',
+)
+Request URL: /public_html/admin/glyphicons-halflings.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:06:50 Error: [MissingActionException] Action AdminController::thunder.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'thunder.css',
+)
+Request URL: /public_html/admin/thunder.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:06:51 Error: [MissingActionException] Action AdminController::admincalendar.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admincalendar.css',
+)
+Request URL: /public_html/admin/admincalendar.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:06:51 Error: [MissingActionException] Action AdminController::Starck_pattern.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'Starck_pattern.jpg',
+)
+Request URL: /public_html/admin/Starck_pattern.jpg
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:06:52 Error: [MissingActionException] Action AdminController::glyphicons-halflings.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'glyphicons-halflings.png',
+)
+Request URL: /public_html/admin/glyphicons-halflings.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:07:43 Error: [MissingActionException] Action AdminController::admincalendar.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admincalendar.css',
+)
+Request URL: /public_html/admin/admincalendar.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:07:43 Error: [MissingActionException] Action AdminController::thunder.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'thunder.css',
+)
+Request URL: /public_html/admin/thunder.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:07:44 Error: [MissingActionException] Action AdminController::Starck_pattern.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'Starck_pattern.jpg',
+)
+Request URL: /public_html/admin/Starck_pattern.jpg
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:07:44 Error: [MissingActionException] Action AdminController::glyphicons-halflings.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'glyphicons-halflings.png',
+)
+Request URL: /public_html/admin/glyphicons-halflings.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:08:24 Error: [MissingActionException] Action AdminController::admincalendar.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admincalendar.css',
+)
+Request URL: /public_html/admin/admincalendar.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:08:25 Error: [MissingActionException] Action AdminController::thunder.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'thunder.css',
+)
+Request URL: /public_html/admin/thunder.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:08:26 Error: [MissingActionException] Action AdminController::Starck_pattern.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'Starck_pattern.jpg',
+)
+Request URL: /public_html/admin/Starck_pattern.jpg
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:08:26 Error: [MissingActionException] Action AdminController::glyphicons-halflings.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'glyphicons-halflings.png',
+)
+Request URL: /public_html/admin/glyphicons-halflings.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:08:27 Error: [NotFoundException] Invalid article
+Request URL: /public_html/webtv/webtvs/stream_edit/img/favicon.png
+Stack Trace:
+#0 [internal function]: WebtvsController->stream_edit('img', 'favicon.png')
+#1 C:\wamp\www\public_html\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(WebtvsController), Array)
+#2 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(WebtvsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-08 21:08:34 Error: [MissingActionException] Action AdminController::admincalendar.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admincalendar.css',
+)
+Request URL: /public_html/admin/admincalendar.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:08:34 Error: [MissingActionException] Action AdminController::thunder.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'thunder.css',
+)
+Request URL: /public_html/admin/thunder.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:08:35 Error: [MissingActionException] Action AdminController::Starck_pattern.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'Starck_pattern.jpg',
+)
+Request URL: /public_html/admin/Starck_pattern.jpg
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:08:36 Error: [MissingActionException] Action AdminController::glyphicons-halflings.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'glyphicons-halflings.png',
+)
+Request URL: /public_html/admin/glyphicons-halflings.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:08:45 Error: [NotFoundException] Invalid Webtv
+Request URL: /public_html/webtv/webtvs/admin_view/img/favicon.png
+Stack Trace:
+#0 [internal function]: WebtvsController->admin_view('img', 'favicon.png')
+#1 C:\wamp\www\public_html\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(WebtvsController), Array)
+#2 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(WebtvsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-08 21:08:46 Error: [NotFoundException] Invalid Webtv
+Request URL: /public_html/webtv/webtvs/admin_view/img/favicon.png
+Stack Trace:
+#0 [internal function]: WebtvsController->admin_view('img', 'favicon.png')
+#1 C:\wamp\www\public_html\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(WebtvsController), Array)
+#2 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(WebtvsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-08 21:08:47 Error: [NotFoundException] Invalid Webtv
+Request URL: /public_html/webtv/webtvs/admin_view/img/favicon.png
+Stack Trace:
+#0 [internal function]: WebtvsController->admin_view('img', 'favicon.png')
+#1 C:\wamp\www\public_html\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(WebtvsController), Array)
+#2 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(WebtvsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-08 21:08:48 Error: [NotFoundException] Invalid Webtv
+Request URL: /public_html/webtv/webtvs/admin_view/img/favicon.png
+Stack Trace:
+#0 [internal function]: WebtvsController->admin_view('img', 'favicon.png')
+#1 C:\wamp\www\public_html\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(WebtvsController), Array)
+#2 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(WebtvsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-08 21:08:58 Error: [MissingActionException] Action AdminController::thunder.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'thunder.css',
+)
+Request URL: /public_html/admin/thunder.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:08:58 Error: [MissingActionException] Action AdminController::admincalendar.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admincalendar.css',
+)
+Request URL: /public_html/admin/admincalendar.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:08:59 Error: [MissingActionException] Action AdminController::Starck_pattern.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'Starck_pattern.jpg',
+)
+Request URL: /public_html/admin/Starck_pattern.jpg
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:09:00 Error: [MissingActionException] Action AdminController::glyphicons-halflings.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'glyphicons-halflings.png',
+)
+Request URL: /public_html/admin/glyphicons-halflings.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:09:25 Error: [MissingActionException] Action AdminController::admincalendar.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admincalendar.css',
+)
+Request URL: /public_html/admin/admincalendar.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:09:25 Error: [MissingActionException] Action AdminController::thunder.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'thunder.css',
+)
+Request URL: /public_html/admin/thunder.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:09:27 Error: [MissingActionException] Action AdminController::Starck_pattern.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'Starck_pattern.jpg',
+)
+Request URL: /public_html/admin/Starck_pattern.jpg
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:09:27 Error: [MissingActionException] Action AdminController::glyphicons-halflings.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'glyphicons-halflings.png',
+)
+Request URL: /public_html/admin/glyphicons-halflings.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:09:35 Error: [MissingActionException] Action AdminController::admincalendar.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admincalendar.css',
+)
+Request URL: /public_html/admin/admincalendar.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:09:35 Error: [MissingActionException] Action AdminController::thunder.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'thunder.css',
+)
+Request URL: /public_html/admin/thunder.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:09:36 Error: [MissingActionException] Action AdminController::Starck_pattern.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'Starck_pattern.jpg',
+)
+Request URL: /public_html/admin/Starck_pattern.jpg
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:09:36 Error: [MissingActionException] Action AdminController::glyphicons-halflings.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'glyphicons-halflings.png',
+)
+Request URL: /public_html/admin/glyphicons-halflings.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:10:22 Error: [MissingActionException] Action AdminController::admincalendar.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admincalendar.css',
+)
+Request URL: /public_html/admin/admincalendar.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:10:22 Error: [MissingActionException] Action AdminController::thunder.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'thunder.css',
+)
+Request URL: /public_html/admin/thunder.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:10:23 Error: [MissingActionException] Action AdminController::Starck_pattern.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'Starck_pattern.jpg',
+)
+Request URL: /public_html/admin/Starck_pattern.jpg
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:10:23 Error: [MissingActionException] Action AdminController::glyphicons-halflings.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'glyphicons-halflings.png',
+)
+Request URL: /public_html/admin/glyphicons-halflings.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:11:19 Error: [MissingActionException] Action AdminController::admincalendar.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admincalendar.css',
+)
+Request URL: /public_html/admin/admincalendar.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:11:19 Error: [MissingActionException] Action AdminController::thunder.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'thunder.css',
+)
+Request URL: /public_html/admin/thunder.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:11:20 Error: [MissingActionException] Action AdminController::Starck_pattern.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'Starck_pattern.jpg',
+)
+Request URL: /public_html/admin/Starck_pattern.jpg
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:11:20 Error: [MissingActionException] Action AdminController::glyphicons-halflings.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'glyphicons-halflings.png',
+)
+Request URL: /public_html/admin/glyphicons-halflings.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:14:07 Error: [MissingActionException] Action AdminController::admincalendar.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admincalendar.css',
+)
+Request URL: /public_html/admin/admincalendar.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:14:07 Error: [MissingActionException] Action AdminController::thunder.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'thunder.css',
+)
+Request URL: /public_html/admin/thunder.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:14:08 Error: [MissingActionException] Action AdminController::Starck_pattern.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'Starck_pattern.jpg',
+)
+Request URL: /public_html/admin/Starck_pattern.jpg
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:14:08 Error: [MissingActionException] Action AdminController::glyphicons-halflings.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'glyphicons-halflings.png',
+)
+Request URL: /public_html/admin/glyphicons-halflings.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:16:53 Error: [MissingActionException] Action AdminController::admincalendar.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admincalendar.css',
+)
+Request URL: /public_html/admin/admincalendar.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:16:54 Error: [MissingActionException] Action AdminController::thunder.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'thunder.css',
+)
+Request URL: /public_html/admin/thunder.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:16:54 Error: [MissingActionException] Action AdminController::Starck_pattern.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'Starck_pattern.jpg',
+)
+Request URL: /public_html/admin/Starck_pattern.jpg
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-08 21:16:55 Error: [MissingActionException] Action AdminController::glyphicons-halflings.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'glyphicons-halflings.png',
+)
+Request URL: /public_html/admin/glyphicons-halflings.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:13:57 Error: [MissingActionException] Action AdminController::admincalendar.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admincalendar.css',
+)
+Request URL: /public_html/admin/admincalendar.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:13:57 Error: [MissingActionException] Action AdminController::thunder.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'thunder.css',
+)
+Request URL: /public_html/admin/thunder.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:13:58 Error: [MissingActionException] Action AdminController::Starck_pattern.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'Starck_pattern.jpg',
+)
+Request URL: /public_html/admin/Starck_pattern.jpg
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:13:58 Error: [MissingActionException] Action AdminController::glyphicons-halflings.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'glyphicons-halflings.png',
+)
+Request URL: /public_html/admin/glyphicons-halflings.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:14:25 Error: [MissingActionException] Action AdminController::admincalendar.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admincalendar.css',
+)
+Request URL: /public_html/admin/admincalendar.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:14:26 Error: [MissingActionException] Action AdminController::thunder.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'thunder.css',
+)
+Request URL: /public_html/admin/thunder.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:14:26 Error: [MissingActionException] Action AdminController::Starck_pattern.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'Starck_pattern.jpg',
+)
+Request URL: /public_html/admin/Starck_pattern.jpg
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:14:27 Error: [MissingActionException] Action AdminController::glyphicons-halflings.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'glyphicons-halflings.png',
+)
+Request URL: /public_html/admin/glyphicons-halflings.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:14:44 Error: [MissingActionException] Action AdminController::thunder.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'thunder.css',
+)
+Request URL: /public_html/admin/thunder.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:14:44 Error: [MissingActionException] Action AdminController::admincalendar.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admincalendar.css',
+)
+Request URL: /public_html/admin/admincalendar.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:14:45 Error: [MissingActionException] Action AdminController::Starck_pattern.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'Starck_pattern.jpg',
+)
+Request URL: /public_html/admin/Starck_pattern.jpg
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:14:45 Error: [MissingActionException] Action AdminController::glyphicons-halflings.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'glyphicons-halflings.png',
+)
+Request URL: /public_html/admin/glyphicons-halflings.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:30:20 Error: [MissingActionException] Action AdminController::admincalendar.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admincalendar.css',
+)
+Request URL: /public_html/admin/admincalendar.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:30:21 Error: [MissingActionException] Action AdminController::thunder.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'thunder.css',
+)
+Request URL: /public_html/admin/thunder.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:30:21 Error: [MissingActionException] Action AdminController::Starck_pattern.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'Starck_pattern.jpg',
+)
+Request URL: /public_html/admin/Starck_pattern.jpg
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:30:22 Error: [MissingActionException] Action AdminController::glyphicons-halflings.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'glyphicons-halflings.png',
+)
+Request URL: /public_html/admin/glyphicons-halflings.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:30:26 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => 'AuthAcl',
+)
+Request URL: /public_html/auth_acl/img/favicon.png
+Stack Trace:
+#0 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-09 10:30:58 Error: [MissingActionException] Action AdminController::thunder.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'thunder.css',
+)
+Request URL: /public_html/admin/thunder.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:30:58 Error: [MissingActionException] Action AdminController::admincalendar.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admincalendar.css',
+)
+Request URL: /public_html/admin/admincalendar.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:30:59 Error: [MissingActionException] Action AdminController::Starck_pattern.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'Starck_pattern.jpg',
+)
+Request URL: /public_html/admin/Starck_pattern.jpg
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:30:59 Error: [MissingActionException] Action AdminController::glyphicons-halflings.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'glyphicons-halflings.png',
+)
+Request URL: /public_html/admin/glyphicons-halflings.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:31:01 Error: [MissingActionException] Action AdminController::thunder.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'thunder.css',
+)
+Request URL: /public_html/admin/thunder.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:31:01 Error: [MissingActionException] Action AdminController::admincalendar.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admincalendar.css',
+)
+Request URL: /public_html/admin/admincalendar.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:31:02 Error: [MissingActionException] Action AdminController::Starck_pattern.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'Starck_pattern.jpg',
+)
+Request URL: /public_html/admin/Starck_pattern.jpg
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:31:02 Error: [MissingActionException] Action AdminController::glyphicons-halflings.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'glyphicons-halflings.png',
+)
+Request URL: /public_html/admin/glyphicons-halflings.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:31:05 Error: [MissingActionException] Action AdminController::thunder.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'thunder.css',
+)
+Request URL: /public_html/admin/thunder.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:31:05 Error: [MissingActionException] Action AdminController::admincalendar.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admincalendar.css',
+)
+Request URL: /public_html/admin/admincalendar.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:31:06 Error: [MissingActionException] Action AdminController::Starck_pattern.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'Starck_pattern.jpg',
+)
+Request URL: /public_html/admin/Starck_pattern.jpg
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:31:06 Error: [MissingActionException] Action AdminController::glyphicons-halflings.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'glyphicons-halflings.png',
+)
+Request URL: /public_html/admin/glyphicons-halflings.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:31:07 Error: [NotFoundException] Invalid user
+Request URL: /public_html/auth_acl/users/edit/img/favicon.png
+Stack Trace:
+#0 [internal function]: UsersController->edit('img', 'favicon.png')
+#1 C:\wamp\www\public_html\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-09 10:31:21 Error: [NotFoundException] Don't hack me
+Request URL: /public_html/auth_acl/users/edit/1411
+Stack Trace:
+#0 [internal function]: UsersController->edit('1411')
+#1 C:\wamp\www\public_html\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-09 10:31:42 Error: [NotFoundException] Don't hack me
+Request URL: /public_html/auth_acl/users/edit/1411
+Stack Trace:
+#0 [internal function]: UsersController->edit('1411')
+#1 C:\wamp\www\public_html\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-09 10:31:55 Error: [MissingActionException] Action AdminController::admincalendar.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admincalendar.css',
+)
+Request URL: /public_html/admin/admincalendar.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:31:56 Error: [MissingActionException] Action AdminController::thunder.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'thunder.css',
+)
+Request URL: /public_html/admin/thunder.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:31:56 Error: [MissingActionException] Action AdminController::Starck_pattern.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'Starck_pattern.jpg',
+)
+Request URL: /public_html/admin/Starck_pattern.jpg
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:31:57 Error: [MissingActionException] Action AdminController::glyphicons-halflings.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'glyphicons-halflings.png',
+)
+Request URL: /public_html/admin/glyphicons-halflings.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:31:57 Error: [MissingActionException] Action AdminController::glyphicons-halflings-white.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'glyphicons-halflings-white.png',
+)
+Request URL: /public_html/admin/glyphicons-halflings-white.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:32:02 Error: [MissingActionException] Action AdminController::thunder.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'thunder.css',
+)
+Request URL: /public_html/admin/thunder.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:32:03 Error: [MissingActionException] Action AdminController::admincalendar.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admincalendar.css',
+)
+Request URL: /public_html/admin/admincalendar.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:32:04 Error: [MissingActionException] Action AdminController::Starck_pattern.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'Starck_pattern.jpg',
+)
+Request URL: /public_html/admin/Starck_pattern.jpg
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:32:04 Error: [MissingActionException] Action AdminController::glyphicons-halflings.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'glyphicons-halflings.png',
+)
+Request URL: /public_html/admin/glyphicons-halflings.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:32:04 Error: [MissingActionException] Action AdminController::glyphicons-halflings-white.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'glyphicons-halflings-white.png',
+)
+Request URL: /public_html/admin/glyphicons-halflings-white.png
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:32:15 Error: [MissingActionException] Action AdminController::admincalendar.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admincalendar.css',
+)
+Request URL: /public_html/admin/admincalendar.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 10:32:16 Error: [MissingActionException] Action AdminController::thunder.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'thunder.css',
+)
+Request URL: /public_html/admin/thunder.css
+Stack Trace:
+#0 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\public_html\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\public_html\app\webroot\index.php(112): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
