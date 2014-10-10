@@ -5,8 +5,6 @@
 /app/Config/database.php
 /lib/Cake/Console/Templates/skel/tmp/
 profile.txt
-app/tmp/cache/*
-app/tmp/logs/*
 app/tmp/*
 /plugins
 /vendors
