@@ -1,0 +1,396 @@
+
+
+
+<?php $this->html->meta ('description', 'ThunderBot c\'est l\'actualité, la web TV, les guides et l\'expertise des progamers sur League of Legends.', array('inline' =>false)); ?>
+
+
+  <div class="container">
+
+
+<?php $events_now = $this->requestAction(array('controller' => 'events', 'action' => 'webtv_bar_now','plugin' => 'full_calendar','admin'=>false)); ?>
+<?php $events_next = $this->requestAction(array('controller' => 'events', 'action' => 'webtv_bar','plugin' => 'full_calendar','admin'=>false)); ?>
+
+
+
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="row main-content">
+      <div id="bouton">
+
+</div>
+
+<webtv>
+  <div class="col-xs-12 col-sm-12 col-sm-12 col-lg-7">
+      <?php  echo $this->Html->script('http://www.thunderbot.gg/caster/cast.js');?>
+    <div class="videocontainer">
+<object width="600" height="338"><param name="movie" value="http://www.dailymotion.com/swf/video/x11svk9?autoPlay=1"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><param name="wmode" value="transparent"></param><embed type="application/x-shockwave-flash" src="http://www.dailymotion.com/swf/video/x11svk9?autoPlay=1" width="600" height="338" wmode="transparent" allowfullscreen="true" allowscriptaccess="always"></embed></object>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-12 col-sm-12 col-lg-5">
+      <div class="panel-body">
+
+
+     <?php if ($events_now): ?> 
+        <div class="row"> 
+
+        <div class="col-xs-0 col-sm-3 col-md-3 col-lg-3">
+          
+        <span class="poste">
+          <?php echo $this->Time->format('H:i',($events_now[0]['Event']['start'])); ?>
+          <?php echo "/"; ?>
+          <?php echo $this->Time->format ('H:i', ($events_now[0]['Event']['end'])); ?></span>
+       
+
+        </div>
+
+
+
+        <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+        <?php echo $this->Html->image('http://www.thunderbot.gg/files/event_type/photo/'.($events_now[0]['EventType']['photo_dir'].'/'.$events_now[0]['EventType']['photo']), array('class' => 'img-responsive')); ?>
+        </div>
+      </div>
+      <hr>
+     <?php else: ?> 
+        <div class="row"> 
+        <div class="col-xs-0 col-sm-3 col-md-3 col-lg-3">
+        </div>
+        </div>
+    <?php endif; ?>
+
+
+
+      <?php foreach ($events_next as $event): ?>
+
+      <div class="row"> 
+      <div class="col-xs-0 col-sm-3 col-md-3 col-lg-3">
+      <span class="poste"><?php echo $this->Time->format ('H:i', ($event['Event']['start'])); ?>/<?php echo $this->Time->format ('H:i', ($event['Event']['end'])); ?></span>
+      </div>
+      <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+      <?php echo $this->Html->image('http://www.thunderbot.gg/files/event_type/photo/'.($event['EventType']['photo_dir'].'/'.$event['EventType']['photo']), array('class' => 'img-responsive')); ?>
+      </div>
+      </div>
+      </br>
+      <?php endforeach; ?>
+      </div>
+  </div>
+
+     
+    </div>
+</webtv>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="row">
+
+
+    
+<!-- CONTENT SIDE-->
+<div class="col-xs-12 col-sm-6 col-sm-6 col-lg-6">
+
+<div class="list-group panel panel-primary">
+    <div class="panel-body">
+    <div id="recherche">
+      <?php echo $this->Form->create('Article', array('action' => 'recherche','class'=>'')); ?>
+            <div class="row">
+              <div class="col-xs-5 col-sm-5 col-sm-5 col-lg-5">
+                    <?php echo $this->Form->input('filter',array('div' => false,'label'=>false,'placeholder'=>"Chercher un article",'class'=>'form-control')); ?>
+             </div>
+              <div class="col-xs-7col-sm-7 col-sm-7 col-lg-7">
+                   <span class="chercher"> <button class="btn btn-thunder2" type="submit"><?php echo __('Chercher'); ?></button>
+              </div>
+            </div>
+      <?php echo $this->Form->end(); ?>
+    </div>
+    </div>
+</div>
+
+    
+
+<?php //debug($thumbarticles); ?>
+
+<?php foreach ($thumbarticles as $thumbarticle): ?>
+
+  <div class="list-group panel panel-primary">
+    <div class="panel-body">
+      <a class="" href="<?php echo $this->Html->url($thumbarticle['Article']['link']); ?>">
+  <img id="img_full" class="img-responsive" alt="" src="http://www.thunderbot.gg/thumb.php?src=/files/article/photo/<?php echo $thumbarticle['Article']['photo_dir'] ?>/<?php echo $thumbarticle['Article']['photo'] ?>&w=600&zc=1"></img></a>
+      <strong class="strong_comment_redacteur"><em><?php echo h($thumbarticle['Category']['category_name']); ?></em></strong>
+    <h2 class="title_black_thunder"><a href="<?php echo $this->Html->url($thumbarticle['Article']['link']); ?>"><?php echo h($thumbarticle['Article']['article_title']); ?></a></h2>
+        <p class=" clearfix">
+          <span class="comment_total2"><span class="glyphicon glyphicon-comment"></span> <?php echo h($thumbarticle['Article']['comment_count']); ?>  </span>
+          &nbsp;|  <small><?php echo $this->frenchDate->french($thumbarticle['Article']['created']); ?> | </small>|  
+          <a class="" href="http://www.thunderbot.gg/membre/<?php echo $thumbarticle['User']['id']; ?>">
+          <strong class="strong_comment_redacteur"><em><?php echo h($thumbarticle['User']['user_name']); ?></em></strong>
+          </a>
+        </p>
+      <p><?php echo $this->Text->truncate($thumbarticle['Article']['article_summary'],175,array('exact'=>false,'html'=>true)); ?></p>
+      <p><a class="btn btn-thunder" href="<?php echo $this->Html->url($thumbarticle['Article']['link']); ?>">Voir la news</a></p>
+      
+    </div>
+  </div>
+
+<?php endforeach; ?>
+
+<style>
+
+#block {
+
+}
+
+</style>
+
+<div class="list-group panel panel-primary">
+
+    <div class="panel-body">
+        <div class="thunderbox">
+            <div class="caption">
+                <div class="row">
+
+
+<?php //debug($threearticle) ?>
+
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+  <div id="block">
+
+
+  <a class="" href="<?php echo $this->Html->url($threearticle[0]['Article']['link']); ?>">
+  <img id="img_full" class="img-responsive" alt="" src="http://www.thunderbot.gg/thumb.php?src=/files/article/photo/<?php echo $threearticle[0]['Article']['photo_dir'] ?>/<?php echo $threearticle[0]['Article']['photo'] ?>&w=270&h=166&zc=1"></img>
+      </a>
+      <strong class="strong_comment_redacteur"><em><?php echo h($thumbarticle['Category']['category_name']); ?></em></strong>
+        <a class="" href="<?php echo $this->Html->url($threearticle[0]['Article']['link']); ?>">
+<h2 class="title5"><span class="comment_total2"><span class="glyphicon glyphicon-comment"></span> <?php echo h($threearticle[0]['Article']['comment_count']); ?>  </span>
+          &nbsp;<?php echo $this->Text->truncate($threearticle[0]['Article']['article_title'],600,array('exact'=>false,'html'=>true)); ?> </h2>
+      </a>
+      </div>  
+  </div>
+
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+  <div id="block">
+
+
+  <a class="" href="<?php echo $this->Html->url($threearticle[1]['Article']['link']); ?>">
+  <img id="img_full" class="img-responsive" alt="" src="http://www.thunderbot.gg/thumb.php?src=/files/article/photo/<?php echo $threearticle[1]['Article']['photo_dir'] ?>/<?php echo $threearticle[1]['Article']['photo'] ?>&w=270&h=166&zc=1"></img>
+      </a>
+      <strong class="strong_comment_redacteur"><em><?php echo h($thumbarticle['Category']['category_name']); ?></em></strong>
+        <a class="" href="<?php echo $this->Html->url($threearticle[1]['Article']['link']); ?>">
+<h2 class="title5"><span class="comment_total2"><span class="glyphicon glyphicon-comment"></span> <?php echo h($threearticle[1]['Article']['comment_count']); ?>  </span>
+          &nbsp;<?php echo $this->Text->truncate($threearticle[1]['Article']['article_title'],600,array('exact'=>false,'html'=>true)); ?> </h2>
+      </a>
+      </div>  
+  </div>
+
+
+                </div>
+
+
+
+                <div class="row">
+
+
+<?php //debug($threearticle) ?>
+
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+  <div id="block">
+
+
+  <a class="" href="<?php echo $this->Html->url($threearticle[2]['Article']['link']); ?>">
+  <img id="img_full" class="img-responsive" alt="" src="http://www.thunderbot.gg/thumb.php?src=/files/article/photo/<?php echo $threearticle[2]['Article']['photo_dir'] ?>/<?php echo $threearticle[2]['Article']['photo'] ?>&w=270&h=166&zc=1"></img>
+      </a>
+      <strong class="strong_comment_redacteur"><em><?php echo h($thumbarticle['Category']['category_name']); ?></em></strong>
+        <a class="" href="<?php echo $this->Html->url($threearticle[2]['Article']['link']); ?>">
+<h2 class="title5"><span class="comment_total2"><span class="glyphicon glyphicon-comment"></span> <?php echo h($threearticle[2]['Article']['comment_count']); ?>  </span>
+          &nbsp;<?php echo $this->Text->truncate($threearticle[2]['Article']['article_title'],600,array('exact'=>false,'html'=>true)); ?> </h2>
+      </a>
+      </div>  
+  </div>
+
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+  <div id="block">
+
+
+  <a class="" href="<?php echo $this->Html->url($threearticle[3]['Article']['link']); ?>">
+  <img id="img_full" class="img-responsive" alt="" src="http://www.thunderbot.gg/thumb.php?src=/files/article/photo/<?php echo $threearticle[3]['Article']['photo_dir'] ?>/<?php echo $threearticle[3]['Article']['photo'] ?>&w=270&h=166&zc=1"></img>
+      </a>
+      <strong class="strong_comment_redacteur"><em><?php echo h($thumbarticle['Category']['category_name']); ?></em></strong>
+        <a class="" href="<?php echo $this->Html->url($threearticle[3]['Article']['link']); ?>">
+<h2 class="title5"><span class="comment_total2"><span class="glyphicon glyphicon-comment"></span> <?php echo h($threearticle[3]['Article']['comment_count']); ?>  </span>
+          &nbsp;<?php echo $this->Text->truncate($threearticle[3]['Article']['article_title'],600,array('exact'=>false,'html'=>true)); ?> </h2>
+      </a>
+      </div>  
+  </div>
+
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php  //debug($articles) ?>
+
+<?php foreach ($articles AS $article): ?>
+<?php
+  $title = h($article['Article']['article_title']);
+  if(substr($title, 0, 2) == '§')
+    $title = substr($title, 2);
+?>
+      <div class="list-group panel panel-primary">
+          <div class="panel-body">
+            <div class="thunderbox">
+              <div class="caption">
+                <div class="row"> 
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+  <a class="" href="<?php echo $this->Html->url($article['Article']['link']); ?>"><img class="img-responsive" alt="" src="http://www.thunderbot.gg/thumb.php?src=/files/article/photo/<?php echo $article['Article']['photo_dir'] ?>/<?php echo $article['Article']['photo'] ?>&w=270&h=166&zc=1"></img></a>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <a class="" href="<?php echo $this->Html->url($article['Article']['link']); ?>">
+      <strong class="strong_comment_redacteur"><em><?php echo h($article['Category']['category_name']); ?></em></strong>
+                      <h2 class="title5" ><span class="comment_total2"><span class="glyphicon glyphicon-comment"></span> <?php echo h($article['Article']['comment_count']); ?>  </span>
+          &nbsp;<?php echo $title; ?></h2></a>
+                      <p class=" clearfix">
+                      <small><?php echo $this->frenchDate->french($article['Article']['created']); ?> | </small>
+                        <a class="" href="http://www.thunderbot.gg/membre/<?php echo $article['User']['id']; ?>">
+                         <strong class="strong_comment_redacteur"><em> &nbsp;<i class="icon-pencil"></i><?php echo h($article['User']['user_name']); ?></em></strong>
+                        </a>
+                      </p>
+                      <p> <?php echo $this->Text->truncate($article['Article']['article_summary'],175,array('exact'=>false,'html'=>true)); ?> </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div> 
+        <div class="panel-footer text-right">
+          <a class="" href="<?php echo $this->Html->url($article['Article']['link']); ?>">Voir la news &rarr;</a>
+        </div>
+      </div>
+ <?php endforeach; ?>
+
+
+
+
+<div class="pagination pagination-large">
+    <ul class="pagination">
+            <?php
+                echo $this->Paginator->prev(__('prev'), array('tag' => 'li'), null, array('tag' => 'li','class' => 'disabled','disabledTag' => 'a'));
+                echo $this->Paginator->numbers(array('separator' => '','currentTag' => 'a', 'currentClass' => 'active','tag' => 'li','first' => 1));
+                echo $this->Paginator->next(__('next'), array('tag' => 'li','currentClass' => 'disabled'), null, array('tag' => 'li','class' => 'disabled','disabledTag' => 'a'));
+            ?>
+        </ul>
+</div>
+
+
+</div>
+<!-- /CONTENT SIDE-->
+
+  <div class="col-xs-12 col-sm-6 col-sm-6 col-lg-3">
+
+<!-- VIDEO  -->
+    <div class="list-group panel panel-primary">
+      <div class="panel-heading text-center hidden-xs">
+        <h4>VIDEOS</h4>
+      </div>
+      <div class="panel-body">
+
+  <div class="tab-pane fade in active" id="home">
+    <div class="row">
+
+    <?php foreach ($videos AS $video): ?>
+    <div class="col-xs-12 col-sm-12 col-lg-12">
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          <div class="thumbnail" style="">
+        <a class="" href="http://www.thunderbot.gg/videos/<?php echo $video['Video']['id']; ?>-<?php echo $video['Video']['slug']; ?>">
+<img class="img-responsive" alt="" src="http://www.thunderbot.gg/thumb.php?src=/files/video/photo/<?php echo $video['Video']['photo_dir']; ?>/<?php echo $video['Video']['photo']; ?>&w=150&h=100&zc=1"></img></a>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <a class="" href="http://www.thunderbot.gg/videos/<?php echo $video['Video']['id']; ?>-<?php echo $video['Video']['slug']; ?>"><h5><?php echo $video['Video']['video_title']; ?></h5></a>
+        <span class="comment_total3"><span class="glyphicon glyphicon-comment"></span> <?php echo h($video['Video']['comment_count']); ?>  </span>
+          &nbsp;
+        </div>
+      </div>
+    </div>
+    <?php endforeach; ?>
+
+  </div>
+  </div>
+
+  </div>
+
+</div>
+
+
+        <div class="list-group panel panel-primary">
+
+    </div>
+
+        
+  </div>
+
+
+<div class="col-xs-12 col-sm-6 col-sm-6 col-lg-3">
+  <div class="list-group panel panel-primary">
+    <div class="panel-heading text-center hidden-xs">
+      <h4>GALERIE</h4>
+    </div>
+
+    <div class="panel-body">
+      <?php foreach ($images AS $image): ?>
+        <a class="" href="http://www.thunderbot.gg/galerie/<?php echo $image['Image']['id']; ?>-<?php echo $image['Image']['slug']; ?>">
+          <h4> <span class="comment_total3"><span class="glyphicon glyphicon-comment"></span> <?php echo h($image['Image']['comment_count']); ?></span>
+          &nbsp;<?php echo $image['Image']['title']; ?></h4>
+        </a>
+        <a class="" href="http://www.thunderbot.gg/galerie/<?php echo $image['Image']['id']; ?>-<?php echo $image['Image']['slug']; ?>">
+         <img class="img-responsive" src="http://www.thunderbot.gg/thumb.php?src=<?php echo $this->Html->url($image['Image']['image']); ?>&w=400&zc=1" alt=""></a>
+        <hr>  
+      <?php endforeach; ?>
+    </div>
+
+  </div>
+</div>     
+
+
+
+    </div>
+</div>
+</div>
+
+

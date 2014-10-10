@@ -1,0 +1,15 @@
+	function ref_stream() {
+		var ref_emb = $('#ref');
+		var reffront_emb = $('#ref_front');
+		$.ajax({ url: 'http://94.23.235.215/~cast/refresh.php',	cache: false, 
+		success : (function(data) { 
+			if (data == 'refresh') {
+				ref_emb.html(ref_emb.html());
+				reffront_emb.html(reffront_emb.html());
+			} 
+			console.log(data); 
+		})});
+		setTimeout(ref_stream, 29600);
+		return false;
+	}
+setTimeout(ref_stream, 5000);

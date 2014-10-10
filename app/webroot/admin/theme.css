@@ -1,0 +1,11 @@
+
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@font-face {
+	font-family: 'UTM French Vanilla';
+	src: 	url("font/UTM-French-Vanilla.eot");
+	src: 	url("font/UTM-French-Vanilla.eot?#iefix") format('embedded-opentype'), 
+			url("font/UTM-French-Vanilla.woff") format('woff'), 
+			url("font/UTM-French-Vanilla.ttf") format('truetype'), 
+			url("font/UTM-French-Vanilla.svg#fontello") format('svg');			
+}
+

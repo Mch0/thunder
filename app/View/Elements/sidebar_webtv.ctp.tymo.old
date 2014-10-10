@@ -1,0 +1,12 @@
+
+	<?php $webtvs = $this->requestAction(array('controller' => 'webtvs', 'action' => 'sidebar_webtv','plugin' => 'webtv','admin'=>false)); ?>
+	<?php foreach ($webtvs as $webtv): ?>
+	<?php endforeach; ?>
+	<?php $events = $this->requestAction(array('controller' => 'events', 'action' => 'webtv_bar_now','plugin' => 'full_calendar','admin'=>false)); ?>
+		<h2><?php echo h($webtv['Webtv']['webtv_title']); ?>
+	<?php foreach ($events as $event): ?>
+		<span class="sidebar_video_streamer"><i class="icon-play  icon-white"></i><?php echo $event['EventType']['name']; ?></span> 
+		 <span class="video_live"><?php echo h($webtv['Webtv']['live'])=='0'?'<span class="label important">OFF</span>':'<span class="label success">LIVE</span>'; ?></span>
+		 </h2>
+			<iframe id="iframe" frameborder="0" width="400" height="225" src="http://www.dailymotion.com/embed/video/x11svk9?autoPlay=1&autoMute=1"></iframe> 
+	<?php endforeach; ?>
