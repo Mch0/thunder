@@ -64,7 +64,7 @@ if (!defined('APP_DIR')) {
  * /lib/Cake/Console/Templates/skel/webroot/index.php
  */
 	//define('CAKE_CORE_INCLUDE_PATH',  DS . 'home' . DS . 'thunder' . DS . 'www' . DS . 'lib');
-	define('CAKE_CORE_INCLUDE_PATH', '/var/www/public_html/lib');
+	define('CAKE_CORE_INCLUDE_PATH', '../../lib');
 
 /**
  * Editing below this line should NOT be necessary.

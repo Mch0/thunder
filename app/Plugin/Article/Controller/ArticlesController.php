@@ -173,7 +173,16 @@ class ArticlesController extends ArticleAppController {
 	  			'Image.comment_count',
         )));
 
+		 //webtv
+		 $this->loadModel('Webtv');
+		 $d['webtv'] = $this->Webtv->find('all',array(
+			 'conditions' => array('online'=>1),
+			 'limit' => 1,
+		 ));
+
 		$this->set($d);
+
+
 	}
 
 

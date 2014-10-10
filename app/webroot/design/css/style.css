@@ -613,3 +613,7 @@ select.filter {
 td.level {
   padding-right: 10px;
 }
+
+#controlPlayer {
+    margin-top : 30px!important;
+}

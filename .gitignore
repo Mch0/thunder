@@ -13,7 +13,7 @@
 .idea/
 app/webroot/cache/*
 app/webroot/files/article/*
-
+app/webroot/files
 # OS generated files #
 ######################
 .DS_Store

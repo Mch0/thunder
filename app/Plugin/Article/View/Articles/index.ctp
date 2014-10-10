@@ -1,23 +1,27 @@
 <!-- Article/view/articles/index.ctp -->
 <?php $this->html->meta ('description', 'ThunderBot c\'est l\'actualité, la web TV, les guides et l\'expertise des progamers sur League of Legends.', array('inline' =>false)); ?>
-
+<?php  echo $this->Html->script('/design/js/videoplayer/videoplayer'); ?>
   <div class="container">
-
-<!-- <div class="col-xs-12 col-sm-12 col-sm-12 col-lg-7">
-            <?php  echo $this->Html->script('http://www.thunderbot.gg/caster/cast.js');?>
-          <div class="videocontainer">
-      <iframe src="http://www.twitch.tv/ogaminglol/embed" frameborder="0" scrolling="no" height="378" width="620"></iframe>
-          </div>
-          <div class="webchat">
-             <iframe id="chattv" src="http://www.twitch.tv/ogaminglol/chat?popout=" frameborder="0" scrolling="no" height="600px" width="100%"></iframe>
-          </div>
-</div> -->
 <!-- WEBTV -->
-<div class="row">
-    <div class="col-xs-12 col-sm-12 col-lg-12">
+
+
+<div class="row" id="controlPlayer>
+<span id="closePlayer" style="color:white">Fermer</span>
+<span id="openPlayer"  style="color:white;display:none">Ouvrir</span>
+</div>
+
+<div class="row" id="player">
+    <div class="col-xs-8 col-sm-8 col-lg-8">
         <div class="list-group panel panel-primary">
-            <div class="panel-body">
-                <iframe src="http://www.twitch.tv/ogaminglol/embed" frameborder="0" scrolling="no" height="378" width="620"></iframe>
+            <div id="webtv" class="panel-body">
+                <?php echo $webtv[0]['Webtv'][iframe_video_thumb] ?>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-4 col-sm-4 col-lg-4">
+        <div class="list-group panel panel-primary">
+            <div id="webchat" class="panel-body">
+                <?php echo $webtv[0]['Webtv'][iframe_chat] ?>
             </div>
         </div>
     </div>

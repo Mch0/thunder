@@ -37,7 +37,7 @@ class WebtvsController extends WebtvAppController {
 		$webtvs = $this->Webtv->find('all',array(
 			'conditions' => array('online'=>1),
 			'limit' => 1,
-		));	
+		));
 		//debug($webtvs);
 		$this->set(compact('webtvs','webtvs'));
 		$this->set($webtvs);
