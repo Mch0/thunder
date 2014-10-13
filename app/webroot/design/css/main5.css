@@ -983,3 +983,16 @@ div.thunderbox img {
 {
     margin-top: -9px;
 }
+#recherche
+{
+    margin-top : 6px;
+}
+#recherche .input-group
+{
+    width: 300px;
+}
+
+#controlPlayer
+{
+    margin-bottom: 25px;
+}

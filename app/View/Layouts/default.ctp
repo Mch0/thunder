@@ -101,6 +101,20 @@
                 </li>
             </ul>
             <ul class="nav pull-right navbar-nav navbar-right">
+                <li class="divider-vertical"></li>
+                    <li>
+                        <div id="recherche" class="right">
+
+                            <?php echo $this->Form->create('Article', array('action' => 'recherche','class'=>'form-search')); ?>
+                                <div class="input-group">
+                                    <?php echo $this->Form->input('filter',array('div' => false,'label'=>false,'placeholder'=>"Rechercher",'class'=>'form-control')); ?>
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </span>
+                                </div>
+                            <?php echo $this->Form->end(); ?>
+                        </div>
+                    </li>
                     <li class="divider-vertical"></li>
                     <li>
                         <a href="https://www.facebook.com/myThunderBot" class="social" target="_blank">
