@@ -4,14 +4,13 @@
   <div class="container">
 <!-- WEBTV -->
 
-<div class="hidden-xs">
-<div class="row col-xs-12 col-sm-12 col-lg-12" id="controlPlayer">
-<span id="closePlayer" style="color:white"><button class="btn btn-primary"><span class="glyphicon glyphicon-remove"></span> Fermer</button></span>
-<span id="openPlayer"  style="color:white;display:none"><button class="btn btn-primary"><span class="glyphicon glyphicon-chevron-down"></span> Ouvrir</button></span>
+
+<div class="row" id="controlPlayer>
+<span id="closePlayer" style="color:white">Fermer</span>
+<span id="openPlayer"  style="color:white;display:none">Ouvrir</span>
 </div>
 
 <div class="row" id="player">
-<?php  echo $this->Html->script('http://www.thunderbot.gg/caster/cast.js');?>
     <div class="col-xs-8 col-sm-8 col-lg-8">
         <div class="list-group panel panel-primary">
             <div id="webtv" class="panel-body">
@@ -27,7 +26,7 @@
         </div>
     </div>
 </div>
-</div>
+
 
 <div class="row">
 <!-- CONTENT SIDE-->
