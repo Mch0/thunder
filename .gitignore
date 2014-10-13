@@ -3,9 +3,8 @@
 *.jpg
 *.png
 /app/Config/database.php
+/app/tmp
 /lib/Cake/Console/Templates/skel/tmp/
-profile.txt
-/app/tmp/
 /plugins
 /vendors
 /build
