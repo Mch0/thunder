@@ -978,3 +978,8 @@ div.thunderbox img {
 {
     text-align: center;
 }
+
+.navbar-right  .social
+{
+    margin-top: -9px;
+}

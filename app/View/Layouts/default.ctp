@@ -72,15 +72,17 @@
                 <li>
                     <a href="<?php echo $this->Html->url(array('controller' => 'webtvs', 'action' => 'index2','plugin' => 'webtv'), true); ?>">Webtv</a>
                 </li>
-                <li>
+                <!--<li>
                     <a href="<?php echo $this->Html->url(array('controller' => 'videos', 'action' => 'index','plugin' => 'video'), true); ?>">Vidéos</a>
                 </li>
                 <li>
                     <a href="<?php echo $this->Html->url(array('controller' => 'images', 'action' => 'index','plugin' => 'image'), true); ?>">Galerie</a>
-                </li>
+                </li>-->
+
                 <li>
                     <a href="<?php echo $this->Html->url(array('controller' => 'equipes', 'action' => 'index','plugin' => 'equipe'), true); ?>">Equipe</a>
                 </li>
+                <li> <a href="#" >Sponsors</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">ThunderBot <b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -99,6 +101,17 @@
                 </li>
             </ul>
             <ul class="nav pull-right navbar-nav navbar-right">
+                    <li class="divider-vertical"></li>
+                    <li>
+                        <a href="https://www.facebook.com/myThunderBot" class="social" target="_blank">
+                            <?php echo $this->Html->image('facebook-white.png',array('alt'=> 'Facebook')); ?>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/MyThunderBot" class="social" target="_blank">
+                            <?php echo $this->Html->image('twitter-white.png',array('alt'=> 'Twitter')); ?>
+                        </a>
+                    </li>
                     <li class="divider-vertical"></li>
                     <li class="dropdown">
 
