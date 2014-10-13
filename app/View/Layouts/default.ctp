@@ -23,11 +23,34 @@
     <?php  echo $this->Html->css('/design/css/main5'); ?>
     <?php  echo $this->Html->css('/design/css/style'); ?>
     <?php  echo $this->Html->script('/design/js/videoplayer/videoplayer'); ?>
+    <?php  echo $this->Html->script('/design/js/bootstrap.min'); ?>
     <?php  echo $this->Html->script('/design/js/thunderbot'); ?>
-
 </head>
 
 <body>
+
+<!-- MODAL  -->
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Nouveau mot de passe</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label><strong>Adresse Email : </strong></label>
+                    <input class="form-control" id="user_email" type="text" name="user_email" placeholder="Adresse Email" />
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="sendResetPassword" onclick="ResetPwd()" class="btn btn-thunder"><span class="glyphicon glyphicon-envelope"></span> Envoyer</button>
+                <button type="button" class="btn btn-thunder" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Fermer </button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
     <div class="container">
@@ -80,15 +103,14 @@
                     <li class="dropdown">
 
                         <?php if($this->Session->read('Auth.User.id')) { ?>
-                        <a class="btn btn-primary navbar-btn btn-xs" href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'logout','plugin' => 'auth_acl'), true); ?>"><span class="glyphicon glyphicon-ok"></span> Se deconnecter</a>
-                        <a class="btn btn-thunder2 navbar-btn btn-xs" href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'editAccount','plugin' => 'auth_acl'), true); ?>"><span class="glyphicon glyphicon-user"></span> Mon compte</a>
+                        <a  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'logout','plugin' => 'auth_acl'), true); ?>"><span class="glyphicon glyphicon-ok"></span> Se deconnecter</a>
+                        <a  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'editAccount','plugin' => 'auth_acl'), true); ?>"><span class="glyphicon glyphicon-user"></span> Mon compte</a>
                         <?php }else{ ?>
                         <a class="dropdown-toggle" href="#" data-toggle="dropdown">Se connecter <strong class="caret"></strong></a>
                         <div class="dropdown-menu" id="box-connexion" style="padding: 15px; padding-bottom: 0px;">
                             <!-- Login form here -->
                             <div >
-                                <form method="post" class="form form-signin" action="/login">
-
+                                    <?php echo $this->Form->create('User', array('url' => '/login','class'=>' form-signin')); ?>
                                 <?php if (!empty($error)) {?>
                                 <div class="alert alert-error"><?php echo $error;?></div>
                                 <?php } ?>
@@ -98,8 +120,7 @@
                                             <?php echo __('Email :'); ?>
                                         </label>
                                     </strong>
-                                        <!--<?php echo $this->Form->input('user_email',array('div' => false,'label'=>false,'id' => 'email','type' => 'email','placeholder'=>__('Adresse Email'),'class'=>'form-control')); ?>-->
-                                    <input name="data[User][user_email]" id="email" placeholder="Adresse Email" class="form-control" type="email">
+                                        <?php echo $this->Form->input('user_email',array('div' => false,'label'=>false,'id' => 'email','type' => 'email','placeholder'=>__('Adresse Email'),'class'=>'form-control')); ?>
                                 </div>
                                 <div class="form-group">
                                     <strong class="login">
@@ -107,8 +128,7 @@
                                             <?php echo __('Mot de passe :'); ?>
                                         </label>
                                     </strong>
-                                        <!--<?php echo $this->Form->password('user_password',array('div' => false,'label'=>false,'id' => 'password','placeholder'=>__('Mot de passe'),'class'=>'form-control')); ?>-->
-                                    <input name="data[User][user_password]" id="password" placeholder="Mot de passe" class="form-control" type="password">
+                                        <?php echo $this->Form->password('user_password',array('div' => false,'label'=>false,'id' => 'password','placeholder'=>__('Mot de passe'),'class'=>'form-control')); ?>
                                 </div>
                                 <div class="control-group">
                                     <br>
@@ -116,18 +136,12 @@
                                         <input type="submit" class="btn btn-thunder2" value="<?php echo __('Envoyer'); ?>" />
                                     </div>
                                     <br>
-                                    <div>
-                                        <?php if (isset($general['Setting']) && (int)$general['Setting']['disable_reset_password'] == 0){?>
-                                        <a href="#" onclick='resetPassword(); return false;'><?php echo __('Mot de passe perdu ?'); ?></a>
-                                        <?php }?>
-                                    </div>
-                                    <div>
-                                        <?php if (isset($general['Setting']) && (int)$general['Setting']['disable_registration'] == 0){?>
-                                        <?php echo $this->Html->link(__('Créer un nouvel account'), array('plugin' => 'auth_acl','controller' => 'users','action' => 'signup')); ?>
-                                        <?php }?>
-                                    </div>
-                                   </form>
+                                   <?php echo $this->Form->end() ?>
+                                    <div id="link-helper">
+                                        <p><a href="#" id="link-resetpassword" data-toggle="modal" data-target="#myModal"><?php echo __('Mot de passe perdu ?'); ?></a></p>
 
+                                        <p><?php echo $this->Html->link(__('Créer un compte'), array('plugin' => 'auth_acl','controller' => 'users','action' => 'signup'),array('id' => 'link-createaccount')); ?></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -191,6 +205,24 @@
 
 </footer>
 <script>
+
+    function ResetPwd()
+    {
+        $.post('<?php echo Router::url(array('plugin' => 'auth_acl','controller' => 'users','action' => 'resetPassword')); ?>',{data:{User:{user_email:$('#user_email').val()}}},function(o){
+        if (o.send_link == 1){
+            $('#myModal').find('.alert-error').remove()
+            $('.modal-body').prepend('<div class="alert alert-success" style="padding:8px;"><?php echo __('Nous vous avons envoyé un mail.'); ?></div>');
+            step =2;
+        }else{
+            alert('Erreur');
+            step =1;
+            $('#myModal').find('.alert-error').remove();
+
+            $('.modal-body').prepend('<div class="alert alert-error alert-danger" style="padding:8px;"><?php echo __('<strong>Erreur</strong> !, Email non valide.'); ?></div>');
+        }
+    },'json');
+    }
+
     (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
         i[r] = i[r] || function () {
@@ -205,7 +237,5 @@
     ga('create', 'UA-42387963-1', 'thunderbot.gg');
     ga('send', 'pageview');
 </script>
-
-<?php  echo $this->Html->script('/design/js/bootstrap.min'); ?>
 </body>
 </html>

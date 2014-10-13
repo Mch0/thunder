@@ -959,7 +959,7 @@ div.thunderbox img {
     background-color: transparent;
 }
 
-#box-connexion, .navbar-right
+#box-connexion, #link-createaccount ,#link-resetpassword
 {
     color : #999;
     background-color: #333;
@@ -967,4 +967,14 @@ div.thunderbox img {
 #box-connexion
 {
     width: 250px;
+}
+
+#box-connexion .btn-thunder2
+{
+    width: 100%;
+}
+
+#link-helper p
+{
+    text-align: center;
 }
