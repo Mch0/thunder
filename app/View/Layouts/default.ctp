@@ -24,7 +24,6 @@
     <?php  echo $this->Html->css('/design/css/style'); ?>
     <?php  echo $this->Html->script('/design/js/videoplayer/videoplayer'); ?>
     <?php  echo $this->Html->script('/design/js/bootstrap.min'); ?>
-    <?php  echo $this->Html->script('/design/js/thunderbot'); ?>
 </head>
 
 <body>

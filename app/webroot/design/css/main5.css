@@ -996,3 +996,36 @@ div.thunderbox img {
 {
     margin-bottom: 25px;
 }
+
+.carousel-inner > .item > img ,.carousel-inner > .item > a > img
+{
+    width: 100%!important;
+    height: 500px!important;
+}
+
+.carousel-caption
+{
+    width: 100%;
+    padding: 20px 4%;
+    background-color: rgba(0,0,0, 0.50);
+    margin : 0;
+    padding-bottom: 0px;
+    bottom : 0px;
+    left : auto ;
+    right : auto;
+    height: 100px;
+}
+
+.carousel-caption  h3
+{
+    color : #fff!important;
+    text-align: left;
+    font-weight: 700;
+    font-size: 40px;
+}
+.carousel-caption  p
+{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 300;
+}

@@ -2,6 +2,42 @@
 <?php $this->html->meta ('description', 'ThunderBot c\'est l\'actualité, la web TV, les guides et l\'expertise des progamers sur League of Legends.', array('inline' =>false)); ?>
   <div class="container">
 <!-- WEBTV -->
+<div class="row hidden-xs">
+    <div class="col-lg-12">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+
+                <?php foreach ($threearticle as  $index => $thumbarticle ): ?>
+                <?php if($index == 0) {?>
+                    <div class="item active">
+                        <?php } else {?>
+                        <div class="item">
+                        <?php }?>
+                        <a class="" href="<?php echo $this->Html->url($thumbarticle['Article']['link']); ?>">
+
+                            <?php $srcImg = "http://www.thunderbot.gg/thumb.php?src=/files/article/photo/" . $thumbarticle['Article']['photo_dir'] . "/" . $thumbarticle['Article']['photo'] ;?>
+                            <?php $alt = $thumbarticle['Article']['article_title']; ?>
+                            <?php echo $this->Html->image("$srcImg", array('class' => 'img-responsive', 'alt' => "$alt")); ?>
+                        <div class="carousel-caption col-lg-12">
+                            <h3><?php echo $thumbarticle['Article']['article_title'] ?></h3>
+                            <p><?php echo $this->Text->truncate($thumbarticle['Article']['article_summary'],175,array('exact'=>false,'html'=>true)); ?></p>
+                        </div>
+                            </a>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+</div>
 
 
 <div class="hidden-xs">
@@ -27,12 +63,11 @@
     </div>
 </div>
 
-
 <div class="row">
 <!-- CONTENT SIDE-->
 <div class="col-xs-12 col-sm-6 col-sm-6 col-lg-6">
-<?php //debug($thumbarticles); ?>
-<?php foreach ($thumbarticles as $thumbarticle): ?>
+<?php //debug($threearticle); ?>
+<?php foreach ($threearticle as $thumbarticle): ?>
   <div class="list-group panel panel-primary">
     <div class="panel-body">
       <a class="" href="<?php echo $this->Html->url($thumbarticle['Article']['link']); ?>">
