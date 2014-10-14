@@ -3,6 +3,8 @@
 *.jpg
 *.png
 /app/Config/database.php
+.htaccess
+.htpasswd
 /app/tmp
 /lib/Cake/Console/Templates/skel/tmp/
 /plugins
