@@ -7,7 +7,7 @@ body {
 
 
 body {
-  background: url('img/1.jpg') no-repeat fixed center top #010101;
+  background: white;
   height: 188px;
   overflow: visible;
   z-index: 3;

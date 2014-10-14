@@ -18,7 +18,28 @@
 
   </div>
 </div>
+      <div class="hidden-xs">
+          <div class="row col-xs-12 col-sm-12 col-lg-12" id="controlPlayer">
+              <span id="closePlayer" style="color:white"><button class="btn btn-thunder2"><span class="glyphicon glyphicon-remove"></span> Fermer</button></span>
+              <span id="openPlayer"  style="color:white;display:none"><button class="btn btn-thunder2"><span class="glyphicon glyphicon-chevron-down"></span> Ouvrir</button></span>
+          </div>
 
+          <div class="row" id="player">
+              <div class="col-xs-8 col-sm-8 col-lg-8">
+                  <div class="list-group panel panel-primary">
+                      <div id="webtv" class="panel-body">
+                          <?php echo $webtv[0]['Webtv'][iframe_video_thumb] ?>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xs-4 col-sm-4 col-lg-4">
+                  <div class="list-group panel panel-primary">
+                      <div id="webchat" class="panel-body">
+                          <?php echo $webtv[0]['Webtv'][iframe_chat] ?>
+                      </div>
+                  </div>
+              </div>
+          </div>
 
 <div class="row">
 
@@ -26,32 +47,6 @@
     
 <!-- CONTENT SIDE-->
 <div class="col-xs-12 col-sm-6 col-sm-6 col-lg-6">
-
-<div class="list-group panel panel-primary">
-    <div class="panel-body">
-    <div id="recherche">
-      <?php echo $this->Form->create('Article', array('action' => 'recherche','class'=>'')); ?>
-            <div class="row">
-              <div class="col-xs-5 col-sm-5 col-sm-5 col-lg-5">
-                    <?php echo $this->Form->input('filter',array('div' => false,'label'=>false,'placeholder'=>"Chercher un article",'class'=>'form-control')); ?>
-             </div>
-              <div class="col-xs-7col-sm-7 col-sm-7 col-lg-7">
-                   <span class="chercher"> <button class="btn btn-thunder2" type="submit"><?php echo __('Chercher'); ?></button>
-              </div>
-            </div>
-      <?php echo $this->Form->end(); ?>
-    </div>
-    </div>
-</div>
-
-    
-
-
-
-
-
-
-
 <?php  //debug($articles) ?>
 
 <?php foreach ($articles AS $article): ?>

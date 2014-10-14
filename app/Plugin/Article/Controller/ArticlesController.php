@@ -321,9 +321,12 @@ class ArticlesController extends ArticleAppController {
         )));
 
 
-
-
-
+		//webtv
+		$this->loadModel('Webtv');
+		$d['webtv'] = $this->Webtv->find('all',array(
+			'conditions' => array('online'=>1),
+			'limit' => 1,
+		));
 		
 		$this->set(compact('article', 'thumbarticles', 'threearticle'));
 		$this->set($d);
