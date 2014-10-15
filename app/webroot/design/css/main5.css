@@ -952,6 +952,8 @@ div.thunderbox img {
   height: auto;
 }
 
+
+/*------ NAV BAR ------*/
 #link-connect:focus, #link-connect:hover
 {
     color: #F81;
@@ -997,7 +999,198 @@ div.thunderbox img {
     margin-bottom: 25px;
 }
 
-.carousel-inner > .item > img ,.carousel-inner > .item > a > img
+
+/*------ SLIDER ------*/
+.slider{
+    max-width:1020px;
+    margin:0 auto 0;
+    min-height:200px;
+   /* background:url(./images/bx_loader.gif) no-repeat center center;*/
+
+}
+.slider1{
+    display: none;
+}
+
+.slide span{
+    display: block;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.slide .zone-txt {
+    width: 100%;
+    padding: 20px 4%;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .50);
+    margin: 0;
+}
+.slide .zone-txt {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    text-align: left;
+    z-index: 50;
+}
+
+.slide .zone-txt .title{
+    color: #fff;
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.slide .sous-titre{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    padding-left: 3px;
+}
+
+.slide .cat{
+    position: absolute;
+    top: -11px;
+}
+
+#outer-slider{width:100%;position:relative;}
+.left_fader{
+    cursor: pointer;
+    opacity: .5;
+    position: absolute;
+    left: -1000px;
+    top: 0px;
+    height: 400px;
+    width: 1075px;
+    background: url(bxslider/homefade.png);
+    background-repeat: repeat-x;
+    float: left;
+    z-index: 5;
+}
+.right_fader
+{
+    cursor: pointer;
+    opacity: .5;
+    position: absolute;
+    right: -1000px;
+    top: 0px;
+    height: 400px;
+    width: 1085px;
+    background: url(bxslider/homefade.png);
+    background-repeat: repeat-x;
+    float: left;
+    z-index: 5;
+}
+
+.bx-wrapper{margin-bottom: 0;position: relative;}
+.bx-wrapper .bx-viewport{border: none;box-shadow: none;}
+.bx-pager{display: none;}
+
+.bx-wrapper .bx-next {
+    right: 20px;
+    background-image: url(bxslider/spritesheet.png);
+    background-repeat: no-repeat;
+    width: 40px!important;
+    height: 40px!important;
+    background-position: -515px -111px;
+    position: absolute!important;
+}
+
+.bx-wrapper .bx-prev {
+    background-image: url(bxslider/spritesheet.png);
+    background-repeat: no-repeat;
+    width: 40px!important;
+    height: 40px!important;
+    background-position: -315px -161px;
+    position: absolute!important;
+}
+
+.bx-wrapper .bx-next:hover{
+    background-image: url(bxslider/spritesheet.png);
+    background-position: -515px -111px;
+}
+
+.bx-wrapper .bx-prev:hover{
+    background-image: url(bxslider/spritesheet.png);
+    background-position: -315px -161px;
+}
+.left_fader
+{
+    cursor: pointer;
+    opacity: .5;
+    position: absolute;
+    left: -1000px;
+    top: 0px;
+    height: 400px;
+    width: 1005px;
+    background: url(bxslider/homefade.png);
+    background-repeat: repeat-x;
+    float: left;
+    z-index: 5;
+}
+
+.right_fader
+{
+    cursor: pointer;
+    opacity: .5;
+    position: absolute;
+    right: -1000px;
+    top: 0px;
+    height: 400px;
+    width: 1015px;
+    background: url(bxslider/homefade.png);
+    background-repeat: repeat-x;
+    float: left;
+    z-index: 5;
+}
+
+
+#thunderbot .bx-viewport
+{
+    overflow: visible!important;
+}
+
+.bx-viewport
+{
+    border-top-width: 0px!important;
+    border-bottom-width: 0px!important;
+}
+#thunderbot .slider1{margin-left: 0;}
+#thunderbot .slide{padding:0;}
+
+#thunderbot .bx-wrapper .bx-controls-direction a {
+    bottom: 150px!important;
+    height: 80px!important;
+}
+
+#thunderbot .bx-wrapper .bx-next{
+    right: -30px!important;
+    background: url('bxslider/fleche-droite-main-slider.png') center center;
+}
+
+#thunderbot .bx-wrapper .bx-next:hover{
+    right: -40px!important;
+    background: url('bxslider/fleche-droite-main-slider.png') center center;
+    opacity: .8;
+}
+
+#thunderbot .bx-wrapper .bx-prev{
+    left: -40px!important;
+    background: url('bxslider/fleche-gauche-main-slider.png') center center;
+}
+
+#thunderbot .bx-wrapper .bx-prev:hover{
+    left: -40px!important;
+    background: url('bxslider/fleche-gauche-main-slider.png') center center;
+    opacity: .8;
+}
+#outer-slider .bx-wrapper .bx-viewport  a  img
+{
+    width: 100%;
+    max-height: 392px;
+}
+
+/*.carousel-inner > .item > img ,.carousel-inner > .item > a > img
 {
     width: 100%!important;
     height: 500px!important;
@@ -1028,4 +1221,4 @@ div.thunderbox img {
     text-align: left;
     font-size: 20px;
     font-weight: 300;
-}
+}*/
