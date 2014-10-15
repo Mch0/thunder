@@ -4,28 +4,6 @@
 <?php  echo $this->Html->css('/design/css/bxslider/jquery.bxslider'); ?>
 <?php  echo $this->Html->script('/design/js/bxslider/jquery.bxslider.min'); ?>
 <!-- SLIDER -->
-
-<!--<?php foreach ($threearticle as  $index => $thumbarticle ): ?>
-<?php if($index == 0) {?>
-<div class="item active">
-<?php } else {?>
-<div class="item">
-    <?php }?>
-    <a class="" href="<?php echo $this->Html->url($thumbarticle['Article']['link']); ?>">
-
-        <?php $srcImg = "http://www.thunderbot.gg/thumb.php?src=/files/article/photo/" . $thumbarticle['Article']['photo_dir'] . "/" . $thumbarticle['Article']['photo'] ;?>
-        <?php $alt = $thumbarticle['Article']['article_title']; ?>
-        <?php echo $this->Html->image("$srcImg", array('class' => 'desktop_img', 'alt' => "$alt"));?>
-        <div class="carousel-caption col-lg-12">
-            <h3><?php echo $thumbarticle['Article']['article_title'] ?></h3>
-
-            <p><?php echo $this->
-                Text->truncate($thumbarticle['Article']['article_summary'],175,array('exact'=>false,'html'=>true));
-                ?></p>
-        </div>
-    </a>
-</div>
-<?php endforeach; ?>-->
 <div class="row">
     <div class="slider text-center" id="thunderbot">
         <div id="outer-slider">
