@@ -42,8 +42,8 @@
     $(document).ready(function() {
         var slider = $('.slider1').show().bxSlider({
             auto: true,
-            pause: 5000,
-            speed: 1000,
+            pause: 2000,
+            speed: 3000,
             pager: false,
             slideWidth: 1020,
             minSlides: 1,
@@ -68,7 +68,7 @@
 <!-- /SLIDER -->
 
 <!-- WEBTV -->
-<!--<div class="hidden-xs">
+<div class="hidden-xs">
     <div class="row col-xs-12 col-sm-12 col-lg-12" id="controlPlayer">
         <span id="closePlayer" style="color:white"><button class="btn btn-thunder2"><span
                 class="glyphicon glyphicon-remove"></span> Fermer
@@ -80,26 +80,30 @@
 
     <div class="row" id="player">
         <div class="col-xs-8 col-sm-8 col-lg-8">
-            <div class="list-group panel panel-primary">
+            <div class="">
                 <div id="webtv" class="panel-body">
                     <?php echo $webtv[0]['Webtv'][iframe_video_thumb] ?>
                 </div>
             </div>
         </div>
         <div class="col-xs-4 col-sm-4 col-lg-4">
-            <div class="list-group panel panel-primary">
+            <div class="">
                 <div id="webchat" class="panel-body">
                     <?php echo $webtv[0]['Webtv'][iframe_chat] ?>
                 </div>
             </div>
         </div>
     </div>
-</div>-->
+</div>
 <!-- /WEBTV -->
 
 <!-- CONTENT SIDE-->
 <div class="row">
-<div class="col-xs-12 col-sm-12 col-sm-12 col-lg-12">
+<div class="col-lg-12">
+    <hr style="border-width: 5px;border-color:grey;">
+    <div style="text-align: center; margin-bottom: 40px;padding-top: 15px;border-bottom: 3px solid orange;border-top: 3px solid orange"><h3>ACTUALITES</h3></div>
+</div>
+    <div class="col-xs-6 col-sm-6 col-sm-6 col-lg-9">
 
 
 <!-- TOP4 -->
@@ -204,7 +208,7 @@ foreach ($articles as $article) {
   if (substr($title, 0, 2) == '§') {
 ?>
 
-<div class="list-group panel panel-primary">
+<div class="">
     <div class="panel-body">
         <div class="thunderbox">
             <div class="caption">
@@ -243,10 +247,10 @@ foreach ($articles as $article) {
 
 <?php } else { ?>
 
-<div class="list-group panel panel-primary">
+<div class="">
     <div class="panel-body">
         <div class="thunderbox">
-            <div class="caption">
+            <div class="">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                         <a class="" href="<?php echo $this->Html->url($article['Article']['link']); ?>"><img
@@ -279,7 +283,7 @@ foreach ($articles as $article) {
             </div>
         </div>
     </div>
-    <div class="panel-footer text-right">
+    <div class="text-right">
         <a class="" href="<?php echo $this->Html->url($article['Article']['link']); ?>">Voir la news &rarr;</a>
     </div>
 </div>
@@ -304,8 +308,43 @@ foreach ($articles as $article) {
 </div>
 <!-- /CONTENT SIDE-->
 
-<!-- VIDEO  -->
+<!-- TWEET -->
+    <div class="col-xs-12 col-sm-6 col-sm-6 col-lg-3">
+        <div class="" id="galerie">
+            <div class="panel-heading text-center hidden-xs">
+                <h4>GALERIE</h4>
+            </div>
 
+            <div class="panel-body">
+                <?php foreach ($images AS $image): ?>
+                <a class=""
+                   href="http://www.thunderbot.gg/galerie/<?php echo $image['Image']['id']; ?>-<?php echo $image['Image']['slug']; ?>">
+                    <h4><span class="comment_total3"><span
+                            class="glyphicon glyphicon-comment"></span> <?php echo h($image['Image']['comment_count']); ?></span>
+                        &nbsp;<?php echo $image['Image']['title']; ?></h4>
+                </a>
+                <a class=""
+                   href="http://www.thunderbot.gg/galerie/<?php echo $image['Image']['id']; ?>-<?php echo $image['Image']['slug']; ?>">
+                    <img class="img-responsive"
+                         src="http://www.thunderbot.gg/thumb.php?src=<?php echo $this->Html->url($image['Image']['image']); ?>&w=400&zc=1"
+                         alt="<?php echo $image['Image']['title']; ?>"></a>
+                <hr>
+                <?php endforeach; ?>
+            </div>
+        </div>
+        <div id="twit">
+            <div class="panel-heading text-center hidden-xs">
+                <h4>DERNIERS TWEETS</h4>
+            </div>
+            <br/>
+            <a class="twitter-timeline"  href="https://twitter.com/MyThunderBot"  data-widget-id="363309093869477888">Tweets de @MyThunderBot</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+    </div>
+
+<!-- /TWEET -->
+
+<!-- VIDEO  -->
 <!--<div class="col-xs-12 col-sm-6 col-sm-6 col-lg-3">
 
 <div class="list-group panel panel-primary">
@@ -347,37 +386,6 @@ foreach ($articles as $article) {
 </div>-->
 
 <!-- /VIDEO -->
-
-
-<!-- GALERIE -->
-
-<!--<div class="col-xs-12 col-sm-6 col-sm-6 col-lg-3">
-    <div class="list-group panel panel-primary">
-        <div class="panel-heading text-center hidden-xs">
-            <h4>GALERIE</h4>
-        </div>
-
-        <div class="panel-body">
-            <?php foreach ($images AS $image): ?>
-            <a class=""
-               href="http://www.thunderbot.gg/galerie/<?php echo $image['Image']['id']; ?>-<?php echo $image['Image']['slug']; ?>">
-                <h4><span class="comment_total3"><span
-                        class="glyphicon glyphicon-comment"></span> <?php echo h($image['Image']['comment_count']); ?></span>
-                    &nbsp;<?php echo $image['Image']['title']; ?></h4>
-            </a>
-            <a class=""
-               href="http://www.thunderbot.gg/galerie/<?php echo $image['Image']['id']; ?>-<?php echo $image['Image']['slug']; ?>">
-                <img class="img-responsive"
-                     src="http://www.thunderbot.gg/thumb.php?src=<?php echo $this->Html->url($image['Image']['image']); ?>&w=400&zc=1"
-                     alt="<?php echo $image['Image']['title']; ?>"></a>
-            <hr>
-            <?php endforeach; ?>
-        </div>
-
-    </div>
-</div>-->
-
-<!-- /GALERIE -->
 </div>
 </div>
 </div>
