@@ -69,7 +69,8 @@
 
 <!-- WEBTV -->
 <div class="hidden-xs">
-    <div class="row col-xs-12 col-sm-12 col-lg-12" id="controlPlayer">
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-lg-12" id="controlPlayer">
         <span id="closePlayer" style="color:white"><button class="btn btn-thunder2"><span
                 class="glyphicon glyphicon-remove"></span> Fermer
         </button></span>
@@ -93,6 +94,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </div>
 <!-- /WEBTV -->
