@@ -65,75 +65,50 @@
         });
     });
 </script>
+<!-- /SLIDER -->
+
 <!-- WEBTV -->
-<div class="hidden-xs">
-<div class="row col-xs-12 col-sm-12 col-lg-12" id="controlPlayer">
-    <span id="closePlayer" style="color:white"><button class="btn btn-thunder2"><span
-            class="glyphicon glyphicon-remove"></span> Fermer
-    </button></span>
-    <span id="openPlayer" style="color:white;display:none"><button class="btn btn-thunder2"><span
-            class="glyphicon glyphicon-chevron-down"></span> Ouvrir
-    </button></span>
-</div>
+<!--<div class="hidden-xs">
+    <div class="row col-xs-12 col-sm-12 col-lg-12" id="controlPlayer">
+        <span id="closePlayer" style="color:white"><button class="btn btn-thunder2"><span
+                class="glyphicon glyphicon-remove"></span> Fermer
+        </button></span>
+        <span id="openPlayer" style="color:white;display:none"><button class="btn btn-thunder2"><span
+                class="glyphicon glyphicon-chevron-down"></span> Ouvrir
+        </button></span>
+    </div>
 
-<div class="row" id="player">
-    <div class="col-xs-8 col-sm-8 col-lg-8">
-        <div class="list-group panel panel-primary">
-            <div id="webtv" class="panel-body">
-                <?php echo $webtv[0]['Webtv'][iframe_video_thumb] ?>
+    <div class="row" id="player">
+        <div class="col-xs-8 col-sm-8 col-lg-8">
+            <div class="list-group panel panel-primary">
+                <div id="webtv" class="panel-body">
+                    <?php echo $webtv[0]['Webtv'][iframe_video_thumb] ?>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-lg-4">
+            <div class="list-group panel panel-primary">
+                <div id="webchat" class="panel-body">
+                    <?php echo $webtv[0]['Webtv'][iframe_chat] ?>
+                </div>
             </div>
         </div>
     </div>
-    <div class="col-xs-4 col-sm-4 col-lg-4">
-        <div class="list-group panel panel-primary">
-            <div id="webchat" class="panel-body">
-                <?php echo $webtv[0]['Webtv'][iframe_chat] ?>
-            </div>
-        </div>
-    </div>
-</div>
+</div>-->
+<!-- /WEBTV -->
 
-<div class="row">
 <!-- CONTENT SIDE-->
-<div class="col-xs-12 col-sm-6 col-sm-6 col-lg-6">
-<?php //debug($threearticle); ?>
-<?php foreach ($threearticle as $thumbarticle): ?>
-<div class="list-group panel panel-primary">
-    <div class="panel-body">
-        <a class="" href="<?php echo $this->Html->url($thumbarticle['Article']['link']); ?>">
-            <img id="img_full" class="img-responsive"
-                 alt="<?php echo h($thumbarticle['Article']['article_title']); ?>"
-                 src="http://www.thunderbot.gg/thumb.php?src=/files/article/photo/<?php echo $thumbarticle['Article']['photo_dir'] ?>/<?php echo $thumbarticle['Article']['photo'] ?>&w=600&zc=1"></img></a>
-        <strong class="strong_comment_redacteur"><em><?php echo h($thumbarticle['Category']['category_name']); ?></em></strong>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-sm-12 col-lg-12">
 
-        <h2 class="title_black_thunder"><a
-                href="<?php echo $this->Html->url($thumbarticle['Article']['link']); ?>"><?php echo h($thumbarticle['Article']['article_title']); ?></a>
-        </h2>
 
-        <p class=" clearfix">
-                <span class="comment_total2"><span
-                        class="glyphicon glyphicon-comment"></span> <?php echo h($thumbarticle['Article']['comment_count']); ?>  </span>
-            &nbsp;|
-            <small><?php echo $this->frenchDate->french($thumbarticle['Article']['created']); ?> |</small>
-            |
-            <a class="" href="http://www.thunderbot.gg/membre/<?php echo $thumbarticle['User']['id']; ?>">
-                <strong class="strong_comment_redacteur"><em><?php echo h($thumbarticle['User']['user_name']); ?></a>
-            <?php echo h($thumbarticle['Article']['redacteur']); ?></em></strong>
-        </p>
-        <p><?php echo $this->
-            Text->truncate($thumbarticle['Article']['article_summary'],175,array('exact'=>false,'html'=>true));
-            ?></p>
-    </div>
-</div>
-<?php endforeach; ?>
-
-<div class="list-group panel panel-primary">
+<!-- TOP4 -->
+<!--<div class="list-group panel panel-primary">
     <div class="panel-body">
         <div class="thunderbox">
             <div class="caption">
                 <div class="row">
                     <?php //debug($threearticle) ?>
-
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                         <div id="block">
                             <a class="" href="<?php echo $this->Html->url($threearticle[0]['Article']['link']); ?>">
@@ -217,7 +192,9 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
+
+<!-- /TOP4 -->
 
 <?php  //debug($articles) ?>
 
@@ -232,7 +209,7 @@ foreach ($articles as $article) {
         <div class="thunderbox">
             <div class="caption">
                 <div class="row">
-                    <div class="col-xs-md3 col-sm-md3 col-md3 col-lg-3">
+                    <div class="col-xs-md6 col-sm-md6 col-md6 col-lg-6">
                         <a class="" href="<?php echo $this->Html->url($article['Article']['link']); ?>"><img
                                 class="img-responsive"
                                 alt="<?php echo substr($this->Text->truncate($title , 35,array('exact'=>false,'html'=>true)), 2); ?>"
@@ -327,47 +304,54 @@ foreach ($articles as $article) {
 </div>
 <!-- /CONTENT SIDE-->
 
-<div class="col-xs-12 col-sm-6 col-sm-6 col-lg-3">
+<!-- VIDEO  -->
 
-    <!-- VIDEO  -->
-    <div class="list-group panel panel-primary">
-        <div class="panel-heading text-center hidden-xs">
-            <h4>VIDEOS</h4>
-        </div>
-        <div class="panel-body">
-            <div class="tab-pane fade in active" id="home">
-                <div class="row">
+<!--<div class="col-xs-12 col-sm-6 col-sm-6 col-lg-3">
 
-                    <?php foreach ($videos AS $video): ?>
-                    <div class="col-xs-12 col-sm-12 col-lg-12">
-                        <div class="row">
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                <div class="thumbnail" style="">
-                                    <a class=""
-                                       href="http://www.thunderbot.gg/videos/<?php echo $video['Video']['id']; ?>-<?php echo $video['Video']['slug']; ?>">
-                                        <img class="img-responsive" alt="<?php echo $video['Video']['video_title']; ?>"
-                                             src="http://www.thunderbot.gg/thumb.php?src=/files/video/photo/<?php echo $video['Video']['photo_dir']; ?>/<?php echo $video['Video']['photo']; ?>&w=150&h=100&zc=1"></img></a>
-                                </div>
-                            </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+<div class="list-group panel panel-primary">
+    <div class="panel-heading text-center hidden-xs">
+        <h4>VIDEOS</h4>
+    </div>
+    <div class="panel-body">
+        <div class="tab-pane fade in active" id="home">
+            <div class="row">
+
+                <?php foreach ($videos AS $video): ?>
+                <div class="col-xs-12 col-sm-12 col-lg-12">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="thumbnail" style="">
                                 <a class=""
                                    href="http://www.thunderbot.gg/videos/<?php echo $video['Video']['id']; ?>-<?php echo $video['Video']['slug']; ?>">
-                                    <h5><?php echo $video['Video']['video_title']; ?></h5></a>
-                                <span class="comment_total3"><span
-                                        class="glyphicon glyphicon-comment"></span> <?php echo h($video['Video']['comment_count']); ?>  </span>
-                                &nbsp;
+                                    <img class="img-responsive" alt="<?php echo $video['Video']['video_title']; ?>"
+                                         src="http://www.thunderbot.gg/thumb.php?src=/files/video/photo/<?php echo $video['Video']['photo_dir']; ?>/<?php echo $video['Video']['photo']; ?>&w=150&h=100&zc=1"></img></a>
                             </div>
                         </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <a class=""
+                               href="http://www.thunderbot.gg/videos/<?php echo $video['Video']['id']; ?>-<?php echo $video['Video']['slug']; ?>">
+                                <h5><?php echo $video['Video']['video_title']; ?></h5></a>
+                            <span class="comment_total3"><span
+                                    class="glyphicon glyphicon-comment"></span> <?php echo h($video['Video']['comment_count']); ?>  </span>
+                            &nbsp;
+                        </div>
                     </div>
-                    <?php endforeach; ?>
                 </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>
-    <div class="list-group panel panel-primary"></div>
 </div>
 
-<div class="col-xs-12 col-sm-6 col-sm-6 col-lg-3">
+
+</div>-->
+
+<!-- /VIDEO -->
+
+
+<!-- GALERIE -->
+
+<!--<div class="col-xs-12 col-sm-6 col-sm-6 col-lg-3">
     <div class="list-group panel panel-primary">
         <div class="panel-heading text-center hidden-xs">
             <h4>GALERIE</h4>
@@ -391,7 +375,9 @@ foreach ($articles as $article) {
         </div>
 
     </div>
-</div>
+</div>-->
+
+<!-- /GALERIE -->
 </div>
 </div>
 </div>

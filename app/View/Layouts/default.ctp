@@ -71,13 +71,6 @@
                 <li>
                     <a href="<?php echo $this->Html->url(array('controller' => 'webtvs', 'action' => 'index2','plugin' => 'webtv'), true); ?>">Webtv</a>
                 </li>
-                <!--<li>
-                    <a href="<?php echo $this->Html->url(array('controller' => 'videos', 'action' => 'index','plugin' => 'video'), true); ?>">Vidéos</a>
-                </li>
-                <li>
-                    <a href="<?php echo $this->Html->url(array('controller' => 'images', 'action' => 'index','plugin' => 'image'), true); ?>">Galerie</a>
-                </li>-->
-
                 <li>
                     <a href="<?php echo $this->Html->url(array('controller' => 'equipes', 'action' => 'index','plugin' => 'equipe'), true); ?>">Equipe</a>
                 </li>
@@ -179,7 +172,7 @@
 </nav>
 
 <div class="container">
-    <div class="row">
+    <!--<div class="row">
         <div class="col-xs-12 col-sm-12 col-sm-12 col-lg-12">
 
             <div id="header_logo">
@@ -190,7 +183,7 @@
                 </a>
             </div>
         </div>
-    </div>
+    </div>-->
 
 
     <div class="thunderbot">
