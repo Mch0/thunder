@@ -7,8 +7,7 @@ body {
 
 
 body {
-  /*background: white;*/
-    background-image: url('img/background.jpg');
+  background: white;
   height: 188px;
   overflow: visible;
   z-index: 3;
@@ -1003,7 +1002,7 @@ div.thunderbox img {
 
 /*------ SLIDER ------*/
 .slider{
-    max-width:1020px;
+    max-width:1170px;
     margin:0 auto 0;
     min-height:200px;
    /* background:url(./images/bx_loader.gif) no-repeat center center;*/
@@ -1191,38 +1190,7 @@ div.thunderbox img {
     max-height: 392px;
 }
 
-/*.carousel-inner > .item > img ,.carousel-inner > .item > a > img
-{
-    width: 100%!important;
-    height: 500px!important;
-}
 
-.carousel-caption
-{
-    width: 100%;
-    padding: 20px 4%;
-    background-color: rgba(0,0,0, 0.50);
-    margin : 0;
-    padding-bottom: 0px;
-    bottom : 0px;
-    left : auto ;
-    right : auto;
-    height: 100px;
-}
-
-.carousel-caption  h3
-{
-    color : #fff!important;
-    text-align: left;
-    font-weight: 700;
-    font-size: 40px;
-}
-.carousel-caption  p
-{
-    text-align: left;
-    font-size: 20px;
-    font-weight: 300;
-}*/
 
 /*------ GALERIE ------*/
 .panel-heading
@@ -1252,6 +1220,12 @@ div.thunderbox img {
 {
     border-width: 5px;
     border-color:grey;
+}
+
+.hr-grey-3
+{
+    clear: both;
+    border-top: 3px solid #eee;
 }
 
 article .picture img
@@ -1291,13 +1265,22 @@ article .picture img
     padding-bottom: 20px;
 }
 
-.resume p a{
+.resume a p {
     color:  #858585;
     font-size: 13px;
     line-height: 16px;
 }
 
-.resume p a:hover
+.resume a p:hover
 {
     color : orange;
+}
+
+.date small
+{
+    font-size: 70%;
+}
+.article
+{
+    margin-top: 15px;
 }

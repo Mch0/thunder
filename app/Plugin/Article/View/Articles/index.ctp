@@ -42,10 +42,10 @@
     $(document).ready(function() {
         var slider = $('.slider1').show().bxSlider({
             auto: true,
-            pause: 2000,
-            speed: 3000,
+            pause: 5000,
+            speed: 1500,
             pager: false,
-            slideWidth: 1020,
+            slideWidth: 1170,
             minSlides: 1,
             maxSlides: 1,
             slideMargin: 0,
@@ -111,145 +111,10 @@
     </div>
 </div>
     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-
-
-<!-- TOP4 -->
-<!--<div class="list-group panel panel-primary">
-    <div class="panel-body">
-        <div class="thunderbox">
-            <div class="caption">
-                <div class="row">
-                    <?php //debug($threearticle) ?>
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                        <div id="block">
-                            <a class="" href="<?php echo $this->Html->url($threearticle[0]['Article']['link']); ?>">
-                                <img id="img_full" class="img-responsive"
-                                     alt="<?php echo $this->Text->truncate($threearticle[0]['Article']['article_title'],600,array('exact'=>false,'html'=>true)); ?>"
-                                     src="http://www.thunderbot.gg/thumb.php?src=/files/article/photo/<?php echo $threearticle[0]['Article']['photo_dir'] ?>/<?php echo $threearticle[0]['Article']['photo'] ?>&w=270&h=166&zc=1"></img>
-                            </a>
-                            <strong class="strong_comment_redacteur"><em><?php echo h($thumbarticle['Category']['category_name']); ?></em></strong>
-                            <a class="" href="<?php echo $this->Html->url($threearticle[0]['Article']['link']); ?>">
-                                <h2 class="title5"><span class="comment_total2"><span
-                                        class="glyphicon glyphicon-comment"></span> <?php echo h($threearticle[0]['Article']['comment_count']); ?>  </span>
-                                    &nbsp;<?php echo $this->
-                                    Text->truncate($threearticle[0]['Article']['article_title'],600,array('exact'=>false,'html'=>true));
-                                    ?> </h2>
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                        <div id="block">
-                            <a class="" href="<?php echo $this->Html->url($threearticle[1]['Article']['link']); ?>">
-                                <img id="img_full" class="img-responsive"
-                                     alt="<?php echo $this->Text->truncate($threearticle[1]['Article']['article_title'],600,array('exact'=>false,'html'=>true)); ?>"
-                                     src="http://www.thunderbot.gg/thumb.php?src=/files/article/photo/<?php echo $threearticle[1]['Article']['photo_dir'] ?>/<?php echo $threearticle[1]['Article']['photo'] ?>&w=270&h=166&zc=1"></img>
-                            </a>
-                            <strong class="strong_comment_redacteur"><em><?php echo h($thumbarticle['Category']['category_name']); ?></em></strong>
-                            <a class="" href="<?php echo $this->Html->url($threearticle[1]['Article']['link']); ?>">
-                                <h2 class="title5"><span class="comment_total2"><span
-                                        class="glyphicon glyphicon-comment"></span> <?php echo h($threearticle[1]['Article']['comment_count']); ?>  </span>
-                                    &nbsp;<?php echo $this->
-                                    Text->truncate($threearticle[1]['Article']['article_title'],600,array('exact'=>false,'html'=>true));
-                                    ?> </h2>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="row">
-
-                    <?php //debug($threearticle) ?>
-
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                        <div id="block">
-                            <a class="" href="<?php echo $this->Html->url($threearticle[2]['Article']['link']); ?>">
-                                <img id="img_full" class="img-responsive"
-                                     alt="<?php echo $this->Text->truncate($threearticle[2]['Article']['article_title'],600,array('exact'=>false,'html'=>true)); ?>"
-                                     src="http://www.thunderbot.gg/thumb.php?src=/files/article/photo/<?php echo $threearticle[2]['Article']['photo_dir'] ?>/<?php echo $threearticle[2]['Article']['photo'] ?>&w=270&h=166&zc=1"></img>
-                            </a>
-                            <strong class="strong_comment_redacteur"><em><?php echo h($thumbarticle['Category']['category_name']); ?></em></strong>
-                            <a class="" href="<?php echo $this->Html->url($threearticle[2]['Article']['link']); ?>">
-                                <h2 class="title5"><span class="comment_total2"><span
-                                        class="glyphicon glyphicon-comment"></span> <?php echo h($threearticle[2]['Article']['comment_count']); ?>  </span>
-                                    &nbsp;<?php echo $this->
-                                    Text->truncate($threearticle[2]['Article']['article_title'],600,array('exact'=>false,'html'=>true));
-                                    ?> </h2>
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                        <div id="block">
-                            <a class="" href="<?php echo $this->Html->url($threearticle[3]['Article']['link']); ?>">
-                                <img id="img_full" class="img-responsive"
-                                     alt="<?php echo $this->Text->truncate($threearticle[3]['Article']['article_title'],600,array('exact'=>false,'html'=>true)); ?>"
-                                     src="http://www.thunderbot.gg/thumb.php?src=/files/article/photo/<?php echo $threearticle[3]['Article']['photo_dir'] ?>/<?php echo $threearticle[3]['Article']['photo'] ?>&w=270&h=166&zc=1"></img>
-                            </a>
-                            <strong class="strong_comment_redacteur"><em><?php echo h($thumbarticle['Category']['category_name']); ?></em></strong>
-                            <a class="" href="<?php echo $this->Html->url($threearticle[3]['Article']['link']); ?>">
-                                <h2 class="title5"><span class="comment_total2"><span
-                                        class="glyphicon glyphicon-comment"></span> <?php echo h($threearticle[3]['Article']['comment_count']); ?>  </span>
-                                    &nbsp;<?php echo $this->
-                                    Text->truncate($threearticle[3]['Article']['article_title'],600,array('exact'=>false,'html'=>true));
-                                    ?> </h2>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>-->
-
-<!-- /TOP4 -->
-<!--<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-    <article>
-        <div class="picture">
-            <a href="http://www.mensquare.com/menly/sport-moteur/174708-cristiano-ronaldo-100-millions-fans-facebook">
-                <img src="http://medias.mensquare.com/wp-content/uploads/sites/3/2014/10/Ronaldo-520x312.jpg">
-            </a>
-        </div>
-
-        <div class="entete">
-            <div class="date">
-                16 oct 2014        </div>
-            <div class="partage">
-                &lt;!&ndash;https://www.facebook.com/sharer/sharer.php?u=&ndash;&gt;
-                <span class="glyphicon glyphicon-signal"></span>
-                <a class="link-facebook-small popup" href="#">
-                    <?= $this->Html->image('social/mini-facebook.jpg', array('alt' => 'share')) ?>
-                </a>
-                &lt;!&ndash;http://twitter.com/share?text=&ndash;&gt;
-                <a class="link-tweeter-small popup" onclick="alert('test')" href="#">
-                    <?= $this->Html->image('social/mini-twitter.jpg', array('alt' => 'share')) ?>
-                </a>
-            </div>
-        </div>
-        <div class="resume">
-            <header>
-                <h3>
-                    <a href="http://www.mensquare.com/menly/sport-moteur/174708-cristiano-ronaldo-100-millions-fans-facebook">
-                        Cristiano Ronaldo atteint les 100 millions de fans sur Facebook                </a>
-                </h3>
-            </header>
-            <div>
-                <p>
-                    <a href="http://www.mensquare.com/menly/sport-moteur/174708-cristiano-ronaldo-100-millions-fans-facebook">
-                        Cristiano Ronaldo est le premier sportif à posséder une aussi grande communauté sur les réseaux sociaux.
-                        The post Cristiano Ronaldo atteint les [...]                </a>
-                </p>
-            </div>
-        </div>
-    </article>
-</div>-->
 <?php  //debug($articles) ?>
 
 <?php
-foreach ($articles as $article) {
+foreach ($articles as $key => $article) {
   $title = h($article['Article']['article_title']);
   if (substr($title, 0, 2) == '§') {
 ?>
@@ -259,7 +124,7 @@ foreach ($articles as $article) {
         <div class="thunderbox">
             <div class="caption">
                 <div class="row">
-                    <div class="col-xs-md6 col-sm-md6 col-md6 col-lg-6">
+                    <div class="col-xs-md6 col-sm-md6 col-md6 col-lg-6" >
                         <a class="" href="<?php echo $this->Html->url($article['Article']['link']); ?>"><img
                                 class="img-responsive"
                                 alt="<?php echo substr($this->Text->truncate($title , 35,array('exact'=>false,'html'=>true)), 2); ?>"
@@ -292,8 +157,7 @@ foreach ($articles as $article) {
 </div>
 
 <?php } else { ?>
-
-<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 article">
     <article>
         <div class="picture">
             <a href="<?= $this->Html->url($article['Article']['link']); ?>">
@@ -336,59 +200,18 @@ foreach ($articles as $article) {
                 </h3>
             </header>
             <div>
-                <p>
+
                     <a href="<?= $this->Html->url($article['Article']['link']); ?>">
                         <?= $this->Text->truncate($article['Article']['article_summary'],175,array('exact'=>false,'html'=>true));?>
                     </a>
-                </p>
+
             </div>
         </div>
     </article>
 </div>
-
-
-
-<!--<div class="">
-    <div class="panel-body">
-        <div class="thunderbox">
-            <div class="">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                        <a class="" href="<?php echo $this->Html->url($article['Article']['link']); ?>">
-                            <img
-                       alt="<?php echo $title; ?>"
-                        src="http://www.thunderbot.gg/thumb.php?src=/files/article/photo/<?php echo $article['Article']['photo_dir'] ?>/<?php echo $article['Article']['photo'] ?>&w=270&h=166&zc=1"></img></a>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                        <a class="" href="<?php echo $this->Html->url($article['Article']['link']); ?>">
-                            <strong class="strong_comment_redacteur"><em><?php echo h($article['Category']['category_name']); ?></em></strong>
-
-                            <h2 class="title5"><span class="comment_total2"><span
-                                    class="glyphicon glyphicon-comment"></span> <?php echo h($article['Article']['comment_count']); ?>  </span>
-                                &nbsp;<?php echo $title; ?></h2></a>
-
-                        <p class=" clearfix">
-                            <small><?php echo $this->frenchDate->french($article['Article']['created']); ?> |
-                            </small>
-                            <a class=""
-                               href="http://www.thunderbot.gg/membre/<?php echo $article['User']['id']; ?>">
-                                <strong class="strong_comment_redacteur"><em> &nbsp;<i
-                                        class="icon-pencil"></i><?php echo h($article['User']['user_name']); ?>
-                                </em></strong>
-                            </a>
-                        </p>
-                        <p> <?php echo $this->
-                            Text->truncate($article['Article']['article_summary'],175,array('exact'=>false,'html'=>true));
-                            ?> </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="text-right">
-        <a class="" href="<?php echo $this->Html->url($article['Article']['link']); ?>">Voir la news &rarr;</a>
-    </div>
-</div>-->
+        <?php if($key%2 == 1) {?>
+            <hr class="hr-grey-3">
+        <?php } ?>
 <?php
   }
 }
