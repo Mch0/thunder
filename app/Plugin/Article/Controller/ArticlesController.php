@@ -97,7 +97,7 @@ class ArticlesController extends ArticleAppController {
 		$this->loadModel('Image');
 		$d['images']  = $this->Image->find('all', array(
 			'conditions' => array('validate'=>1),
-			'limit' => 10,
+			'limit' => 5,
 			'order' => array('Image.created' => 'desc'),
 			'fields' => array(
 	  			'Image.id', 
@@ -163,7 +163,7 @@ class ArticlesController extends ArticleAppController {
 		$this->loadModel('Image');
 		$d['images']  = $this->Image->find('all', array(
 			'conditions' => array('validate'=>1),
-			'limit' => 10,
+			'limit' => 7,
 			'order' => array('Image.created' => 'desc'),
 			'fields' => array(
 	  			'Image.id', 
