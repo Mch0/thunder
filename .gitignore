@@ -2,6 +2,7 @@
 #################################################
 *.jpg
 .htaccess
+
 .htpasswd
 /app/Config/database.php
 /app/tmp

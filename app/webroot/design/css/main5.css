@@ -1235,3 +1235,68 @@ div.thunderbox img {
     padding-left: 0px;
     padding-right: 0px;
 }
+
+/*------ ACTUALITES ------*/
+
+.line-title-actualite
+{
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 15px;
+    border-bottom: 3px solid orange;
+    border-top: 3px solid orange;
+}
+
+.hr-grey-5
+{
+    border-width: 5px;
+    border-color:grey;
+}
+
+article .picture img
+{
+    max-width: 100%;
+    width: 100%;
+}
+.partage
+{
+    float : right;
+    font-size: 15px;
+}
+ div.partage > span
+{
+    top: 3px;
+}
+.date
+{
+    float : left;
+}
+.entete
+{
+    width: 100%;
+    margin-top: 10px;
+    display: inline-block;
+    color: #979ea2;
+    text-transform: uppercase;
+}
+
+.resume h3 a{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.resume
+{
+    padding-bottom: 20px;
+}
+
+.resume p a{
+    color:  #858585;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.resume p a:hover
+{
+    color : orange;
+}
