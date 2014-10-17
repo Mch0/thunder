@@ -980,7 +980,25 @@ div.thunderbox img {
 {
     text-align: center;
 }
-
+.navbar-brand
+{
+    margin-left: 116px!important;
+}
+.container > .navbar-header
+{
+    margin-right: -15px!important;
+    margin-left: -15px!important;
+}
+.menu li a
+{
+    font-size: 41px;
+    color :#999;
+    margin-top: 70px;
+}
+.menu li a:hover{
+    background: none;
+    color : orange;
+}
 .navbar-right  .social
 {
     margin-top: -9px;

@@ -216,7 +216,8 @@ foreach ($articles as $key => $article) {
   }
 }
 ?>
-
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-6-offset-3 col-lg-6 col-lg-offset-3">
 <div class="pagination pagination-large">
     <ul class="pagination">
         <?php
@@ -229,7 +230,8 @@ foreach ($articles as $key => $article) {
         ?>
     </ul>
 </div>
-
+        </div>
+</div>
 </div>
 <!-- /CONTENT SIDE-->
 
