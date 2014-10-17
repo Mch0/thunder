@@ -233,29 +233,22 @@ foreach ($articles as $key => $article) {
 </div>
 <!-- /CONTENT SIDE-->
 
-<!-- TWEET -->
+<!-- RIGHT SIDE BAR -->
     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-        <div class="" id="galerie">
+        <div id="riot">
             <div class="panel-heading text-center hidden-xs">
-                <h4>GALERIE</h4>
+                <h4>RIOT NEWS</h4>
             </div>
-
-            <div class="panel-body">
-                <?php foreach ($images AS $image): ?>
-                <a class=""
-                   href="http://www.thunderbot.gg/galerie/<?php echo $image['Image']['id']; ?>-<?php echo $image['Image']['slug']; ?>">
-                    <h4><span class="comment_total3"><span
-                            class="glyphicon glyphicon-comment"></span> <?php echo h($image['Image']['comment_count']); ?></span>
-                        &nbsp;<?php echo $image['Image']['title']; ?></h4>
-                </a>
-                <a class=""
-                   href="http://www.thunderbot.gg/galerie/<?php echo $image['Image']['id']; ?>-<?php echo $image['Image']['slug']; ?>">
-                    <img class="img-responsive"
-                         src="http://www.thunderbot.gg/thumb.php?src=<?php echo $this->Html->url($image['Image']['image']); ?>&w=400&zc=1"
-                         alt="<?php echo $image['Image']['title']; ?>"></a>
-                <hr>
-                <?php endforeach; ?>
-            </div>
+            <br/>
+            <table style="border:1px solid black" class="riot-table">
+                <?php foreach($riotLinks as $link) { ?>
+                <tr>
+                    <td>
+                        <?= $link ?>
+                    </td>
+                </tr>
+                <?php } ?>
+            </table>
         </div>
         <div id="twit">
             <div class="panel-heading text-center hidden-xs">
@@ -267,50 +260,7 @@ foreach ($articles as $key => $article) {
         </div>
     </div>
 
-<!-- /TWEET -->
-
-<!-- VIDEO  -->
-<!--<div class="col-xs-12 col-sm-6 col-sm-6 col-lg-3">
-
-<div class="list-group panel panel-primary">
-    <div class="panel-heading text-center hidden-xs">
-        <h4>VIDEOS</h4>
-    </div>
-    <div class="panel-body">
-        <div class="tab-pane fade in active" id="home">
-            <div class="row">
-
-                <?php foreach ($videos AS $video): ?>
-                <div class="col-xs-12 col-sm-12 col-lg-12">
-                    <div class="row">
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                            <div class="thumbnail" style="">
-                                <a class=""
-                                   href="http://www.thunderbot.gg/videos/<?php echo $video['Video']['id']; ?>-<?php echo $video['Video']['slug']; ?>">
-                                    <img class="img-responsive" alt="<?php echo $video['Video']['video_title']; ?>"
-                                         src="http://www.thunderbot.gg/thumb.php?src=/files/video/photo/<?php echo $video['Video']['photo_dir']; ?>/<?php echo $video['Video']['photo']; ?>&w=150&h=100&zc=1"></img></a>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                            <a class=""
-                               href="http://www.thunderbot.gg/videos/<?php echo $video['Video']['id']; ?>-<?php echo $video['Video']['slug']; ?>">
-                                <h5><?php echo $video['Video']['video_title']; ?></h5></a>
-                            <span class="comment_total3"><span
-                                    class="glyphicon glyphicon-comment"></span> <?php echo h($video['Video']['comment_count']); ?>  </span>
-                            &nbsp;
-                        </div>
-                    </div>
-                </div>
-                <?php endforeach; ?>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-</div>-->
-
-<!-- /VIDEO -->
+<!-- /RIGHT SIDE BAR -->
 </div>
 </div>
 </div>

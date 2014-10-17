@@ -1284,3 +1284,20 @@ article .picture img
 {
     margin-top: 15px;
 }
+#twit
+{
+    margin-top: 25px;
+}
+.riot-table
+{
+    width: 100%;
+}
+.riot-table td
+{
+    border: 2px solid orange;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    font-weight: bold;
+}
