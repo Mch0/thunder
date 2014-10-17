@@ -67,7 +67,7 @@
         </div>
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav visible-xs">
+            <ul class="nav navbar-nav visible-xs visible-sm">
                 <li>
                     <a href="<?php echo $this->Html->url(array('controller' => 'webtvs', 'action' => 'index2','plugin' => 'webtv'), true); ?>">Webtv</a>
                 </li>
