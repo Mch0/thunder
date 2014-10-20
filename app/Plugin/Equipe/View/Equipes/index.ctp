@@ -1,6 +1,3 @@
-<?php  echo $this->Html->script('/design/js/jquery-1.6.2'); ?>
-<?php  echo $this->Html->script('/design/js/masonry/masonry'); ?>
-<?php  echo $this->Html->script('/design/js/masonry/main'); ?>
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
@@ -50,8 +47,9 @@
             <?php endforeach ?>
         </div>
     </div>
-
-
+    <?php  echo $this->Html->script('/design/js/jquery-1.6.2'); ?>
+    <?php  echo $this->Html->script('/design/js/masonry/masonry'); ?>
+    <?php  echo $this->Html->script('/design/js/masonry/main'); ?>
 </div>
 </div>
 
