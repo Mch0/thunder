@@ -167,6 +167,11 @@
                         </div>
         <?php } ?>
                     </li>
+                <?php if ($this->Acl->check('Articles','admin_index','Article') == true ){?>
+                <li><?php echo $this->Html->link(__('ADMIN'), array('plugin' => 'article','controller' =>
+                    'articles','action' => 'admin_index')); ?>
+                </li>
+                <?php } ?>
                 </ul>
         </div>
     </div>
@@ -180,7 +185,7 @@
                     <a href="<?php echo $this->Html->url(array('controller' => 'articles', 'action' => 'index','plugin' => 'article'), true); ?>">
                         <img class="ThunderBot"
                              src="http://www.thunderbot.gg/thumb.php?src=/css/images/thunder_logo.png&w=300&zc=1"
-                             alt=""/>
+                             alt="" height="170px"/>
                     </a>
                 </div>
             </div>
@@ -199,11 +204,7 @@
                     <li>
                         <a href="<?php echo $this->Html->url(array('controller' => 'contact', 'action' => 'index','plugin' => 'contact'), true); ?>">Contact</a>
                     </li>
-                    <?php if ($this->Acl->check('Articles','admin_index','Article') == true ){?>
-                    <li><?php echo $this->Html->link(__('ADMIN'), array('plugin' => 'article','controller' =>
-                        'articles','action' => 'admin_index')); ?>
-                    </li>
-                    <?php } ?>
+
 <!--                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">ThunderBot <b class="caret"></b></a>
                         <ul class="dropdown-menu">

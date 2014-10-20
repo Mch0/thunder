@@ -790,9 +790,11 @@ img.img_24 {
 
 
 #header_logo {
-    margin-top: -53px;
-    margin-bottom: -35px;
+    margin-top: 0px;
+    /*margin-bottom: -35px;*/
     float: left;
+    margin-left: 60px;
+
 }
 
 #img_full {
@@ -991,9 +993,11 @@ div.thunderbox img {
 }
 .menu li a
 {
-    font-size: 41px;
-    color :#999;
+    font-size: 32px;
+    color : black;
+    font-weight: bold;
     margin-top: 70px;
+    text-transform: uppercase;
 }
 .menu li a:hover{
     background: none;
@@ -1020,7 +1024,7 @@ div.thunderbox img {
 
 /*------ SLIDER ------*/
 .slider{
-    max-width:1170px;
+    max-width:970px;
     margin:0 auto 0;
     min-height:200px;
    /* background:url(./images/bx_loader.gif) no-repeat center center;*/
