@@ -32,12 +32,12 @@
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" href="#">
+                                <a target="_blank" href="<?php echo h($equipe['Equipe']['twitter']); ?>">
                                     <?php echo $this->html->image('/img/social/icon_twitter.png', array('height' => '64px' , 'width' => '64px' , 'class' => 'social')); ?>
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" href="#">
+                                <a target="_blank" href="<?php echo h($equipe['Equipe']['youtube']); ?>">
                                     <?php echo $this->html->image('/img/social/icon_youtube.png', array('height' => '64px' , 'width' => '64px' , 'class' => 'social')); ?>
                                 </a>
                             </li>

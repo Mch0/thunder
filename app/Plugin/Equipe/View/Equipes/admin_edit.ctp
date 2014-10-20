@@ -73,7 +73,18 @@ facebook
 					<?php echo $this->Form->input('facebook',array('div' => false,'label'=>false,'error'=>false,'class'=>'input-xxlarge')); ?>
 				</div>
 			</div>
-
+twitter
+            <div class="control-group">
+                <div class="controls">
+                    <?php echo $this->Form->input('twitter',array('div' => false,'label'=>false,'error'=>false,'class'=>'input-xxlarge')); ?>
+                </div>
+            </div>
+youtube
+            <div class="control-group">
+                <div class="controls">
+                    <?php echo $this->Form->input('youtube',array('div' => false,'label'=>false,'error'=>false,'class'=>'input-xxlarge')); ?>
+                </div>
+            </div>
 
 			<div class="form-actions">
 				<input type="submit" class="btn btn-primary"
