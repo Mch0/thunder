@@ -41,7 +41,7 @@ body {
   }
 
   .row-offcanvas-right.active {
-    right: 50%; 
+    right: 50%;
   }
 
   .row-offcanvas-left.active {
@@ -178,7 +178,7 @@ span.clear {
 }
 
 .page-guides h1,
-.page-guides h2, 
+.page-guides h2,
 .page-guides h3 {
   font-family: 'Convergence', sans-serif;
 }
@@ -409,13 +409,13 @@ span.clear {
 #runes #rune-page {
   display: block;
   position: relative;
-  top: 0; 
+  top: 0;
   width: 656px;
   height: 435px;
 }
 .add #runes #rune-page {
-  position: absolute; 
-  right: 0px; 
+  position: absolute;
+  right: 0px;
   top: 65px;
 }
 #runes #rune-page span span {
@@ -946,7 +946,7 @@ p.title_tab_deck {
     word-wrap: break-word;
 }
 
-  
+
 div.thunderbox img {
   margin-right: auto;
   margin-left: auto;
@@ -1016,13 +1016,12 @@ div.thunderbox img {
     width: 300px;
 }
 
-#controlPlayer
+/*------ SLIDER ------*/
+#caroussel
 {
-    margin-bottom: 25px;
+    max-height: 400px;
 }
 
-
-/*------ SLIDER ------*/
 .slider{
     max-width:970px;
     margin:0 auto 0;
@@ -1306,7 +1305,7 @@ article .picture img
 {
     margin-top: 15px;
 }
-#twit
+#twit, #twit-ThunderBot
 {
     margin-top: 25px;
 }
@@ -1396,12 +1395,33 @@ article .picture img
 .content-info > ul
 {
     list-style-type: none;
+    padding-top: 10px;
+    margin-left: 210px;
 }
 .content-info > ul > li
 {
     float: left;
-    margin-left: 15px;
+    margin-right: 15px;
 }
 .social {
     height: 64px!important;
+}
+/*------ PAGE WEB TV ------*/
+.videocontainer
+{
+    min-height: 600px;
+    max-height: 600px;
+}
+#tv-chat iframe
+{
+    min-height: 600px;
+    max-height: 600px;
+}
+.tab-pane
+{
+    min-height: 520px;
+}
+#tv-info
+{
+    margin-top: 30px;
 }

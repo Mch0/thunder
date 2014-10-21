@@ -22,7 +22,7 @@
                     <div class="content-info">
                         <h2><?php echo h($equipe['Equipe']['name']); ?></h2>
                         <p><?php echo h($equipe['Equipe']['content']); ?></p>
-                        <ul>
+                        <ul id="content-social">
                             <li>
                                 <a target="_blank" href="<?php echo h($equipe['Equipe']['facebook']); ?>">
                                     <?php echo $this->html->image('/img/social/icon_facebook.png',array('height'=>'64px','width'=>'64px','class'=>'social')); ?>
@@ -47,44 +47,12 @@
             <?php endforeach ?>
         </div>
     </div>
-    <?php  echo $this->Html->script('/design/js/jquery-1.6.2'); ?>
-    <?php  echo $this->Html->script('/design/js/masonry/masonry'); ?>
-    <?php  echo $this->Html->script('/design/js/masonry/main'); ?>
-</div>
-</div>
-
-<!--<?php foreach ($equipes as $equipe): ?>
-
-
-<div clas="col-lg-3">
-      <div class="list-group panel panel-primary">
-
-          <div class="panel-body">
-            <div class="thunderbox">
-              <div class="caption">
-                <div class="row">
-
-			<div class="col-xs-3 col-sm-3 col-sm-3 col-lg-3">
-				<?php echo $this->Html->image('/files/equipe/photo/'.($equipe['Equipe']['photo_dir'].'/'.$equipe['Equipe']['photo'])); ?>
-			</div>
-
-
-			<div class="col-xs-3 col-sm-3 col-sm-3 col-lg-3">
-				<h2 class="player"><a target="_blank" href="<?php echo h($equipe['Equipe']['facebook']); ?>">
-				<?php echo $this->html->image('/design/css/img/facebook.png'); ?></a> <?php echo h($equipe['Equipe']['name']); ?>
-				 <span class="player_role">
-				 <?php echo h($equipe['Equipe']['role']); ?>
-				 </span></h2>
-				<p><?php echo h($equipe['Equipe']['content']); ?></p>
-			</div>
-
-
-                </div>
-              </div>
-            </div>
-        </div>
-      </div>
 
 </div>
-<?php endforeach; ?>-->
+</div>
+<?php  echo $this->Html->script('/design/js/jquery-1.6.2'); ?>
+<?php  echo $this->Html->script('/design/js/masonry/masonry'); ?>
+<?php  echo $this->Html->script('/design/js/masonry/main'); ?>
+
+
 

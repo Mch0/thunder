@@ -4,7 +4,7 @@
 <?php  echo $this->Html->css('/design/css/bxslider/jquery.bxslider'); ?>
 <?php  echo $this->Html->script('/design/js/bxslider/jquery.bxslider.min'); ?>
 <!-- SLIDER -->
-<div class="row">
+<div class="row" id="caroussel">
     <div class="slider text-center" id="thunderbot">
         <div id="outer-slider">
             <div class="left_fader">&nbsp;</div>
@@ -72,6 +72,12 @@
 <?php if(count($webtv) > 0) { ?>
 <div class="hidden-xs">
     <div class="row">
+        <div class="col-lg-12">
+            <hr class="hr-grey-5">
+            <div class="line-title-actualite">
+                <h3>WEB TV</h3>
+            </div>
+        </div>
     <div class="col-xs-12 col-sm-12 col-lg-12" id="controlPlayer">
         <span id="closePlayer" style="color:white"><button class="btn btn-thunder2"><span
                 class="glyphicon glyphicon-remove"></span> Fermer
