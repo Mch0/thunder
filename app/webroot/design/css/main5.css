@@ -137,7 +137,10 @@ span.clear {
   float: left;
   margin: 0 20px;
 }
-
+.menu-dynamique
+{
+    margin-top: -2px;
+}
 #guides {
   width: 830px;
   float: left;
@@ -1318,18 +1321,17 @@ article .picture img
 {
     margin-top: 25px;
 }
-.riot-table
+.riot_news
 {
-    width: 100%;
+    display: inline-flex;
 }
-.riot-table td
+.riot_news_logo
 {
-    border: 2px solid orange;
-    text-align: left;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    font-weight: bold;
+    display: inline-table;
+}
+.riot_news_title
+{
+    margin-left: 8px;
 }
 
 /*------ EQUIPE ------*/

@@ -248,15 +248,17 @@ foreach ($articles as $key => $article) {
                 <h4>RIOT NEWS</h4>
             </div>
             <br/>
-            <table style="border:1px solid black" class="riot-table">
                 <?php foreach($riotLinks as $link) { ?>
-                <tr>
-                    <td>
-                        <?= $link ?>
-                    </td>
-                </tr>
+            <div class="riot_news">
+                <div class="riot_news_logo">
+                        <?php echo $this->Html->Image('logo_news_riot.png') ?>
+                    </div>
+                <div class="riot_news_title">
+                       <?= $link ?>
+                    </div>
+            </div>
+            <hr/>
                 <?php } ?>
-            </table>
         </div>
         <div id="twit">
             <div class="panel-heading text-center hidden-xs">
