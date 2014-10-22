@@ -62,12 +62,12 @@
             </button>
             <a class="navbar-brand"
                href="<?php echo $this->Html->url(array('controller' => 'articles', 'action' => 'index','plugin' => 'article'), true); ?>">
-                <!--<img class="" src="<?php echo $this->Html->url('/design/css/img/logo.png'); ?>" alt="Thunderbot logo"
+               <!-- <img class="menu-dynamique" src="<?php echo $this->Html->url('/design/css/img/logo.png'); ?>" alt="Thunderbot logo"
                      style="height: 30px;"/>-->ThunderBot</a>
         </div>
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav visible-xs visible-sm">
+            <ul class="nav navbar-nav visible-xs visible-sm menu-dynamique">
                 <li>
                     <a href="<?php echo $this->Html->url(array('controller' => 'webtvs', 'action' => 'index2','plugin' => 'webtv'), true); ?>">Webtv</a>
                 </li>
@@ -85,11 +85,6 @@
                 <li>
                     <a href="<?php echo $this->Html->url(array('controller' => 'contact', 'action' => 'index','plugin' => 'contact'), true); ?>">Contact</a>
                 </li>
-                <?php if ($this->Acl->check('Articles','admin_index','Article') == true ){?>
-                <li><?php echo $this->Html->link(__('ADMIN'), array('plugin' => 'article','controller' =>
-                    'articles','action' => 'admin_index')); ?>
-                </li>
-                <?php } ?>
             </ul>
 
 
@@ -168,7 +163,7 @@
         <?php } ?>
                     </li>
                 <?php if ($this->Acl->check('Articles','admin_index','Article') == true ){?>
-                <li><?php echo $this->Html->link(__('ADMIN'), array('plugin' => 'article','controller' =>
+                <li><?php echo $this->Html->link(__('Admin'), array('plugin' => 'article','controller' =>
                     'articles','action' => 'admin_index')); ?>
                 </li>
                 <?php } ?>
@@ -195,7 +190,7 @@
                         <a href="<?php echo $this->Html->url(array('controller' => 'webtvs', 'action' => 'index2','plugin' => 'webtv'), true); ?>">Webtv</a>
                     </li>
                     <li>
-                        <a href="<?php echo $this->Html->url(array('controller' => 'equipes', 'action' => 'index','plugin' => 'equipe'), true); ?>">Equipe</a>
+                        <a href="<?php echo $this->Html->url(array('controller' => 'equipes', 'action' => 'index','plugin' => 'equipe'), true); ?>">Équipe</a>
                     </li>
                     <li> <a href="#" >Sponsors</a></li>
                     <li>
@@ -264,6 +259,7 @@
     </div>
 
 </footer>
+
 <script>
 
     function ResetPwd()
@@ -296,6 +292,20 @@
     })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-42387963-1', 'thunderbot.gg');
     ga('send', 'pageview');
+</script>
+
+<script type="text/javascript">
+            $(document).ready(function() {
+                $(window).scroll(function(){
+                    var topDist = jQuery(this).scrollTop();
+                    console.log(topDist);
+                    if (topDist > 500){
+                        $('.menu-dynamique').addClass('visible-lg');
+                    } else {
+                        $('.menu-dynamique').removeClass('visible-lg');
+                    }
+                });
+            });
 </script>
 </body>
 </html>

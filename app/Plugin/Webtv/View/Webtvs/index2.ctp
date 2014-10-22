@@ -95,9 +95,6 @@
                                     </br>
                                     <?php endforeach; ?>
                                 </div>
-                                <div class="tab-pane" id="settings">
-
-                                </div>
                             </div>
                         </div>
                     </div>

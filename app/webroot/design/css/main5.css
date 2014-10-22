@@ -982,14 +982,19 @@ div.thunderbox img {
 {
     text-align: center;
 }
-.navbar-brand
+
+/*.navbar-brand
 {
     margin-left: 116px!important;
-}
+}*/
 .container > .navbar-header
 {
     margin-right: -15px!important;
     margin-left: -15px!important;
+}
+.navbar-ex1-collapse
+{
+    width: 110%;
 }
 .menu li a
 {
@@ -1002,6 +1007,10 @@ div.thunderbox img {
 .menu li a:hover{
     background: none;
     color : orange;
+}
+.menu
+{
+    margin-left: -60px;
 }
 .navbar-right  .social
 {
