@@ -298,7 +298,6 @@
             $(document).ready(function() {
                 $(window).scroll(function(){
                     var topDist = jQuery(this).scrollTop();
-                    console.log(topDist);
                     if (topDist > 500){
                         $('.menu-dynamique').addClass('visible-lg');
                     } else {
