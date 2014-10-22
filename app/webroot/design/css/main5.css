@@ -140,6 +140,7 @@ span.clear {
 .menu-dynamique
 {
     margin-top: -2px;
+
 }
 #guides {
   width: 830px;
@@ -793,10 +794,11 @@ img.img_24 {
 
 
 #header_logo {
-    margin-top: 0px;
+    margin-top: 5%;
     /*margin-bottom: -35px;*/
     float: left;
-    margin-left: 60px;
+    /*margin-left: 60px;*/
+    margin-left : -28%;
 
 }
 
@@ -997,7 +999,7 @@ div.thunderbox img {
 }
 .menu li a
 {
-    font-size: 32px;
+    font-size: 26px;
     color : black;
     font-weight: bold;
     margin-top: 70px;
@@ -1009,7 +1011,7 @@ div.thunderbox img {
 }
 .menu
 {
-    margin-left: -60px;
+    margin-left: -7%;
 }
 .navbar-right  .social
 {

@@ -298,10 +298,14 @@
             $(document).ready(function() {
                 $(window).scroll(function(){
                     var topDist = jQuery(this).scrollTop();
-                    if (topDist > 500){
+                    if (topDist > 800){
                         $('.menu-dynamique').addClass('visible-lg');
-                    } else {
+
+                        $('#recherche').addClass('hidden').fadeOut(3000);
+                    }
+                    else {
                         $('.menu-dynamique').removeClass('visible-lg');
+                        $('#recherche').removeClass('hidden').fadeIn(3000);
                     }
                 });
             });
