@@ -1334,6 +1334,13 @@ article .picture img
     margin-left: 8px;
 }
 
+#riot hr
+{
+    border: 1px solid grey;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
 /*------ EQUIPE ------*/
 
 
