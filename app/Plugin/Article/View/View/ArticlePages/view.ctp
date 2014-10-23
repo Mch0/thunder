@@ -84,4 +84,4 @@ $this->html->meta ('description', $articlePage['ArticlePage']['article_summary']
 </div>
 
  </div>
- <hr class="reset_float"></hr>
+ <hr class="reset_float"/>

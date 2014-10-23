@@ -19,11 +19,6 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
     $title = substr($title, 2);
 ?>
 
-
-
-
-
-
  <!-- ARTICLE -->
 <div class="container">
   <div class="row">

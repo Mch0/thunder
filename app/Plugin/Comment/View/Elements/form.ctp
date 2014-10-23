@@ -1,5 +1,4 @@
 
-<h3>Commentaire</h3>
  <?php echo $this->Form->create('Comment' , array('id' => 'commentForm', 'url' => array('controller' => 'comments', 'action' => 'add', 'plugin' => 'comment')), array(  
    'class' => 'form-horizontal',  
    'inputDefaults' => array(  
@@ -22,11 +21,11 @@
 	<?= $this->Form->input('parent_id',array('type' => 'hidden', 'default' => 0)); ?>
 
  <?php echo $this->Form->input('content', array(  
-   'label' => array('class' => 'control-label','text'=>'')  
-   )); ?>  
+   'label' => array('class' => 'control-label','text'=>''),'placeholder' => '  Partage tes pensés !','rows' => '3'
+   )); ?>
  </fieldset>   
 <?php echo $this->Form->end(array(
-    'label' => __('Submit'),
+    'label' => __('Envoyer'),
     'class' => 'btn btn-thunder2',
     'div' => array(
         'class' => 'control-group',
