@@ -1067,11 +1067,10 @@ div.thunderbox img {
 
 .slide .zone-txt .title{
     color: #fff;
-    font-size: 48px;
+    font-size: 34px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
-
 .slide .sous-titre{
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
@@ -1084,7 +1083,11 @@ div.thunderbox img {
     top: -11px;
 }
 
-#outer-slider{width:100%;position:relative;}
+#outer-slider
+{
+    width:100%;
+    position:relative;
+}
 .left_fader{
     cursor: pointer;
     opacity: .5;
