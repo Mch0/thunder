@@ -167,6 +167,7 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
             <br/>
 
 <?php foreach ($threearticles as $threearticle): ?>
+            <article>
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <a class="" href="<?php echo $this->Html->url($threearticle['Article']['link']); ?>">
@@ -186,8 +187,10 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
                 <a class="" href="<?php echo $this->Html->url($threearticle['Article']['link']); ?>"><h4><?php echo h($threearticle['Article']['article_title']); ?></h4></a>
             </div>
         </div>
+            </article>
             <hr/>
       <?php endforeach; ?>
+
   </div>
 
     </div>
