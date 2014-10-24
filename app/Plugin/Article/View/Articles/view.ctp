@@ -139,7 +139,7 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
             <div class="row" id="comment">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <?php //debug($comments); ?>
-                        <?php foreach ($comments as $k => $comment): ?>
+                        <?php foreach (array_reverse($comments) as $k => $comment): ?>
                     <div class="row">
                         <div class="article-comment">
                             <div class="col-xs-12 col-sm-2 col-md2 col-lg-2">
