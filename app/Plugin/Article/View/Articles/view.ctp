@@ -146,6 +146,7 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
                         <?php foreach (array_reverse($comments) as $k => $comment): ?>
                     <div class="row">
                         <div class="article-comment">
+
                             <div class="col-xs-12 col-sm-2 col-md2 col-lg-2">
                                   <?php
                                   if ($comment['User']['avatar']) {
@@ -167,7 +168,7 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
                             <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
                                 <div class="article-comment-content">
                                     <p>
-                                        <a class="" href="http://www.thunderbot.gg/membre/<?php echo $comment['User']['id']; ?>">
+                                        <a class="" href="/membre/<?php echo $comment['User']['id'] ?>">
                                             <strong class="strong_comment_redacteur">
 
                                                     <?= h($comment['User']['user_name']); ?>
