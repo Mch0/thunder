@@ -199,23 +199,6 @@
                     <li>
                         <a href="<?php echo $this->Html->url(array('controller' => 'contact', 'action' => 'index','plugin' => 'contact'), true); ?>">Contact</a>
                     </li>
-
-<!--                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">ThunderBot <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'wall_sup','plugin' => 'auth_acl'), true); ?>">Mur</a>
-                            </li>
-                            <li>
-                                <a href="<?php echo $this->Html->url(array('controller' => 'contact', 'action' => 'index','plugin' => 'contact'), true); ?>">Contact</a>
-                            </li>
-                            <?php if ($this->Acl->check('Articles','admin_index','Article') == true ){?>
-                            <li><?php echo $this->Html->link(__('ADMIN'), array('plugin' => 'article','controller' =>
-                                'articles','action' => 'admin_index')); ?>
-                            </li>
-                            <?php } ?>
-                        </ul>
-                    </li>-->
                 </ul>
             </div>
         </div>
