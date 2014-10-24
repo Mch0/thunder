@@ -107,7 +107,7 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
                     {   ?>
                     <a class="nav-article" href="<?php echo $this->Html->url($articleNext['Article']['link']); ?>">
                         <span class="next-article pull-right">Article suivant</span>
-
+                        <br/>
                         <span class="pull-right"><?=  $this->Text->truncate($articleNext['Article']['article_title'],45,array('exact'=>false,'html'=>true)); ?></span>
                     </a>
                     <?php   }   ?>
