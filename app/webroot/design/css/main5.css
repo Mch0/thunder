@@ -1237,6 +1237,8 @@ div.thunderbox img {
     border-top-right-radius: 0px;
     padding-left: 0px;
     padding-right: 0px;
+    background: url('img/list.png') repeat-x scroll 0px 100% #333;
+    color : white;
 }
 
 /*------ ACTUALITES ------*/
@@ -1485,8 +1487,8 @@ article .picture img
 
 .article-comment-form
 {
-    margin-top: 50px;
-    margin-bottom: 75px;
+    /*margin-top: 50px;*/
+    /*margin-bottom: 75px;*/
 }
 
 #commentForm textarea
@@ -1498,4 +1500,18 @@ article .picture img
 .article-articles-title
 {
     margin:40px 0 20px
+}
+.next-article, .prev-article
+{
+    font-size: 10px;
+    color: grey;
+}
+
+.nav-article:hover
+{
+    color:orange!important;
+}
+#comment
+{
+    margin-top: 50px;
 }
