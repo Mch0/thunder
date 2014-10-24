@@ -82,7 +82,9 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
                     <a class="nav-article" href="<?php echo $this->Html->url($articlePrev['Article']['link']); ?>">
                         <span class="prev-article pull-left">Article précédent</span>
                         <br/>
+                        <span class="glyphicon glyphicon-chevron-left pull-left"></span> &nbsp;
                         <span class="pull-left"><?=  $this->Text->truncate($articlePrev['Article']['article_title'],45,array('exact'=>false,'html'=>true)); ?></span>
+
                     </a>
                     <?php   }   ?>
 
@@ -108,7 +110,9 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
                     <a class="nav-article" href="<?php echo $this->Html->url($articleNext['Article']['link']); ?>">
                         <span class="next-article pull-right">Article suivant</span>
                         <br/>
+                        <span class="glyphicon glyphicon-chevron-right pull-right"></span> &nbsp;
                         <span class="pull-right"><?=  $this->Text->truncate($articleNext['Article']['article_title'],45,array('exact'=>false,'html'=>true)); ?></span>
+
                     </a>
                     <?php   }   ?>
 

@@ -1515,3 +1515,14 @@ article .picture img
 {
     margin-top: 50px;
 }
+.nav-article .glyphicon-chevron-right, .nav-article .glyphicon-chevron-left
+{
+    top: 3px;
+}
+.nav-article .glyphicon-chevron-right{
+margin-left: 3px;
+}
+.nav-article .glyphicon-chevron-left
+{
+    margin-right: 3px;
+}
