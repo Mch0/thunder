@@ -74,7 +74,7 @@
     <div class="row">
         <div class="col-lg-12">
             <hr class="hr-grey-5">
-            <div class="line-title-actualite">
+            <div class=" panel-heading line-title-actualite">
                 <h3>WEB TV</h3>
             </div>
         </div>
@@ -112,7 +112,7 @@
 <div class="row">
 <div class="col-lg-12">
     <hr class="hr-grey-5">
-    <div class="line-title-actualite">
+    <div class="line-title-actualite panel-heading">
         <h3>ACTUALITES</h3>
     </div>
 </div>
