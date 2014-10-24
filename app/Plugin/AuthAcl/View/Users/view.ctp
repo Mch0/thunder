@@ -20,16 +20,14 @@
 
 
 
-                        <div class="row"> 
-
-
+                        <div class="row">
                   <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
                      <h2><?php echo $user['User']['user_name']; ?></h2>
 
           <?php
 
           if ($user['User']['avatar']) {
-              echo $this->Html->image('http://www.thunderbot.gg/files/users/thumbnails/'.($user['id'].'_scale_150.jpg'), array('class' => 'img-responsive'));
+              echo $this->Html->image('http://www.thunderbot.gg/files/users/thumbnails/'.($user['User']['id'].'_scale_150.jpg'), array('class' => 'img-responsive'));
           } else {
               echo $this->Html->image("/design/css/img/robotthunderbot.png", array("class" => "img-responsive",));
           }
