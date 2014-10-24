@@ -244,16 +244,17 @@ foreach ($articles as $key => $article) {
 <!-- RIGHT SIDE BAR -->
     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
         <div id="riot">
-            <div class="panel-heading text-center hidden-xs">
+            <div class=" row panel-heading text-center hidden-xs">
                 <h4>RIOT NEWS</h4>
             </div>
             <br/>
+
                 <?php foreach($riotLinks as $link) { ?>
-            <div class="riot_news">
-                <div class="riot_news_logo">
-                        <?php echo $this->Html->Image('logo_news_riot.png') ?>
+            <div class="row">
+                    <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+                       <?php echo $this->Html->Image('logo_news_riot.png') ?>
                     </div>
-                <div class="riot_news_title">
+                    <div class="col-sm-10 col-xs-10 col-md-10 col-lg-10">
                        <?= $link ?>
                     </div>
             </div>
