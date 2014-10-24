@@ -246,7 +246,7 @@ foreach ($articles as $key => $article) {
 <!-- RIGHT SIDE BAR -->
     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
         <div id="riot">
-            <div class=" row panel-heading text-center hidden-xs">
+            <div class="panel-heading text-center hidden-xs">
                 <h4>RIOT NEWS</h4>
             </div>
             <br/>
