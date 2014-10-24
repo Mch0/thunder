@@ -41,7 +41,7 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
                             </small>
                             <strong class="strong_comment_redacteur">
                                 <em> &nbsp;<i class="icon-pencil"></i>
-                                    <a class="" href="http://www.thunderbot.gg/membre/<?php echo $article['User']['id']; ?>">
+                                    <a class="" href="/membre/<?php echo $article['User']['id']; ?>">
                                         <strong class="strong_comment_redacteur"> <?php echo h($article['User']['user_name']); ?></strong>
                                     </a>
                                     <?php echo h($article['Article']['redacteur']); ?>
@@ -60,7 +60,7 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
                 <!-- IMAGE ARTICLE -->
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="img-article">
-                        <?php echo $this->html->image('http://www.thunderbot.gg/files/article/photo/'.($article['Article']['photo_dir'].'/'.$article['Article']['photo']), array('class' => 'img-responsive', 'alt' => $title)); ?>
+                        <?php echo $this->html->image('/files/article/photo/'.($article['Article']['photo_dir'].'/'.$article['Article']['photo']), array('class' => 'img-responsive', 'alt' => $title)); ?>
                     </div>
                 </div>
             </div>
@@ -150,7 +150,7 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
                             <div class="col-xs-12 col-sm-2 col-md2 col-lg-2">
                                   <?php
                                   if ($comment['User']['avatar']) {
-                                      echo $this->Html->image('http://www.thunderbot.gg/files/users/thumbnails/'.($comment['User']['id'].'_scale_150.jpg'), array('class' =>
+                                      echo $this->Html->image('/files/users/thumbnails/'.($comment['User']['id'].'_scale_150.jpg'), array('class' =>
                                         'img-responsive', "alt" => $comment['User']['user_name']));
                                   } else {
                                       echo $this->Html->image("/design/css/img/robotthunderbot.png", array("class" => "img-responsive", "alt" => 'thunderbot'));
@@ -214,7 +214,7 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
                 <strong class="strong_comment_redacteur"><em><?php echo h($thumbarticle['Category']['category_name']); ?></em></strong>
                 <small><?php echo $this->frenchDate->french($threearticle['Article']['created']); ?> | </small>
                 <strong class="strong_comment_redacteur"><em> &nbsp;<i class="icon-pencil"></i>
-                    <a class="" href="http://www.thunderbot.gg/membre/<?php echo $threearticle['User']['id']; ?>">
+                    <a class="" href="/membre/<?php echo $threearticle['User']['id']; ?>">
                         <strong class="strong_comment_redacteur"> <?php echo h($threearticle['User']['user_name']); ?></strong>
                     </a>
                     <?php echo h($threearticle['Article']['redacteur']); ?></em></strong>

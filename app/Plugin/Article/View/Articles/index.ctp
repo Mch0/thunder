@@ -168,7 +168,9 @@ foreach ($articles as $key => $article) {
         <div class="picture">
             <a href="<?= $this->Html->url($article['Article']['link']); ?>">
                 <img alt="<?= $title; ?>"
-                     src="http://www.thunderbot.gg/thumb.php?src=/files/article/photo/<?= $article['Article']['photo_dir'] ?>/<?= $article['Article']['photo'] ?>&w=270&h=166&zc=1" />
+                     src="/files/article/photo/<?= $article['Article']['photo_dir'] ?>/<?= $article['Article']['photo'] ?>" />
+
+
             </a>
         </div>
         <div class="entete">
