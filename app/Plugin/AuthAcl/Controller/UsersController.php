@@ -379,7 +379,8 @@ class UsersController extends AuthAclAppController {
 				}else{
 					$this->Cookie->write('AutoLoginUser', $this->Auth->user(), true, '+2 weeks');
 				}
-				$this->redirect($this->Auth->redirect());
+				//$this->redirect($this->Auth->redirect());
+				$this->redirect($this->referer());
 			} else {
 				$error = __('Your username or password was incorrect.');
 			}
@@ -392,7 +393,8 @@ class UsersController extends AuthAclAppController {
 		//$this->Session->setFlash('Good-Bye');
 		$this->Session->delete('auth_user');
 		$this->Cookie->delete('AutoLoginUser');
-		$this->redirect($this->Auth->logout());
+		$this->Auth->logout();
+		$this->redirect($this->referer());
 	}
 
 	public function changeStatus(){
