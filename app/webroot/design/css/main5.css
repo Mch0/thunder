@@ -142,6 +142,7 @@ span.clear {
     margin-top: -2px;
 
 }
+
 #guides {
   width: 830px;
   float: left;
@@ -992,11 +993,11 @@ div.thunderbox img {
 {
     margin-left: 116px!important;
 }*/
-.container > .navbar-header
+/*.container > .navbar-header
 {
     margin-right: -15px!important;
     margin-left: -15px!important;
-}
+}*/
 .menu li a
 {
     font-size: 26px;
@@ -1013,9 +1014,30 @@ div.thunderbox img {
 {
     margin-left: -7%;
 }
+.menu-dynamique
+{
+    margin-left: 8%;
+}
+.menu-dynamique li
+{
+    margin-right: 25px;
+    margin-bottom: 10px;
+}
+
+.navbar .divider-vertical
+{
+    height: 70px;
+    border-right: 1px solid #808080;
+    vertical-align: top;
+    top :5px
+}
 .navbar-right  .social
 {
-    margin-top: -9px;
+    margin-top: 5px;
+}
+.navbar-right .dropdown
+{
+    margin-top: 13px;
 }
 #recherche
 {
@@ -1232,7 +1254,7 @@ div.thunderbox img {
     font-size: 20px;
     border-top: 3px solid orange;
     border-bottom: 3px solid orange;
-    padding-top: 15px;
+    padding-top: 10px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     padding-left: 0px;
@@ -1247,11 +1269,14 @@ div.thunderbox img {
 {
     text-align: center;
     margin-bottom: 40px;
-    padding-top: 15px;
+    padding-top: 10px;
     border-bottom: 3px solid orange;
     border-top: 3px solid orange;
 }
-
+.line-title-actualite h4
+{
+    font-size: 16px;
+}
 .hr-grey-5
 {
     border-width: 5px;
@@ -1525,4 +1550,29 @@ margin-left: 3px;
 .nav-article .glyphicon-chevron-left
 {
     margin-right: 3px;
+}
+.navbar-ex1-collapse .fa
+{
+    display : block!important;
+    margin-left: 10%;
+}
+.navbar-ex1-collapse .fa-suitcase
+{
+    margin-left: 25%;
+}
+.navbar-ex1-collapse .fa-envelope
+{
+    margin-left: 23%;
+}
+.navbar-ex1-collapse .fa-file
+{
+    margin-left: -1%;
+}
+.navbar-brand
+{
+    padding-top: 0px;
+}
+.navbar-brand .header-logo
+{
+    margin-top: -20px;
 }

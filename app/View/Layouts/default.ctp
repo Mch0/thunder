@@ -24,6 +24,7 @@
     <?php  echo $this->Html->css('/design/css/style'); ?>
     <?php  echo $this->Html->script('/design/js/videoplayer/videoplayer'); ?>
     <?php  echo $this->Html->script('/design/js/bootstrap.min'); ?>
+    <?php  echo $this->Html->css('/design/css/font-awesome'); ?>
 </head>
 
 <body>
@@ -51,7 +52,7 @@
     </div>
 </div>
 
-<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+<nav class="navbar navbar-fixed-top navbar-inverse big-menu" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -60,37 +61,64 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand"
+
+            <a class="navbar-brand navbar-brand-1"
                href="<?php echo $this->Html->url(array('controller' => 'articles', 'action' => 'index','plugin' => 'article'), true); ?>">
-               <!-- <img class="menu-dynamique" src="<?php echo $this->Html->url('/design/css/img/logo.png'); ?>" alt="Thunderbot logo"
-                     style="height: 30px;"/>-->ThunderBot</a>
+                <img class="header-logo hidden-xs hidden-sm" src="<?php echo $this->Html->url('/design/css/img/logo.png'); ?>" alt="Thunderbot logo"
+                     style="height: 170px;" />
+            </a>
+
+            <a class="navbar-brand navbar-brand-2 hidden" style="width: 200px"
+               href="<?php echo $this->Html->url(array('controller' => 'articles', 'action' => 'index','plugin' => 'article'), true); ?>">
+
+                <img  src="<?php echo $this->Html->url('/design/css/img/logo.png'); ?>" alt="Thunderbot logo"
+                     style="height: 70px" />ThunderBot
+            </a>
         </div>
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav visible-xs visible-sm menu-dynamique">
+            <ul class="nav navbar-nav menu-dynamique">
                 <li>
-                    <a href="<?php echo $this->Html->url(array('controller' => 'webtvs', 'action' => 'index2','plugin' => 'webtv'), true); ?>">Webtv</a>
+                    <a href="<?php echo $this->Html->url(array('controller' => 'webtvs', 'action' => 'index2','plugin' => 'webtv'), true); ?>">
+                       <span class="hidden-xs hidden-sm"> <i class="fa fa-desktop fa-2x"></i></span>
+                        Webtv
+                    </a>
                 </li>
+                <li class="divider-vertical"></li>
                 <li>
-                    <a href="<?php echo $this->Html->url(array('controller' => 'equipes', 'action' => 'index','plugin' => 'equipe'), true); ?>">Equipe</a>
+
+                    <a href="<?php echo $this->Html->url(array('controller' => 'equipes', 'action' => 'index','plugin' => 'equipe'), true); ?>">
+                        <span class="hidden-xs hidden-sm"><i class="fa fa-users fa-2x visibe-lg"></i></span>
+                            Équipe
+                    </a>
                 </li>
+                <li class="divider-vertical"></li>
                 <li>
                     <a href="#" >
+                       <span class="hidden-xs hidden-sm"> <i class="fa fa-suitcase fa-2x visibe-lg"></i></span>
                         Sponsors
                     </a>
                 </li>
+                <li class="divider-vertical"></li>
                 <li>
-                    <a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'wall_sup','plugin' => 'auth_acl'), true); ?>">Mur</a>
+                    <a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'wall_sup','plugin' => 'auth_acl'), true); ?>">
+                        <span class="hidden-xs hidden-sm"><i class="fa fa-file fa-2x visibe-lg"></i></span>
+                        Mur
+                    </a>
                 </li>
+                <li class="divider-vertical"></li>
                 <li>
-                    <a href="<?php echo $this->Html->url(array('controller' => 'contact', 'action' => 'index','plugin' => 'contact'), true); ?>">Contact</a>
+                    <a href="<?php echo $this->Html->url(array('controller' => 'contact', 'action' => 'index','plugin' => 'contact'), true); ?>">
+                        <span class="hidden-xs hidden-sm"><i class="fa fa-envelope fa-2x visibe-lg"></i></span>
+                        Contact
+                    </a>
                 </li>
+                <li class="divider-vertical"></li>
             </ul>
 
 
             <ul class="nav pull-right navbar-nav navbar-right">
-                <li class="divider-vertical"></li>
-                    <li>
+                    <!--<li>
                         <div id="recherche" class="right">
 
                             <?php echo $this->Form->create('Article', array('action' => 'recherche','class'=>'form-search')); ?>
@@ -102,8 +130,7 @@
                                 </div>
                             <?php echo $this->Form->end(); ?>
                         </div>
-                    </li>
-                    <li class="divider-vertical"></li>
+                    </li>-->
                     <li>
                         <a href="https://www.facebook.com/myThunderBot" class="social" target="_blank">
                             <?php echo $this->Html->image('facebook-white.png',array('alt'=> 'Facebook')); ?>
@@ -114,7 +141,6 @@
                             <?php echo $this->Html->image('twitter-white.png',array('alt'=> 'Twitter')); ?>
                         </a>
                     </li>
-                    <li class="divider-vertical"></li>
                     <li class="dropdown">
 
                         <?php if($this->Session->read('Auth.User.id')) { ?>
@@ -173,7 +199,7 @@
 </nav>
 
 <div class="container">
-    <div class="row">
+    <!--<div class="row">
         <div class="col-xs-12 col-sm-12 col-sm-12 col-lg-12">
             <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                 <div id="header_logo">
@@ -202,7 +228,7 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div>-->
 
 
     <div class="thunderbot">
@@ -281,14 +307,16 @@
             $(document).ready(function() {
                 $(window).scroll(function(){
                     var topDist = jQuery(this).scrollTop();
-                    if (topDist > 800){
-                        $('.menu-dynamique').addClass('visible-lg');
+                    if (topDist > 100){
+                        $('.navbar-brand-1').addClass('hidden');
 
-                        $('#recherche').addClass('hidden').fadeOut(3000);
+                        $('.navbar-brand-2').removeClass('hidden');
+                        //$('#recherche').addClass('hidden').fadeOut(3000);
                     }
                     else {
-                        $('.menu-dynamique').removeClass('visible-lg');
-                        $('#recherche').removeClass('hidden').fadeIn(3000);
+                        $('.navbar-brand-1').removeClass('hidden');
+                        $('.navbar-brand-2').addClass('hidden');
+                        //$('#recherche').removeClass('hidden').fadeIn(3000);
                     }
                 });
             });

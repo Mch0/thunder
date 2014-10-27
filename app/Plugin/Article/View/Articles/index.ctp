@@ -113,7 +113,7 @@
 <div class="col-lg-12">
     <hr class="hr-grey-5">
     <div class="line-title-actualite panel-heading">
-        <h3>ACTUALITES</h3>
+        <h4>ACTUALITES</h4>
     </div>
 </div>
     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
@@ -149,7 +149,7 @@ foreach ($articles as $key => $article) {
                             <small><?php echo $this->frenchDate->french($article['Article']['created']); ?> |
                             </small>
                             <a class=""
-                               href="http://www.thunderbot.gg/membre/<?php echo $article['User']['id']; ?>">
+                               href="/membre/<?php echo $article['User']['id']; ?>">
                                 <strong class="strong_comment_redacteur"><em> &nbsp;<i
                                         class="icon-pencil"></i><?php echo h($article['User']['user_name']); ?>
                                 </em></strong>
@@ -169,8 +169,6 @@ foreach ($articles as $key => $article) {
             <a href="<?= $this->Html->url($article['Article']['link']); ?>">
                 <img alt="<?= $title; ?>"
                      src="/files/article/photo/<?= $article['Article']['photo_dir'] ?>/<?= $article['Article']['photo'] ?>" />
-
-
             </a>
         </div>
         <div class="entete">
@@ -178,8 +176,7 @@ foreach ($articles as $key => $article) {
                 <small>
                     <?= $this->frenchDate->french($article['Article']['created']); ?> |
                 </small>
-                <a class=""
-                   href="http://www.thunderbot.gg/membre/<?php echo $article['User']['id']; ?>">
+                <a href="/membre/<?php echo $article['User']['id']; ?>" target="_blank">
                     <strong class="strong_comment_redacteur">
                         <em> &nbsp;
                             <i class="icon-pencil"></i><?= h($article['User']['user_name']); ?>
@@ -247,7 +244,7 @@ foreach ($articles as $key => $article) {
     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
         <div id="riot">
             <div class="panel-heading text-center hidden-xs">
-                <h4>RIOT NEWS</h4>
+                <h5>RIOT NEWS</h5>
             </div>
             <br/>
 
@@ -265,7 +262,7 @@ foreach ($articles as $key => $article) {
         </div>
         <div id="twit">
             <div class="panel-heading text-center hidden-xs">
-                <h4>DERNIERS TWEETS</h4>
+                <h5>DERNIERS TWEETS</h5>
             </div>
             <br/>
             <a class="twitter-timeline"  href="https://twitter.com/MyThunderBot"  data-widget-id="363309093869477888">Tweets de @MyThunderBot</a>
