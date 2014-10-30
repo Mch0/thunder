@@ -7,72 +7,58 @@ $this->html->meta ('description', 'ThunderBot WebTV - Admirez le skill ! Thunder
 
 <?php $this->set('title_for_layout', $image['Image']['title']) ?>
 
-
-
-
-
  <!-- ARTICLE -->
 <div class="container">
-  <div class="row">
-
-
-<div class="col-xs-12 col-sm-8 col-sm-8 col-lg-8">
-     
-      <div class="list-group panel panel-primary">
-          <div class="panel-body">
-            <div class="thunderbox">
-              <div class="caption">
-                <div class="row"> 
-                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                  	<h1>Le mur des supporters</h1>
-                     <img class="img-responsive" alt="" src="http://www.thunderbot.gg/css/images/mur_supporter.png"></img>
-                  </div>
+    <div class="row" id="wall">
+            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                <div class="page-header">
+                   <h1>Le mur des supporters</h1>
                 </div>
-              </div>
+                <?php echo $this->Html->image('/css/images/mur_supporter.png',array('class' => 'img-responsive')) ?>
+                <!--<img class="img-responsive" alt="" src="/css/images/mur_supporter.png" />-->
             </div>
-        </div> 
-      </div>
 
+        <div class="col-xs-12 col-sm-3 col-sm-3 col-lg-3">
 
-</div>
-
-
-
-
-<!-- SIDEBAR -->
-<div class="col-xs-12 col-sm-4 col-sm-4 col-lg4">
-    <div class="list-group panel panel-primary">
-          <div class="panel-heading text-center hidden-xs">
-            <h4>VIDEOS</h4>
+            <div class="panel-heading text-center hidden-xs article-articles-title">
+                <h4>ARTICLES</h4>
             </div>
-          <div class="panel-body">
-                <div class="tab-pane fade in active" id="home">
+            <br/>
+
+            <?php foreach ($threearticles as $threearticle): ?>
+            <article>
                 <div class="row">
-                <?php foreach ($videos AS $video): ?>
-                        <div class="col-xs-6 col-sm-12 col-lg-12">
-                          <div class="row">
-                          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                          <div class="thumbnail" style="">
-                          <a class="" href="http://www.thunderbot.gg/videos/<?php echo $video['Video']['id']; ?>-<?php echo $video['Video']['slug']; ?>">
-                          <img class="img-responsive" alt="" src="http://www.thunderbot.gg/thumb.php?src=/files/video/photo/<?php echo $video['Video']['photo_dir']; ?>/<?php echo $video['Video']['photo']; ?>&w=150&h=100&zc=1"></img></a>
-                          </div>
-                          </div>
-                          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                          <a class="" href="http://www.thunderbot.gg/videos/<?php echo $video['Video']['id']; ?>-<?php echo $video['Video']['slug']; ?>"><h5><?php echo $video['Video']['video_title']; ?></h5></a>
-                          </div>
-                          </div>
-                        </div>
-                <?php endforeach; ?>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <a class="" href="<?php echo $this->Html->url($threearticle['Article']['link']); ?>">
+                            <img id="" class="img-responsive" alt="<?php echo $threearticle['Article']['article_title']; ?>" src="http://www.thunderbot.gg/thumb.php?src=/files/article/photo/<?php echo $threearticle['Article']['photo_dir'] ?>/<?php echo $threearticle['Article']['photo'] ?>&w=270&h=166&zc=1"></img>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <strong class="strong_comment_redacteur"><em><?php echo h($thumbarticle['Category']['category_name']); ?></em></strong>
+                        <small><?php echo $this->frenchDate->french($threearticle['Article']['created']); ?> | </small>
+                        <strong class="strong_comment_redacteur"><em> &nbsp;<i class="icon-pencil"></i>
+                            <a class="" href="/membre/<?php echo $threearticle['User']['id']; ?>">
+                                <strong class="strong_comment_redacteur"> <?php echo h($threearticle['User']['user_name']); ?></strong>
+                            </a>
+                            <?php echo h($threearticle['Article']['redacteur']); ?></em></strong>
+                        <a class="" href="<?php echo $this->Html->url($threearticle['Article']['link']); ?>"><h4><?php echo h($threearticle['Article']['article_title']); ?></h4></a>
+                    </div>
+                </div>
+            </article>
+            <hr/>
+            <?php endforeach; ?>
 
-                </div>
-                </div>
-          </div>
+        </div>
+      </div>
     </div>
 </div>
 
 
-    </div>
-</div>
+
+
+
 
 
 

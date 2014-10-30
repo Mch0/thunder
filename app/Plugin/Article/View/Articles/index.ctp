@@ -3,6 +3,7 @@
 <div class="container">
 <?php  echo $this->Html->css('/design/css/bxslider/jquery.bxslider'); ?>
 <?php  echo $this->Html->script('/design/js/bxslider/jquery.bxslider.min'); ?>
+
 <!-- SLIDER -->
 <div class="row" id="caroussel">
     <div class="slider text-center" id="thunderbot">
@@ -15,7 +16,7 @@
                         <?php foreach ($threearticle as  $index => $thumbarticle ): ?>
                         <div class="slide">
                                 <a href="<?php echo $this->Html->url($thumbarticle['Article']['link']); ?>">
-                                    <?php $srcImg = "http://www.thunderbot.gg/thumb.php?src=/files/article/photo/" . $thumbarticle['Article']['photo_dir'] . "/" . $thumbarticle['Article']['photo'] ;?>
+                                    <?php $srcImg = "/files/article/photo/" . $thumbarticle['Article']['photo_dir'] . "/" . $thumbarticle['Article']['photo'] ;?>
                                     <?php $alt = $thumbarticle['Article']['article_title']; ?>
                                     <img src="<?php echo $srcImg ?>" alt="<?php echo $alt ?>" class="desktop_img"/>
                                    <!-- <?php echo $this->Html->image("$srcImg", array('class' => 'desktop_img', 'alt' => "$alt"));?>-->
@@ -48,8 +49,8 @@
             slideWidth: 1170,
             minSlides: 1,
             maxSlides: 1,
-            slideMargin: 0,
-            preloadImages: 'all'
+            slideMargin: 0
+            /*preloadImages: 'all'*/
         });
 
         $('.right_fader').click(function() {
@@ -66,6 +67,13 @@
     });
 </script>
 <!-- /SLIDER -->
+    <?php if($error != false)
+    { ?>
+<div class="alert error-message">
+        <span class="alert alert-danger"> <?php echo $error ?> </span>
+</div>
+    <?php   $error = "";}
+    ?>
 
 <!-- WEBTV -->
 

@@ -89,20 +89,12 @@ class UsersController extends AuthAclAppController {
 		$this->set('title_for_layout', __('Mur des supporters'));
 		$this->layout = 'default';
 
+		$this->loadModel('Article');
+		$d['threearticles'] = $this->Article->find('all',array(
+			'conditions' => array('online' => 1, 'thumb_three' => 1,),
+			'limit'  => 4,
+		));
 
-		//video
-		$this->loadModel('Video');
-		$d['videos']  = $this->Video->find('all', array(
-			'limit' => 8,
-			'order' => array('Video.created' => 'desc'),
-			'fields' => array(
-	  			'Video.id', 
-	  			'Video.video_title',
-	  			'Video.comment_count', 
-	  			'Video.slug',
-	  			'Video.photo',
-	  			'Video.photo_dir',
-        )));
 		$this->set($d);
 	}
 
@@ -355,7 +347,7 @@ class UsersController extends AuthAclAppController {
 
 	public function login() {
 		$this->set('title_for_layout', __('Se connecter'));
-		$this->layout = 'admin_login';
+		/*$this->layout = 'admin_login';*/
 		$this->Session->delete('auth_user');
 		App::uses('Setting', 'AuthAcl.Model');
 		$Setting = new Setting();
@@ -386,6 +378,8 @@ class UsersController extends AuthAclAppController {
 			}
 		}
 		$this->set('error',$error);
+		$this->Session->setFlash($error);
+		$this->redirect($this->referer());
 	}
 
 	public function logout() {

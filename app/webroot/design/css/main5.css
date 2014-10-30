@@ -8,9 +8,9 @@ body {
 
 body {
   background: white;
-  height: 188px;
-  overflow: visible;
-  z-index: 3;
+  /*height: 188px;*/
+  /*overflow: visible;*/
+  /*z-index: 3;*/
   padding-top: 70px;
 }
 
@@ -989,15 +989,6 @@ div.thunderbox img {
     text-align: center;
 }
 
-/*.navbar-brand
-{
-    margin-left: 116px!important;
-}*/
-/*.container > .navbar-header
-{
-    margin-right: -15px!important;
-    margin-left: -15px!important;
-}*/
 .menu li a
 {
     font-size: 26px;
@@ -1014,13 +1005,10 @@ div.thunderbox img {
 {
     margin-left: -7%;
 }
-.menu-dynamique
-{
-    margin-left: 8%;
-}
+
 .menu-dynamique li
 {
-    margin-right: 25px;
+    margin-right: 21px;
     margin-bottom: 10px;
 }
 
@@ -1038,6 +1026,10 @@ div.thunderbox img {
 .navbar-right .dropdown
 {
     margin-top: 13px;
+}
+.navbar-right
+{
+    margin-right: -25px!important;
 }
 #recherche
 {
@@ -1575,4 +1567,68 @@ margin-left: 3px;
 .navbar-brand .header-logo
 {
     margin-top: -20px;
+}
+
+.thunderbot
+{
+    margin-top: 57px;
+}
+.error-message
+{
+   text-align: center;
+}
+
+/*------ CONTACT ------*/
+
+form .row:first-child .floating-label-form-group {
+    border-top: 1px solid #eee;
+}
+.floating-label-form-group {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #eee;
+}
+.floating-label-form-group input, .floating-label-form-group textarea {
+    z-index: 1;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    border: 0;
+    border-radius: 0;
+    font-size: 1.5em;
+    background: 0 0;
+    box-shadow: none!important;
+    resize: none;
+}
+.floating-label-form-group label {
+    display: block;
+    z-index: 0;
+    position: relative;
+    top: 2em;
+    margin: 0;
+    font-size: .85em;
+    line-height: 1.764705882em;
+    vertical-align: middle;
+    vertical-align: baseline;
+    opacity: 0;
+    -webkit-transition: top .3s ease,opacity .3s ease;
+    -moz-transition: top .3s ease,opacity .3s ease;
+    -ms-transition: top .3s ease,opacity .3s ease;
+    transition: top .3s ease,opacity .3s ease;
+}
+.floating-label-form-group input, .floating-label-form-group textarea {
+    z-index: 1;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    border: 0;
+    border-radius: 0;
+    font-size: 1.5em;
+    background: 0 0;
+    box-shadow: none!important;
+    resize: none;
+}
+.contact{
+    height: 800px;
 }

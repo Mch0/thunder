@@ -12,12 +12,9 @@
     <link rel="shortcut icon" href="/favicon.ico">
 
     <title><?php echo 'ThunderBot - '.$title_for_layout; ?></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <?php echo $scripts_for_layout;?>
     <?php echo $this->fetch('css'); ?>
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <?php  echo $this->Html->css('/design/css/bootstrap'); ?>
     <?php  echo $this->Html->css('/design/css/main5'); ?>
@@ -74,17 +71,24 @@
                 <img  src="<?php echo $this->Html->url('/design/css/img/logo.png'); ?>" alt="Thunderbot logo"
                      style="height: 70px" />ThunderBot
             </a>
+            <a class="navbar-brand navbar-brand-3 visible-xs visible-sm" style="width: 200px"
+               href="<?php echo $this->Html->url(array('controller' => 'articles', 'action' => 'index','plugin' => 'article'), true); ?>">
+
+                <img  src="<?php echo $this->Html->url('/design/css/img/logo.png'); ?>" alt="Thunderbot logo"
+                      style="height: 50px" />ThunderBot
+            </a>
         </div>
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav menu-dynamique">
+
                 <li>
                     <a href="<?php echo $this->Html->url(array('controller' => 'webtvs', 'action' => 'index2','plugin' => 'webtv'), true); ?>">
                        <span class="hidden-xs hidden-sm"> <i class="fa fa-desktop fa-2x"></i></span>
                         Webtv
                     </a>
                 </li>
-                <li class="divider-vertical"></li>
+                <li class="divider-vertical visible-lg"></li>
                 <li>
 
                     <a href="<?php echo $this->Html->url(array('controller' => 'equipes', 'action' => 'index','plugin' => 'equipe'), true); ?>">
@@ -92,45 +96,32 @@
                             Équipe
                     </a>
                 </li>
-                <li class="divider-vertical"></li>
+                <li class="divider-vertical visible-lg"></li>
                 <li>
                     <a href="#" >
                        <span class="hidden-xs hidden-sm"> <i class="fa fa-suitcase fa-2x visibe-lg"></i></span>
                         Sponsors
                     </a>
                 </li>
-                <li class="divider-vertical"></li>
+                <li class="divider-vertical visible-lg "></li>
                 <li>
                     <a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'wall_sup','plugin' => 'auth_acl'), true); ?>">
                         <span class="hidden-xs hidden-sm"><i class="fa fa-file fa-2x visibe-lg"></i></span>
                         Mur
                     </a>
                 </li>
-                <li class="divider-vertical"></li>
+                <li class="divider-vertical visible-lg"></li>
                 <li>
                     <a href="<?php echo $this->Html->url(array('controller' => 'contact', 'action' => 'index','plugin' => 'contact'), true); ?>">
                         <span class="hidden-xs hidden-sm"><i class="fa fa-envelope fa-2x visibe-lg"></i></span>
                         Contact
                     </a>
                 </li>
-                <li class="divider-vertical"></li>
+                <li class="divider-vertical visible-lg"></li>
             </ul>
 
 
             <ul class="nav pull-right navbar-nav navbar-right">
-                    <!--<li>
-                        <div id="recherche" class="right">
-
-                            <?php echo $this->Form->create('Article', array('action' => 'recherche','class'=>'form-search')); ?>
-                                <div class="input-group">
-                                    <?php echo $this->Form->input('filter',array('div' => false,'label'=>false,'placeholder'=>"Rechercher",'class'=>'form-control')); ?>
-                                    <span class="input-group-addon">
-                                        <span class="glyphicon glyphicon-search"></span>
-                                    </span>
-                                </div>
-                            <?php echo $this->Form->end(); ?>
-                        </div>
-                    </li>-->
                     <li>
                         <a href="https://www.facebook.com/myThunderBot" class="social" target="_blank">
                             <?php echo $this->Html->image('facebook-white.png',array('alt'=> 'Facebook')); ?>
@@ -145,7 +136,27 @@
 
                         <?php if($this->Session->read('Auth.User.id')) { ?>
                         <a  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'logout','plugin' => 'auth_acl'), true); ?>"><span class="glyphicon glyphicon-ok"></span> Se deconnecter</a>
-                        <a  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'editAccount','plugin' => 'auth_acl'), true); ?>"><span class="glyphicon glyphicon-user"></span> Mon compte</a>
+                        <!--<a  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'editAccount','plugin' => 'auth_acl'), true); ?>"><span class="glyphicon glyphicon-user"></span> Mon compte</a>-->
+                        <a class="dropdown-toggle" data-toggle="dropdown"  href="#"><span class="glyphicon glyphicon-user"></span> Mon compte <strong class="caret"></strong></a>
+                        <div class="dropdown-menu" id="account">
+                            <ul>
+                                <li>
+                                    <a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'editAccount','plugin' => 'auth_acl'), true); ?>">
+                                        <span class="glyphicon glyphicon-user"></span>
+                                        Mon compte
+                                    </a>
+                                </li>
+                                <?php if ($this->Acl->check('Articles','admin_index','Article') == true ){?>
+                                <li><?php echo $this->Html->link(__('Admin'), array('plugin' => 'article','controller' =>
+                                    'articles','action' => 'admin_index'));
+
+                                    ?>
+
+                                </li>
+                                <?php } ?>
+                            </ul>
+                        </div>
+
                         <?php }else{ ?>
                         <a class="dropdown-toggle" href="#" data-toggle="dropdown">Se connecter <strong class="caret"></strong></a>
                         <div class="dropdown-menu" id="box-connexion" style="padding: 15px; padding-bottom: 0px;">
@@ -153,7 +164,7 @@
                             <div >
                                     <?php echo $this->Form->create('User', array('url' => '/login','class'=>' form-signin')); ?>
                                 <?php if (!empty($error)) {?>
-                                <div class="alert alert-error"><?php echo $error;?></div>
+                                <div class="alert alert-danger"><?php echo $error;?></div>
                                 <?php } ?>
                                 <div class="form-group">
                                     <strong>
@@ -188,49 +199,12 @@
                         </div>
         <?php } ?>
                     </li>
-                <?php if ($this->Acl->check('Articles','admin_index','Article') == true ){?>
-                <li><?php echo $this->Html->link(__('Admin'), array('plugin' => 'article','controller' =>
-                    'articles','action' => 'admin_index')); ?>
-                </li>
-                <?php } ?>
                 </ul>
         </div>
     </div>
 </nav>
 
 <div class="container">
-    <!--<div class="row">
-        <div class="col-xs-12 col-sm-12 col-sm-12 col-lg-12">
-            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                <div id="header_logo">
-                    <a href="<?php echo $this->Html->url(array('controller' => 'articles', 'action' => 'index','plugin' => 'article'), true); ?>">
-                        <img class="ThunderBot"
-                             src="http://www.thunderbot.gg/thumb.php?src=/css/images/thunder_logo.png&w=300&zc=1"
-                             alt="" height="170px"/>
-                    </a>
-                </div>
-            </div>
-            <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 menu visible-lg visible-md" >
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="<?php echo $this->Html->url(array('controller' => 'webtvs', 'action' => 'index2','plugin' => 'webtv'), true); ?>">Webtv</a>
-                    </li>
-                    <li>
-                        <a href="<?php echo $this->Html->url(array('controller' => 'equipes', 'action' => 'index','plugin' => 'equipe'), true); ?>">Équipe</a>
-                    </li>
-                    <li> <a href="#" >Sponsors</a></li>
-                    <li>
-                        <a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'wall_sup','plugin' => 'auth_acl'), true); ?>">Mur</a>
-                    </li>
-                    <li>
-                        <a href="<?php echo $this->Html->url(array('controller' => 'contact', 'action' => 'index','plugin' => 'contact'), true); ?>">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>-->
-
-
     <div class="thunderbot">
         <?php
               if (method_exists($this, 'fetch')){
@@ -311,11 +285,13 @@
                         $('.navbar-brand-1').addClass('hidden');
 
                         $('.navbar-brand-2').removeClass('hidden');
+                        $('.navbar-brand-2').addClass('visible-lg visible-md');
                         //$('#recherche').addClass('hidden').fadeOut(3000);
                     }
                     else {
                         $('.navbar-brand-1').removeClass('hidden');
                         $('.navbar-brand-2').addClass('hidden');
+                        $('.navbar-brand-2').removeClass("visible-md visible-lg");
                         //$('#recherche').removeClass('hidden').fadeIn(3000);
                     }
                 });
