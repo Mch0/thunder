@@ -1641,3 +1641,23 @@ form .row:first-child .floating-label-form-group {
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
+/*------ ACCOUNT ------*/
+
+.form-control[readonly]
+{
+    background-color: white!important;
+}
+#UserBirthdayMonth, #UserBirthdayDay, #UserBirthdayYear
+{
+    width: 33%;
+    display: inline-block;
+}
+#account .date
+{
+    float: none;
+}
+#account
+{
+    margin-bottom: 30px;
+}

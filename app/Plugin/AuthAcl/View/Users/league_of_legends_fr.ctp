@@ -7,7 +7,7 @@ $this->html->meta ('description', 'league_of_legends_fr', array('inline' =>false
 
 
 
- <!-- ARTICLE -->
+ <!-- Users/league_of_legends_fr.ctp -->
 <div class="container">
   <div class="row">
 

@@ -4,7 +4,7 @@
 
 
 
- <!-- ARTICLE -->
+ <!-- Users/view.ctp -->
 <div class="container">
 
     <div class="row">
