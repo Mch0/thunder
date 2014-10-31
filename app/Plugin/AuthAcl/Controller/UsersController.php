@@ -115,10 +115,8 @@ class UsersController extends AuthAclAppController {
 
 
 	public function editAccount(){
-
-		$this->layout = 'default';
 		$this->set('title_for_layout', __('Mon compte'));
-
+		$this->layout = 'default';
 		if ($this->request->isAjax()){
 			$this->autoRender = false;
 			$this->layout = null;
@@ -135,10 +133,7 @@ class UsersController extends AuthAclAppController {
 			throw new NotFoundException(__('Invalid user'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
-			if(file_exists(WWW_ROOT . DS .  files . DS . users. DS . thumbnails .DS . $id .'_scale_150' . '.jpg'))
-			{
-		 		unlink(WWW_ROOT . DS .  files . DS . users. DS . thumbnails .DS . $id .'_scale_150' . '.jpg' );
-			}
+		 	unlink(WWW_ROOT . DS .  files . DS . users. DS . thumbnails .DS . $id .'_scale_150' . '.jpg' );
 			if (empty($this->request->data['User']['user_password'])){
 				unset($this->request->data['User']['user_password']);
 				unset($this->User->validate['user_confirm_password']['checkPassword']);
@@ -156,8 +151,6 @@ class UsersController extends AuthAclAppController {
 				$errors = $this->User->validationErrors;
 			}
 		} else {
-
-			$this->layout = 'default';
 			$this->request->data = am($this->request->data,$this->User->read(null, $id));
 			unset($this->request->data['User']['user_password']);
 		}
@@ -714,6 +707,9 @@ class UsersController extends AuthAclAppController {
 				}
 			}
 		}
+
+
+
 		$this->redirect(array('action' => 'activecomplete'));
 
 	}
