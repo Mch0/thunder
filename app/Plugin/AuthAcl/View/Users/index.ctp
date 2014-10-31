@@ -1,3 +1,4 @@
+<!-- Users/index.ctp -->
 <?php
 $this->Paginator->options(array('url' => $passArg));
 ?>

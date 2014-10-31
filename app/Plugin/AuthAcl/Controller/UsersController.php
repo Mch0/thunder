@@ -133,7 +133,10 @@ class UsersController extends AuthAclAppController {
 			throw new NotFoundException(__('Invalid user'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
-		 	unlink(WWW_ROOT . DS .  files . DS . users. DS . thumbnails .DS . $id .'_scale_150' . '.jpg' );
+			if(file_exists(WWW_ROOT . DS .  files . DS . users. DS . thumbnails .DS . $id .'_scale_150' . '.jpg'))
+			{
+		 		//unlink(WWW_ROOT . DS .  files . DS . users. DS . thumbnails .DS . $id .'_scale_150' . '.jpg' );
+			}
 			if (empty($this->request->data['User']['user_password'])){
 				unset($this->request->data['User']['user_password']);
 				unset($this->User->validate['user_confirm_password']['checkPassword']);
