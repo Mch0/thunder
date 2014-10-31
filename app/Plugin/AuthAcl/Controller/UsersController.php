@@ -49,21 +49,13 @@ class UsersController extends AuthAclAppController {
 	      'conditions' => array('User.id' => $id),
 	      'recursive'  => -1
 	    ));
+	  	$this->loadModel('Article');
 
-		$this->loadModel('Article');
 		$d['articles']  = $this->Article->find('all', array(
 	      	'conditions' => array('Article.user_id' => $user['User']['id'], 'online'=> 1),
-			'limit' => 10,
 			'order' => array('Article.created' => 'desc'),
-			'fields' => array(
-	  			'Article.id', 
-	  			'Article.article_title',
-	  			'Article.comment_count', 
-	  			'Article.slug',
-	  			'Article.photo',
-	  			'Article.photo_dir',
-	  			'Article.created',
-        )));
+			'callbacks' => 'after'
+		));
 
 
 		$this->loadModel('Image');

@@ -172,6 +172,7 @@ foreach ($articles as $key => $article) {
 
 <?php } else { ?>
 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 article">
+
     <article>
         <div class="picture">
             <a href="<?= $this->Html->url($article['Article']['link']); ?>">
