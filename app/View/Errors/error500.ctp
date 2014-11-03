@@ -16,7 +16,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 ?>
-<h2><?php echo $message; ?></h2>
+<!--<h2><?php echo $message; ?></h2>
 <p class="error">
 	<strong><?php echo __d('cake', 'Error'); ?>: </strong>
 	<?php echo __d('cake', 'An Internal Error Has Occurred.'); ?>
@@ -25,4 +25,18 @@
 if (Configure::read('debug') > 0):
 	echo $this->element('exception_stack_trace');
 endif;
-?>
+?>-->
+<div id="error-500">
+    <h1 class="alert-danger">Erreur interne</h1>
+    <br/>
+    <br/>
+    <p>Oups, Une erreur innatendue est survenue. Veuillez contacter le webmaster pour l'informer du problème.
+        <br/>
+        <a href="mailto:arnaud.scote@gmail.com">Informer</a>
+    </p>
+    <p>
+        <a href="<?php echo $this->Html->url(array('controller' => 'articles', 'action' => 'index','plugin' => 'article'), true); ?>">
+            Accueil
+        </a>
+    </p>
+</div>

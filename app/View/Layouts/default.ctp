@@ -230,13 +230,7 @@
                 <p>© thunderbot.gg</p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <ul class="list-inline pull-right">
-                    <li><a href="#" title=""><i class="icon-twitter"></i></a></li>
-                    <li><a href="#" title=""><i class="icon-facebook"></i></a></li>
-                    <li><a href="#" title=""><i class="icon-google-plus"></i></a></li>
-                    <li><a href="#" title=""><i class="icon-youtube"></i></a></li>
-                    <li><a href="#" title=""><i class="icon-dribbble"></i></a></li>
-                </ul>
+                <p class="pull-right">Designed By <a style="color:white" href="mailto:arnaud.scote@gmail.com">Mcho</a></p>
             </div>
         </div>
     </div>

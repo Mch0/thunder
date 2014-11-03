@@ -1650,14 +1650,26 @@ form .row:first-child .floating-label-form-group {
 }
 #UserBirthdayMonth, #UserBirthdayDay, #UserBirthdayYear
 {
-    width: 33%;
+    width: 32%;
     display: inline-block;
 }
-#account .date
+#account .date, #signup .date
 {
     float: none;
 }
 #account
 {
     margin-bottom: 30px;
+}
+#signup-complete
+{
+    min-height: 950px;
+}
+#error-404
+{
+    min-height: 850px;
+}
+#error-404 p
+{
+    font-size: 20px;
 }

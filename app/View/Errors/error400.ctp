@@ -16,7 +16,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 ?>
-<h2><?php echo $message; ?></h2>
+<!--<h2><?php echo $message; ?></h2>
 <p class="error">
 	<strong><?php echo __d('cake', 'Error'); ?>: </strong>
 	<?php printf(
@@ -28,4 +28,19 @@
 if (Configure::read('debug') > 0):
 	echo $this->element('exception_stack_trace');
 endif;
-?>
+?>-->
+        <div id="error-404">
+            <h1>Erreur 404 Page Not Found</h1>
+        <br/>
+    <div>
+        <img src="<?php echo $this->Html->url('/img/404.png'); ?>" />
+    </div>
+        <br/>
+            <p>Oups, il semblerait que la page que vous demandé n'existe pas.</p>
+            <p>
+                <a href="<?php echo $this->Html->url(array('controller' => 'articles', 'action' => 'index','plugin' => 'article'), true); ?>">
+                    Accueil
+                </a>
+            </p>
+
+        </div>
