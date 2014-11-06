@@ -1,41 +1,44 @@
+Installation du projet 
 
-<!--<iframe src="http://webchat.quakenet.org/?channels=thunderbot&uio=d4" width="365" height="338"></iframe> -->
-CakePHP
-=======
+==================================================
 
-[![CakePHP](http://cakephp.org/img/cake-logo.png)](http://www.cakephp.org)
+> app/Config 
+> créer un fichier database.php si inexistant
 
-CakePHP is a rapid development framework for PHP which uses commonly known design patterns like Active Record, Association Data Mapping, Front Controller and MVC.
-Our primary goal is to provide a structured framework that enables PHP users at all levels to rapidly develop robust web applications, without any loss to flexibility.
+<?php
+class DATABASE_CONFIG {
 
-Some Handy Links
-----------------
+	public $default = array(
+		'datasource' => 'Database/Mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => 'login',
+		'password' => 'password',
+		'database' => 'thunder_25d45f287g912h63jn41',
+		'encoding' => 'utf8'
+	);
+}
+?>
+> renseigner host, login, password et database
 
-[CakePHP](http://www.cakephp.org) - The rapid development PHP framework
+======================================================
 
-[Cookbook](http://book.cakephp.org) - THE Cake user documentation; start learning here!
+> app/Config/Core.php
 
-[Plugins](http://plugins.cakephp.org/) - A repository of extensions to the framework
+> ligne 35 
 
-[The Bakery](http://bakery.cakephp.org) - Tips, tutorials and articles
+> changer le niveau de log selon environnement (dev, int, prod)
 
-[API](http://api.cakephp.org) - A reference to Cake's classes
+=======================================================
 
-[CakePHP TV](http://tv.cakephp.org) - Screen casts from events and video tutorials
+> app/Webroot/index.php
 
-[The Cake Software Foundation](http://cakefoundation.org/) - promoting development related to CakePHP
+> ligne 65
 
-Get Support!
-------------
+> modifier le chemin pour renseigner la dossier lib de cakephp
 
-[Our Google Group](https://groups.google.com/group/cake-php) - community mailing list and forum
+========================================================
 
-[#cakephp](http://webchat.freenode.net/?channels=#cakephp) on irc.freenode.net - Come chat with us, we have cake.
+> activer le mod rewrite url pour apache
 
-[Q & A](http://ask.cakephp.org/) - Ask questions here, all questions welcome
-
-[Lighthouse](https://cakephp.lighthouseapp.com/) - Got issues? Please tell us!
-
-[![Bake Status](https://secure.travis-ci.org/cakephp/cakephp.png?branch=master)](http://travis-ci.org/cakephp/cakephp)
-
-![Cake Power](https://raw.github.com/cakephp/cakephp/master/lib/Cake/Console/Templates/skel/webroot/img/cake.power.gif)
+========================================================
