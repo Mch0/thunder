@@ -58,7 +58,7 @@ body {
 
 span.poste {
     width: 12%;
-    background: none repeat scroll 0% 0% #FE8A13;
+    background: none repeat scroll 0% 0% #d90008;
     font-size: 14px;
     font-weight: bold;
     color: #FFF;
@@ -625,7 +625,7 @@ span.clear {
   display: block;
   padding: 10px;
   background: url("../img/list.png") repeat-x 0 100% #333;
-  border-bottom: 1px solid #fe8a13;
+  border-bottom: 1px solid #d90008;
   clear: both;
 }
 
@@ -663,11 +663,11 @@ span.clear {
 }
 #guidesList li.guide span.info span.author
 {
-  color: #fe8a13;
+  color: #d90008;
 }
 #guidesList li.guide span.info span.poste {
   float: right;
-  background: #fe8a13;
+  background: #d90008;
   font-size: 16px;
   font-weight: bold;
   color: #fff;
@@ -746,7 +746,7 @@ h2.player {
     color: #FFF;
     height: 40px;
     background: url('img/pattern_menu.png') repeat scroll 0% 0% #323232;
-    border-bottom: 2px solid #F81;
+    border-bottom: 2px solid #d90008;
     box-shadow: 0px 2px 6px -2px #1F0F05;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -819,7 +819,7 @@ h2.title5  {
 }
 
 strong.strong_comment_redacteur {
-    color: #F81;
+    color: #d90008;
     font-size: 13px;
 }
 
@@ -864,7 +864,7 @@ footer.well {
 
   color: #ffffff;
   background: url('img/list.png') repeat-x scroll 0px 100%;
-  border-top: 2px solid #FE8A13;
+  border-top: 2px solid #d90008;
 }
 
 
@@ -964,7 +964,7 @@ div.thunderbox img {
 /*------ NAV BAR ------*/
 #link-connect:focus, #link-connect:hover
 {
-    color: #F81;
+    color: #d90008;
     text-decoration: none;
     background-color: transparent;
 }
@@ -999,7 +999,7 @@ div.thunderbox img {
 }
 .menu li a:hover{
     background: none;
-    color : orange;
+    color : #d90008;
 }
 .menu
 {
@@ -1244,8 +1244,8 @@ div.thunderbox img {
 .panel-heading
 {
     font-size: 20px;
-    border-top: 3px solid orange;
-    border-bottom: 3px solid orange;
+    border-top: 3px solid #d90008;
+    border-bottom: 3px solid #d90008;
     padding-top: 10px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -1262,8 +1262,8 @@ div.thunderbox img {
     text-align: center;
     margin-bottom: 40px;
     padding-top: 10px;
-    border-bottom: 3px solid orange;
-    border-top: 3px solid orange;
+    border-bottom: 3px solid #d90008;
+    border-top: 3px solid #d90008;
 }
 .line-title-actualite h4
 {
@@ -1325,9 +1325,9 @@ article .picture img
     line-height: 16px;
 }
 
-.resume a p:hover
+.resume a p:hover, .resume header h3 a:hover, #riot a:hover, .menu-dynamique a:hover
 {
-    color : orange;
+    color : #d90008;
 }
 
 .date small
@@ -1406,8 +1406,8 @@ article .picture img
 }
 .info .content-info
 {
-    border-right: 2px solid orange;
-    border-bottom: 2px solid orange;
+    border-right: 2px solid #d90008;
+    border-bottom: 2px solid #d90008;
     height: 300px;
 }
 .info .content-info img
@@ -1423,10 +1423,10 @@ article .picture img
 .thumb-title
 {
     text-align: center;
-    border-top: 2px solid orange;
-    border-right: 2px solid orange;
-    border-left: 2px solid orange;
-    border-bottom: 2px solid orange;
+    border-top: 2px solid #d90008;
+    border-right: 2px solid #d90008;
+    border-left: 2px solid #d90008;
+    border-bottom: 2px solid #d90008;
     margin-bottom: 0px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -1527,7 +1527,7 @@ article .picture img
 
 .nav-article:hover
 {
-    color:orange!important;
+    color:#d90008!important;
 }
 #comment
 {

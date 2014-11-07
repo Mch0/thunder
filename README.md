@@ -42,3 +42,9 @@ class DATABASE_CONFIG {
 > activer le mod rewrite url pour apache
 
 ========================================================
+
+> dans app/ créer un dossier cache
+
+> dans cache créer un dossier models et persistent
+
+> donner les droits 777 a cache et sous dossier chmod 777 -R cache

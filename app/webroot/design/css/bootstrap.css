@@ -2192,13 +2192,13 @@ fieldset[disabled] .btn-success.active {
 .btn-thunder2.active,
 .open .dropdown-toggle.btn-info {
   color: #fff;
-  background-color: #FE8A13;
-  border-color: #FFC203;
+  background-color: #d90008;
+  border-color: black;
 }
 .btn-thunder2 {
   color: #fff;
-  background-color: #FE8A13;
-  border-color:  #FFC203;
+  background-color: #d90008;
+  border-color:  black;
 }
 
 
@@ -4068,16 +4068,16 @@ line-height: 20px;
 .navbar-inverse {
 color: #FFF;
 background: url('img/list.png') repeat-x scroll 0px 100% #333;
-border-bottom: 2px solid #FE8A13;
+border-bottom: 2px solid #d90008;
 }
 .navbar-inverse .navbar-brand {
   color: #999;
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
-    color: #F81;
+    color: #d90008;
     text-decoration: none;
-    background-color: transpare
+    background-color: transparent;
 }
 
 .navbar-inverse .navbar-text {
@@ -4213,8 +4213,8 @@ border-bottom: 2px solid #FE8A13;
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   color: #ffffff;
-  background-color: #FE8A13;
-  border-color: #FE8A13;
+  background-color: #d90008;
+  border-color: #d90008;
 }
 .pagination > .active > a,
 .pagination > .active > span,
@@ -4225,8 +4225,8 @@ border-bottom: 2px solid #FE8A13;
   z-index: 2;
   color: #fff;
   cursor: default;
-  background-color: #FE8A13;
-  border-color: #FE8A13;
+  background-color: #d90008;
+  border-color: #d90008;
 }
 .pagination > .disabled > span,
 .pagination > .disabled > span:hover,
@@ -4362,7 +4362,7 @@ border-bottom: 2px solid #FE8A13;
 }
 
 .label-thunder {
-  background-color: #FE8A13;
+  background-color: #d90008;
 }
 
 
@@ -4668,7 +4668,7 @@ a.thunderbox.active {
 
 
 .navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
-    color: #F81;
+    color: #d90008;
     text-decoration: none;
     background-color: transparent;
 }
