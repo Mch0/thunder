@@ -69,7 +69,7 @@
 <div class="alert error-message">
         <span class="alert alert-danger"> <?php echo $error ?> </span>
 </div>
-    <?php   $error = "";}
+    <?php   $error = ""; unset($error);}
     ?>
 
 <!-- WEBTV -->
@@ -248,7 +248,7 @@ foreach ($articles as $key => $article) {
 
 <!-- RIGHT SIDE BAR -->
     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-        <div id="riot">
+        <div id="ee">
 
 		        <div >
 			        <h5 class="line-title-high-tech"><span>RIOT NEWS</span></h5>

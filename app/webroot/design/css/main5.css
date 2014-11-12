@@ -1377,6 +1377,11 @@ article .picture img
     margin-top: 12px;
     margin-bottom: 12px;
 }
+.hr-grey-3
+{
+    clear: both;
+    border-top: 3px solid #eee;
+}
 
 /*------ EQUIPE ------*/
 #portfolio .bloc
