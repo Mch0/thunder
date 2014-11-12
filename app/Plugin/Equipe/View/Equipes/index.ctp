@@ -9,8 +9,14 @@
     <div class="row">
         <div class="col-lg-10 col-lg-offset-1" id="portfolio">
             <?php foreach ($equipes as $equipe): ?>
-            <div class="bloc dev masonry-brick" id="<?php echo h($equipe['Equipe']['role']); ?>">
-               <h2 class="thumb-title"> <?php echo h($equipe['Equipe']['role']); ?></h2>
+            <div class="bloc  masonry-brick" id="<?php echo h($equipe['Equipe']['role']); ?>">
+	            <div class="thumb-title">
+		            <h2><?php echo h($equipe['Equipe']['role']);  ?></h2>
+		            <span><?php echo h($equipe['Equipe']['name']); ?></span>
+	            </div>
+
+
+
                 <a class="thumb" href="">
 
                     <?php echo $this->Html->image('/files/equipe/photo/'.($equipe['Equipe']['photo_dir'].'/'.$equipe['Equipe']['photo']),array('height' => '300px')); ?>

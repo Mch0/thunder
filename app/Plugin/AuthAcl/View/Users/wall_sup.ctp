@@ -20,9 +20,9 @@ $this->html->meta ('description', 'ThunderBot WebTV - Admirez le skill ! Thunder
 
         <div class="col-xs-12 col-sm-3 col-sm-3 col-lg-3">
 
-            <div class="panel-heading text-center hidden-xs article-articles-title">
-                <h4>ARTICLES</h4>
-            </div>
+	        <div >
+		        <h5 class="line-title-high-tech"><span>ARTICLES</span></h5>
+	        </div>
             <br/>
 
             <?php foreach ($threearticles as $threearticle): ?>

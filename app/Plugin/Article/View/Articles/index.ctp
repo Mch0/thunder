@@ -19,10 +19,7 @@
                                     <?php $srcImg = "/files/article/photo/" . $thumbarticle['Article']['photo_dir'] . "/" . $thumbarticle['Article']['photo'] ;?>
                                     <?php $alt = $thumbarticle['Article']['article_title']; ?>
                                     <img src="<?php echo $srcImg ?>" alt="<?php echo $alt ?>" class="desktop_img"/>
-                                   <!-- <?php echo $this->Html->image("$srcImg", array('class' => 'desktop_img', 'alt' => "$alt"));?>-->
-
                                     <span class="zone-txt">
-                                        <!--<span class="cat bg-slider-lifestyle">Lifestyle</span>-->
                                         <h2 class="title"><?php echo $thumbarticle['Article']['article_title'] ?></h2>
 
                                         <span class="sous-titre">
@@ -80,12 +77,12 @@
 <?php if(count($webtv) > 0) { ?>
 <div class="hidden-xs">
     <div class="row">
-        <div class="col-lg-12">
-            <hr class="hr-grey-5">
-            <div class=" panel-heading line-title-actualite">
-                <h3>WEB TV</h3>
-            </div>
-        </div>
+	    <div class="col-lg-12">
+
+		    <div >
+			    <h4 class="line-title-high-tech"><span>WEB TV</span></h4>
+		    </div>
+	    </div>
     <div class="col-xs-12 col-sm-12 col-lg-12" id="controlPlayer">
         <span id="closePlayer" style="color:white"><button class="btn btn-thunder2"><span
                 class="glyphicon glyphicon-remove"></span> Fermer
@@ -119,9 +116,9 @@
 <!-- CONTENT SIDE-->
 <div class="row">
 <div class="col-lg-12">
-    <hr class="hr-grey-5">
-    <div class="line-title-actualite panel-heading">
-        <h4>ACTUALITES</h4>
+
+    <div >
+        <h4 class="line-title-high-tech"><span>ACTUALITES</span></h4>
     </div>
 </div>
     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
@@ -252,9 +249,10 @@ foreach ($articles as $key => $article) {
 <!-- RIGHT SIDE BAR -->
     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
         <div id="riot">
-            <div class="panel-heading text-center hidden-xs">
-                <h5>RIOT NEWS</h5>
-            </div>
+
+		        <div >
+			        <h5 class="line-title-high-tech"><span>RIOT NEWS</span></h5>
+		        </div>
             <br/>
 
                 <?php foreach($riotLinks as $link) { ?>
@@ -270,9 +268,9 @@ foreach ($articles as $key => $article) {
                 <?php } ?>
         </div>
         <div id="twit">
-            <div class="panel-heading text-center hidden-xs">
-                <h5>DERNIERS TWEETS</h5>
-            </div>
+	        <div >
+		        <h5 class="line-title-high-tech"><span>DERNIERS TWEETS</span></h5>
+	        </div>
             <br/>
             <a class="twitter-timeline"  href="https://twitter.com/MyThunderBot"  data-widget-id="363309093869477888">Tweets de @MyThunderBot</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>

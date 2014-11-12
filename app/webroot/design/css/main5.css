@@ -1269,16 +1269,32 @@ div.thunderbox img {
 {
     font-size: 16px;
 }
-.hr-grey-5
+h5.line-title-high-tech span
 {
-    border-width: 5px;
-    border-color:grey;
+    font-size: 20px;
 }
 
-.hr-grey-3
+h5.line-title-high-tech
 {
-    clear: both;
-    border-top: 3px solid #eee;
+    margin: 20px 0;
+    text-align: center;
+    color: #d90008;
+    background: url('/img/line-title-high-tech.png') repeat-x 0 -2px;
+}
+.line-title-high-tech span
+{
+    background-color: #fff;
+    padding: 0 10px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: "Oswald";
+}
+h4.line-title-high-tech
+{
+    margin: 20px 0;
+    text-align: center;
+    color: #d90008;
+    background: url('/img/line-title-high-tech.png') repeat-x 0 2px;
 }
 
 article .picture img
@@ -1363,8 +1379,10 @@ article .picture img
 }
 
 /*------ EQUIPE ------*/
-
-
+#portfolio .bloc
+{
+    margin-bottom: 5%;
+}
 .bloc{
     float:left;
     margin: 15px;
@@ -1444,6 +1462,11 @@ article .picture img
 }
 .social {
     height: 64px!important;
+}
+
+.thumb-title h2
+{
+    margin-bottom: 0;
 }
 /*------ PAGE WEB TV ------*/
 .videocontainer
