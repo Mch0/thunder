@@ -1,13 +1,6 @@
-<div class="container">
+<div class="container" id="equipe">
     <div class="row">
-        <div class="col-lg-12">
-<h1 class="thunder_orange">League of legends</h1>
-    </div>
-    </div>
-
-
-    <div class="row">
-        <div class="col-lg-10 col-lg-offset-1" id="portfolio">
+        <div class="col-lg-10" id="portfolio">
             <?php foreach ($equipes as $equipe): ?>
             <div class="bloc  masonry-brick" id="<?php echo h($equipe['Equipe']['role']); ?>">
 	            <div class="thumb-title">

@@ -7,10 +7,11 @@ body {
 
 
 body {
-  background: white;
+  /*background: white;*/
   /*height: 188px;*/
   /*overflow: visible;*/
   /*z-index: 3;*/
+    background-image: linear-gradient(#FCFCFC,#545454);
   padding-top: 70px;
 }
 
@@ -1384,6 +1385,10 @@ article .picture img
 }
 
 /*------ EQUIPE ------*/
+#portfolio
+{
+    margin-left: 10.5%;
+}
 #portfolio .bloc
 {
     margin-bottom: 5%;
@@ -1600,7 +1605,12 @@ margin-left: 3px;
 
 .thunderbot
 {
-    margin-top: 57px;
+    margin-top: 10px;
+}
+
+#article, #equipe, #mur
+{
+    margin-top: 60px;
 }
 .error-message
 {

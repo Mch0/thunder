@@ -20,7 +20,7 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
 ?>
 
 
-<div class="container">
+<div class="container" id="article">
     <div class="row">
         <!-- ARTICLE -->
         <div class="col-xs-12 col-sm-9 col-sm9 col-lg-9">
