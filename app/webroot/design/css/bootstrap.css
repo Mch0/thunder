@@ -4068,7 +4068,7 @@ line-height: 20px;
 .navbar-inverse {
 color: #FFF;
 background: url('img/list.png') repeat-x scroll 0px 100% #333;
-border-bottom: 2px solid #d90008;
+/*border-bottom: 2px solid #d90008;*/
 }
 .navbar-inverse .navbar-brand {
   color: #999;

@@ -65,17 +65,17 @@
                      style="height: 170px;" />
             </a>
 
-            <a class="navbar-brand navbar-brand-2 hidden" style="width: 200px"
+            <a class="navbar-brand navbar-brand-2 hidden" style="width: 205px"
                href="<?php echo $this->Html->url(array('controller' => 'articles', 'action' => 'index','plugin' => 'article'), true); ?>">
 
                 <img  src="<?php echo $this->Html->url('/design/css/img/logo.png'); ?>" alt="Thunderbot logo"
-                     style="height: 70px" />ThunderBot
+                     style="height: 70px" /><span style="margin-left: px">ThunderBot</span>
             </a>
             <a class="navbar-brand navbar-brand-3 visible-xs visible-sm" style="width: 200px"
                href="<?php echo $this->Html->url(array('controller' => 'articles', 'action' => 'index','plugin' => 'article'), true); ?>">
 
                 <img  src="<?php echo $this->Html->url('/design/css/img/logo.png'); ?>" alt="Thunderbot logo"
-                      style="height: 50px" />ThunderBot
+                      style="height: 50px" /><span style="margin-left: 5px">ThunderBot</span>
             </a>
         </div>
 
@@ -127,12 +127,12 @@
 
             <ul class="nav pull-right navbar-nav navbar-right">
                     <li>
-                        <a href="https://www.facebook.com/myThunderBot" class="social" target="_blank">
+                        <a href="https://www.facebook.com/myThunderBot" class="social" target="_blank" style="width: 45px">
                             <?php echo $this->Html->image('facebook-white.png',array('alt'=> 'Facebook')); ?>
                         </a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/MyThunderBot" class="social" target="_blank">
+                        <a href="https://twitter.com/MyThunderBot" class="social" target="_blank" style="width: 45px">
                             <?php echo $this->Html->image('twitter-white.png',array('alt'=> 'Twitter')); ?>
                         </a>
                     </li>
