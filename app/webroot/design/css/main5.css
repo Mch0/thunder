@@ -873,7 +873,7 @@ footer.well {
 
   color: #ffffff;
   background: url('img/list.png') repeat-x scroll 0px 100%;
-  border-top: 2px solid #d90008;
+  /*border-top: 2px solid #d90008;*/
 }
 
 
@@ -1045,7 +1045,7 @@ body > nav > div > div.collapse.navbar-collapse.navbar-ex1-collapse > ul.nav.nav
 }
 .navbar-right .dropdown
 {
-    margin-top: 13px;
+    margin-top: 17px;
 }
 .navbar-right
 {
