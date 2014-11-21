@@ -15,7 +15,8 @@ body {
 
 body {
 
-    background-image: linear-gradient(#FCFCFC,#545454);
+    /*background-image: linear-gradient(#FCFCFC,#545454);*/
+    background-color: #f5f5f5;
     padding-top: 70px;
 
 }
