@@ -196,7 +196,7 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
         <div class="col-xs-12 col-sm-3 col-sm-3 col-lg-3">
 
 	        <div >
-		        <h5 class="line-title-high-tech"><span>ARTICLES</span></h5>
+		        <h5><span class="col-lg-4 line-title-high-tech">&nbsp;</span><span class="col-lg-4 big-title">ARTICLES</span><span  class="col-lg-4 line-title-high-tech">&nbsp;</span></h5>
 	        </div>
             <br/>
 
