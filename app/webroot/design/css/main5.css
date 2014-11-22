@@ -875,9 +875,17 @@ footer.well {
   color: #ffffff;
   background: url('img/list.png') repeat-x scroll 0px 100%;
   /*border-top: 2px solid #d90008;*/
+    font-family: Akashi;
 }
+.footer
+{
 
-
+}
+.comment-count, .strong_comment_redacteur
+{
+    font-family: Akashi;
+    color : #d90008;
+}
 footer.well li {
     list-style: none outside none;
 }

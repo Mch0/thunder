@@ -4192,7 +4192,8 @@ background: url('img/list.png') repeat-x scroll 0px 100% #333;
   padding: 6px 12px;
   margin-left: -1px;
   line-height: 1.42857143;
-  color: #d90008;
+  /*color: #d90008;*/
+    color : black;
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -4213,7 +4214,7 @@ background: url('img/list.png') repeat-x scroll 0px 100% #333;
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   color: #ffffff;
-  background-color: #d90008;
+  background-color: black;
   border-color: #d90008;
 }
 .pagination > .active > a,
@@ -4225,7 +4226,7 @@ background: url('img/list.png') repeat-x scroll 0px 100% #333;
   z-index: 2;
   color: #fff;
   cursor: default;
-  background-color: #d90008;
+  background-color: black;
   border-color: #d90008;
 }
 .pagination > .disabled > span,

@@ -170,7 +170,6 @@ foreach ($articles as $key => $article) {
 
 <?php } else { ?>
 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 article">
-
     <article>
         <div class="picture">
             <a href="<?= $this->Html->url($article['Article']['link']); ?>">
@@ -193,7 +192,7 @@ foreach ($articles as $key => $article) {
             </div>
             <div class="partage">
                 <!--https://www.facebook.com/sharer/sharer.php?u=-->
-                <span class="glyphicon glyphicon-signal"></span>
+                <span class="glyphicon glyphicon-comment"></span><span class="comment-count"> <?= $article['Article']['comment_count'] ?></span>
                 <a class="link-facebook-small popup" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?= $this->Html->url($article['Article']['link'],true) ?>">
                     <?= $this->Html->image('social/mini-facebook.jpg', array('alt' => 'share')) ?>
                 </a>
