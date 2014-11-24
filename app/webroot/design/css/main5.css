@@ -839,6 +839,7 @@ span.bouton_hide {
 hr.rouge
 {
     border-top : 1px solid #d90008!important;
+    margin-bottom: 50px;
 }
 
 div.input textarea required {
