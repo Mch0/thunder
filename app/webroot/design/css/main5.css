@@ -836,9 +836,9 @@ strong.strong_comment_redacteur {
 span.bouton_hide {
 
 }
-hr .rouge
+hr.rouge
 {
-    border-top : 1px solid #d90008;
+    border-top : 1px solid #d90008!important;
 }
 
 div.input textarea required {

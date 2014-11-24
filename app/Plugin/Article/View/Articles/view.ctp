@@ -73,7 +73,7 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
             </div>
 
             <!-- SHARE ARTICLE -->
-            <hr/>
+            <hr class="rouge"/>
             <div class="row" id="social-article">
                 <!-- PREVIOUS ARTICLE -->
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
