@@ -4086,6 +4086,7 @@ background: url('img/list.png') repeat-x scroll 0px 100% #333;
 
 .navbar-inverse .navbar-nav > li > a {
   color: #999;
+    color : #a70101;
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
