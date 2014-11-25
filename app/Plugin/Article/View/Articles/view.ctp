@@ -150,7 +150,7 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
                             <div class="col-xs-12 col-sm-2 col-md2 col-lg-2">
                                   <?php
                                   if ($comment['User']['avatar']) {
-                                      echo $this->Html->image('/files/users/thumbnails/'.($comment['User']['id'].'_scale_150.jpg'), array('class' =>
+                                      echo $this->Html->image($comment['User']['avatar'], array('class' =>
                                         'img-responsive', "alt" => $comment['User']['user_name']));
                                   } else {
                                       echo $this->Html->image("/design/css/img/robotthunderbot.png", array("class" => "img-responsive", "alt" => 'thunderbot'));

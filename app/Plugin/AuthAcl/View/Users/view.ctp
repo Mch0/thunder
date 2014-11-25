@@ -74,7 +74,7 @@
                             <?php
 
                              if ($user['User']['avatar']) {
-                                    echo $this->Html->image('/files/users/thumbnails/'.($user['User']['id'].'_scale_150.jpg'), array('class' => 'thumbnail', 'width' => '100%'));
+                                    echo $this->Html->image($user['User']['avatar'], array('class' => 'thumbnail', 'width' => '100%'));
                             } else {
                             echo $this->Html->image("/design/css/img/robotthunderbot.png", array("class" => "img-responsive",));
                             }
