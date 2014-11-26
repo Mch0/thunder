@@ -5,7 +5,7 @@
 <?php  echo $this->Html->script('/design/js/bxslider/jquery.bxslider.min'); ?>
 
 <!-- SLIDER -->
-<div class="row" id="caroussel">
+<div class="row hidden-xs " id="caroussel">
     <div class="slider text-center" id="thunderbot">
         <div id="outer-slider">
             <div class="left_fader">&nbsp;</div>
