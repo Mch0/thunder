@@ -1359,7 +1359,8 @@ article .picture img
 {
     max-width: 100%;
     width: 100%;
-    max-height: 340px;
+    max-height: 242px;
+    min-height: 242px;
 }
 .partage
 {
@@ -1585,6 +1586,8 @@ article .picture img
 {
     height: 75px;
     max-height: 75px;
+    max-width: 75px;
+    min-width: 75px;
 }
 .article-comment-timeago
 {
