@@ -119,7 +119,10 @@
 
     <div >
         <!--<h4 class="line-title-high-tech"><span>ACTUALITES</span></h4>-->
-	    <h4><span class="col-lg-5 line-title-high-tech">&nbsp;</span><span class="col-lg-2 big-title">ARTICLES</span><span  class="col-lg-5 line-title-high-tech">&nbsp;</span></h4>
+	    <h4><span class="col-lg-5 col-md-5 col-sm-5 col-xs-4 line-title-high-tech">&nbsp;</span>
+		    <span class="col-lg-2 col-md-2 col-sm-2 col-xs-4 big-title">ARTICLES</span>
+		    <span  class="col-lg-5 col-md-5 col-sm-5 col-xs-4 line-title-high-tech">&nbsp;</span>
+	    </h4>
     </div>
 </div>
     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
@@ -251,7 +254,10 @@ foreach ($articles as $key => $article) {
         <div id="ee">
 
 		        <div >
-			        <h5><span class="col-lg-3 line-title-high-tech">&nbsp;</span><span class="col-lg-6 big-title">RIOT NEWS</span><span  class="col-lg-3 line-title-high-tech">&nbsp;</span></h5>
+			        <h5><span class="col-lg-3 col-sm-5 col-md-3 col-xs-5 line-title-high-tech">&nbsp;</span>
+				        <span class="col-lg-6 col-sm-2 col-md-6 col-xs-2 big-title">RIOT NEWS</span>
+				        <span  class="col-lg-3 col-sm-5 col-md-3 col-xs-5 line-title-high-tech">&nbsp;</span>
+			        </h5>
 <!--			        <h5 class="line-title-high-tech"><span>RIOT NEWS</span></h5>-->
 		        </div>
             <br/>
@@ -270,7 +276,11 @@ foreach ($articles as $key => $article) {
         </div>
         <div id="twit">
 	        <div>
-		        <h5><span class="col-lg-2 line-title-high-tech">&nbsp;</span><span class="col-lg-8 big-title">DERNIERS TWEETS</span><span  class="col-lg-2 line-title-high-tech">&nbsp;</span></h5>
+		        <h5>
+			        <span class="col-lg-3 col-md-3 col-sm-5 col-xs-5 line-title-high-tech">&nbsp;</span>
+			        <span class="col-lg-6 col-md-6 col-sm-2 col-xs-2 big-title">DERNIERS TWEETS</span>
+			        <span class="col-lg-3 col-md-3 col-sm-5 col-xs-5 line-title-high-tech">&nbsp;</span>
+		        </h5>
 	        </div>
             <br/>
             <a class="twitter-timeline"  href="https://twitter.com/MyThunderBot"  data-widget-id="363309093869477888">Tweets de @MyThunderBot</a>
