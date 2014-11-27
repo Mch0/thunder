@@ -25,7 +25,7 @@
    )); ?>
  </fieldset>   
 <?php echo $this->Form->end(array(
-    'label' => __('Envoyer'),
+    'label' => 'Envoyer',
     'class' => 'btn btn-thunder2',
     'div' => array(
         'class' => 'control-group',

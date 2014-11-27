@@ -15,7 +15,6 @@ body {
 
 body {
 
-    /*background-image: linear-gradient(#FCFCFC,#545454);*/
     background-color: #f5f5f5;
     padding-top: 70px;
 
@@ -1418,6 +1417,15 @@ article .picture img
 {
     margin-top: 25px;
 }
+#riot ul li:first-child, #riot > ul > li:nth-last-child(2)
+{
+    font-weight: bold;
+}
+#riot ul
+{
+    list-style-type: none;
+}
+
 .riot_news
 {
     display: inline-flex;
@@ -1431,12 +1439,12 @@ article .picture img
     margin-left: 8px;
 }
 
-#riot hr
+/*#riot hr
 {
     border: 1px solid grey;
     margin-top: 12px;
     margin-bottom: 12px;
-}
+}*/
 .hr-grey-3
 {
     clear: both;

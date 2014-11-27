@@ -20,6 +20,7 @@ class CommentSchema extends CakeSchema {
 		'parent_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 9),
 		'user_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 9),
 		'spam' => array('type' => 'integer', 'null' => true, 'default' => '0', 'length' => 1),
+		'up' => array('type' => 'integer','null' => false, 'default' => '0', 'length' => 5),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1),
 			'tutoriel_id' => array('column' => 'ref_id', 'unique' => 0)

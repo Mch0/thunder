@@ -251,7 +251,7 @@ foreach ($articles as $key => $article) {
 
 <!-- RIGHT SIDE BAR -->
     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-        <div id="ee">
+        <div id="riot">
 
 		        <div >
 			        <h5><span class="col-lg-3 col-sm-5 col-md-3 col-xs-5 line-title-high-tech">&nbsp;</span>
@@ -261,9 +261,11 @@ foreach ($articles as $key => $article) {
 <!--			        <h5 class="line-title-high-tech"><span>RIOT NEWS</span></h5>-->
 		        </div>
             <br/>
-
+<ul>
                 <?php foreach($riotLinks as $link) { ?>
+	<li>
             <div class="row">
+
                     <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
                        <?php echo $this->Html->Image('logo_news_riot.png') ?>
                     </div>
@@ -271,8 +273,10 @@ foreach ($articles as $key => $article) {
                        <?= $link ?>
                     </div>
             </div>
+	</li>
             <hr/>
                 <?php } ?>
+</ul>
         </div>
         <div id="twit">
 	        <div>
