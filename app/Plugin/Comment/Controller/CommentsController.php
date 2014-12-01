@@ -54,7 +54,26 @@ class CommentsController extends AdminController{
         return $this->redirect($this->referer());
 	}
 
+	public function addOne()
+	{
+		if( $this->request->is('ajax') )
+		{
+			$user = $this->Session->read('Auth.User');
+			if(!empty($user))
+			{
+			$comment = $this->Comment->findById($this->request->data('comment'));
+			$comment['Comment']['up'] += 1;
+			$this->Comment->save($comment);
+			$this->loadModel('CommentUp');
+			$this->CommentUp->create();
+			$this->CommentUp->save(array('id_comment' => $this->request->data('comment'), 'id_user' => $user['id']));
+			echo true;
+			}
+			echo false;
+		}
+		exit();
 
+	}
 	
 	function add(){
 		$referer = $this->referer().'#commentForm';

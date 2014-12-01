@@ -1597,6 +1597,11 @@ article .picture img
     max-width: 75px;
     min-width: 75px;
 }
+.comment-up
+{
+    font-size: 23px;
+    margin-left: 14px;
+}
 .article-comment-timeago
 {
     color : #151515;
