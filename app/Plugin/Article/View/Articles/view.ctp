@@ -125,29 +125,18 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
             <!-- COMMMENT -->
         <div class="row">
             <!-- FORM COMMENT -->
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <span class="nb-comment">Tous les commentaires (<?= count($comments) ?>)</span>
-                    <?php if ($this->Session->read('Auth.User.id')): ?>
-                    <div class="article-comment-form">
 
-                        <br/>
-                        <br/>
-
-                            <?= $this->Comment->form('Article', $article['Article']['id'], array("id" => "form_thunder",)); ?>
-
-                    </div>
-                    <?php endif ?>
-                </div>
-            </div>
             <div class="row" id="comment">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <?php //debug($comments); ?>
-                        <?php foreach (array_reverse($comments) as $k => $comment): ?>
+
+                        <?php foreach ($comments as $k => $comment): ?>
+	                <?php //debug($comment); ?>
                     <div class="row">
                         <div class="article-comment">
 
-                            <div class="col-xs-12 col-sm-2 col-md2 col-lg-2">
+                            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+	                            <div class="row">
+	                            <div class="col-xs-9 col-sm-9 col-md-9 col-lg-7">
                                   <?php
                                   if ($comment['User']['avatar']) {
                                       echo $this->Html->image($comment['User']['avatar'], array('class' =>
@@ -164,6 +153,16 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
                                     <?php echo $this->html->link(__('Effacer'), array('controller' => 'comments', 'action' => 'delete','plugin' => 'comment', $comment['Comment']['id']),array('class'=>'btn btn-mini btn-danger'),null,'Voulez vous vraiment supprimer cette Article ?'); ?>
                                   </p>
                                   <?php endif ?>
+		                            </div>
+	                            <div id="up" class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+
+									<p class="comment-up" id="comment-nb-up-<?php echo $comment['Comment']['id'] ?>"><?= $comment['Comment']['up'] ?></p>
+
+		                            <?php if ($this->Session->read('Auth.User.id')): ?>
+		                            <button class="add1 btn btn-thunder2"  data-commentid="<?php echo $comment['Comment']['id'] ?>" class="btn btn-thunder2">+1</button>
+		                            <?php endif ?>
+	                            </div>
+		                            </div>
                             </div>
                             <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
                                 <div class="article-comment-content">
@@ -189,6 +188,21 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
                         <?php endforeach ?>
                 </div>
             </div>
+	        <div class="row">
+		        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			        <span class="nb-comment">Tous les commentaires (<?= count($comments) ?>)</span>
+			        <?php if ($this->Session->read('Auth.User.id')): ?>
+			        <div class="article-comment-form">
+
+				        <br/>
+				        <br/>
+
+				        <?= $this->Comment->form('Article', $article['Article']['id'], array("id" => "form_thunder",)); ?>
+
+			        </div>
+			        <?php endif ?>
+		        </div>
+	        </div>
         </div>
     </div>
 
@@ -242,7 +256,22 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
     </div>
 </div>
 
-
+<script>
+	$('document').ready(function(){
+		$('.add1').on('click',function(){
+			var commentid = $(this).data('commentid');
+			$.post("<?php echo $this->Html->url(array('plugin'=>'comment','controller'=>'comments','action'=>'addOne'),true) ?>", {comment : commentid})
+					.done(function(response){
+					if(response == 1)
+					{
+						var nb = parseInt($("#comment-nb-up-"+commentid)[0].innerHTML) + 1 ;
+						$("#comment-nb-up-"+commentid)[0].innerHTML = "";
+						$("#comment-nb-up-"+commentid)[0].innerHTML = nb ;
+					}
+			});
+		});
+	});
+</script>
 
 
 
