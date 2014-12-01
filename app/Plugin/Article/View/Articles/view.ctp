@@ -159,7 +159,7 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
 									<p class="comment-up" id="comment-nb-up-<?php echo $comment['Comment']['id'] ?>"><?= $comment['Comment']['up'] ?></p>
 
 		                            <?php if ($this->Session->read('Auth.User.id')): ?>
-		                            <button class="add1 btn btn-thunder2"  data-commentid="<?php echo $comment['Comment']['id'] ?>" class="btn btn-thunder2">+1</button>
+		                            <button class="hidden add1 btn btn-thunder2"  data-commentid="<?php echo $comment['Comment']['id'] ?>" class="btn btn-thunder2">+1</button>
 		                            <?php endif ?>
 	                            </div>
 		                            </div>
