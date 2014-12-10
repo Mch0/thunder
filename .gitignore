@@ -18,6 +18,11 @@
 app/webroot/cache/*
 app/webroot/files/article/*
 app/webroot/files
+app/webroot/index.php
+app/webroot/files/*
+app/Config/bootstrap.php
+app/Config/core.php
+maintenance.php
 # OS generated files #
 ######################
 .DS_Store
