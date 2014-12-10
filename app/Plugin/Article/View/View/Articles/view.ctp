@@ -1,11 +1,11 @@
 
 
     <!-- POLLS-->
-<script>var baseURL = "http://www.thunderbot.gg/";</script> 
+<!--<script>var baseURL = "http://www.thunderbot.gg/";</script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.js"></script>
 <script type="text/javascript" src="http://www.thunderbot.gg/js/polls/poll/app.js"></script>
-<script type="text/javascript" src="http://www.thunderbot.gg/js/polls/poll/controller.js"></script> 
+<script type="text/javascript" src="http://www.thunderbot.gg/js/polls/poll/controller.js"></script> -->
     <!--  -->
 
 <?php $this->set('title_for_layout', $article['Article']['article_title']) ?>

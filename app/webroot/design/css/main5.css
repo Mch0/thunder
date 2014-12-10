@@ -1597,6 +1597,10 @@ article .picture img
     max-width: 75px;
     min-width: 75px;
 }
+#commentForm
+{
+    margin-bottom: 30px;
+}
 .comment-up
 {
     font-size: 23px;

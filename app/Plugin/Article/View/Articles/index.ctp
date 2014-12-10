@@ -5,7 +5,7 @@
 <?php  echo $this->Html->script('/design/js/bxslider/jquery.bxslider.min'); ?>
 
 <!-- SLIDER -->
-<div class="row hidden-xs " id="caroussel">
+<div class="row visible-lg visible-md" id="caroussel">
     <div class="slider text-center" id="thunderbot">
         <div id="outer-slider">
             <div class="left_fader">&nbsp;</div>
@@ -64,6 +64,26 @@
     });
 </script>
 <!-- /SLIDER -->
+
+<!-- PUB -->
+<div class="row">
+	<div class="col-lg-12">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- Bannière ThunderBot -->
+		<ins class="adsbygoogle"
+		     style="display:inline-block;width:100%;height:90px"
+		     data-ad-client="ca-pub-7641333057933876"
+		     data-ad-slot="9076369016"></ins>
+		<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>
+</div>
+
+
+
+
+
     <?php if($error != false)
     { ?>
 <div class="alert error-message">
@@ -176,14 +196,16 @@ foreach ($articles as $key => $article) {
     <article>
         <div class="picture">
             <a href="<?= $this->Html->url($article['Article']['link']); ?>">
+	            <?php $src="http://".$_SERVER['SERVER_NAME']."/thumb.php?src=/files/article/photo/".$article['Article']['photo_dir']."/".$article['Article']['photo']."&w=250&h=150";?>
                 <img alt="<?= $title; ?>"
-                     src="/files/article/photo/<?= $article['Article']['photo_dir'] ?>/<?= $article['Article']['photo'] ?>" />
+                     src="<?php echo $src?>" />
             </a>
         </div>
         <div class="entete">
             <div class="date">
                 <small>
                     <?= $this->frenchDate->french($article['Article']['created']); ?> |
+
                 </small>
                 <a href="/membre/<?php echo $article['User']['id']; ?>" target="_blank">
                     <strong class="strong_comment_redacteur">
@@ -249,8 +271,25 @@ foreach ($articles as $key => $article) {
 </div>
 <!-- /CONTENT SIDE-->
 
-<!-- RIGHT SIDE BAR -->
+
+
+	<!-- RIGHT SIDE BAR -->
     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+
+
+	    <!-- PUB -->
+	    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	    <!-- Rectangle 1 ThunderBot -->
+	    <ins class="adsbygoogle"
+	         style="display:inline-block;width:260px;height:250px"
+	         data-ad-client="ca-pub-7641333057933876"
+	         data-ad-slot="1553102210"></ins>
+	    <script>
+		    (adsbygoogle = window.adsbygoogle || []).push({});
+	    </script>
+
+
+
         <div id="riot">
 
 		        <div >
@@ -290,6 +329,18 @@ foreach ($articles as $key => $article) {
             <a class="twitter-timeline"  href="https://twitter.com/MyThunderBot"  data-widget-id="363309093869477888">Tweets de @MyThunderBot</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>
+
+	    <!-- PUB -->
+	    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	    <!-- Bloc dessous Twitter main page -->
+	    <ins class="adsbygoogle"
+	         style="display:inline-block;width:260px;height:250px"
+	         data-ad-client="ca-pub-7641333057933876"
+	         data-ad-slot="9141917816"></ins>
+	    <script>
+		    (adsbygoogle = window.adsbygoogle || []).push({});
+	    </script>
+
     </div>
 
 <!-- /RIGHT SIDE BAR -->

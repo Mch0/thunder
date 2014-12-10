@@ -54,6 +54,7 @@ class CommentsController extends AdminController{
         return $this->redirect($this->referer());
 	}
 
+
 	public function addOne()
 	{
 		if( $this->request->is('ajax') )
@@ -61,13 +62,25 @@ class CommentsController extends AdminController{
 			$user = $this->Session->read('Auth.User');
 			if(!empty($user))
 			{
-			$comment = $this->Comment->findById($this->request->data('comment'));
-			$comment['Comment']['up'] += 1;
-			$this->Comment->save($comment);
-			$this->loadModel('CommentUp');
-			$this->CommentUp->create();
-			$this->CommentUp->save(array('id_comment' => $this->request->data('comment'), 'id_user' => $user['id']));
-			echo true;
+				$this->loadModel('CommentUp');
+				$commentUpsForUser = $this->CommentUp->find('all',array('conditions' =>
+					array('id_user' => $user['id'], 'id_comment' => $this->request->data('comment') )));
+				if($commentUpsForUser)
+				{
+
+					//die("Commentaire :".$this->request->data('comment')." est déjà up par le user : ".$user['id']);
+					echo false;
+					//echo false;
+				}
+				else{
+					$comment = $this->Comment->findById($this->request->data('comment'));
+					$comment['Comment']['up'] += 1;
+					$this->Comment->save($comment);
+
+					$this->CommentUp->create();
+					$this->CommentUp->save(array('id_comment' => $this->request->data('comment'), 'id_user' => $user['id']));
+					echo true;
+				}
 			}
 			echo false;
 		}

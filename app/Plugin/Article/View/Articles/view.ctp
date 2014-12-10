@@ -1,10 +1,10 @@
 
     <!-- POLLS-->
-<script>var baseURL = "http://www.thunderbot.gg/";</script> 
+<!--<script>var baseURL = "http://www.thunderbot.gg/";</script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.js"></script>
 <script type="text/javascript" src="http://www.thunderbot.gg/js/polls/poll/app.js"></script>
-<script type="text/javascript" src="http://www.thunderbot.gg/js/polls/poll/controller.js"></script> 
+<script type="text/javascript" src="http://www.thunderbot.gg/js/polls/poll/controller.js"></script> -->
     <!--  -->
 
 <?php $this->set('title_for_layout', $article['Article']['article_title']) ?>
@@ -24,6 +24,15 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
     <div class="row">
         <!-- ARTICLE -->
         <div class="col-xs-12 col-sm-9 col-sm9 col-lg-9">
+	        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	        <!-- Bannière Article -->
+	        <ins class="adsbygoogle"
+	             style="display:inline-block;width:728px;height:90px"
+	             data-ad-client="ca-pub-7641333057933876"
+	             data-ad-slot="6467653010"></ins>
+	        <script>
+		        (adsbygoogle = window.adsbygoogle || []).push({});
+	        </script>
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
@@ -60,7 +69,10 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
                 <!-- IMAGE ARTICLE -->
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="img-article">
-                        <?php echo $this->html->image('/files/article/photo/'.($article['Article']['photo_dir'].'/'.$article['Article']['photo']), array('class' => 'img-responsive', 'alt' => $title)); ?>
+	                    <!-- 788 * 390 -->
+	                    <?php $srcImg = "http://".$_SERVER['SERVER_NAME']."/thumb.php?src=/files/article/photo/".$article['Article']['photo_dir']."/".$article['Article']['photo']."&w=400&h=200" ?>
+                        <!--<?php echo $this->html->image('/files/article/photo/'.($article['Article']['photo_dir'].'/'.$article['Article']['photo']), array('class' => 'img-responsive', 'alt' => $title)); ?>-->
+                        <img src="<?php echo $srcImg ?>" class="img-responsive" alt="$title" />
                     </div>
                 </div>
             </div>
@@ -159,7 +171,7 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
 									<p class="comment-up" id="comment-nb-up-<?php echo $comment['Comment']['id'] ?>"><?= $comment['Comment']['up'] ?></p>
 
 		                            <?php if ($this->Session->read('Auth.User.id')): ?>
-		                            <button class="hidden add1 btn btn-thunder2"  data-commentid="<?php echo $comment['Comment']['id'] ?>" class="btn btn-thunder2">+1</button>
+		                            <button class="add1 btn btn-thunder2"  data-commentid="<?php echo $comment['Comment']['id'] ?>" class="btn btn-thunder2">+1</button>
 		                            <?php endif ?>
 	                            </div>
 		                            </div>
@@ -225,7 +237,8 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <a class="" href="<?php echo $this->Html->url($threearticle['Article']['link']); ?>">
-                    <img id="" class="img-responsive" alt="<?php echo $threearticle['Article']['article_title']; ?>" src="http://www.thunderbot.gg/thumb.php?src=/files/article/photo/<?php echo $threearticle['Article']['photo_dir'] ?>/<?php echo $threearticle['Article']['photo'] ?>&w=270&h=166&zc=1"></img>
+	                <?php $srcImg = "http://".$_SERVER['SERVER_NAME']."/thumb.php?src=/files/article/photo/".$threearticle['Article']['photo_dir']."/".$threearticle['Article']['photo']."&w=270&h=166"  ?>
+                    <img id="" class="img-responsive" alt="<?php echo $threearticle['Article']['article_title']; ?>" src="<?php echo $srcImg ?>" />
                 </a>
             </div>
         </div>
@@ -244,6 +257,16 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
             </article>
             <hr/>
       <?php endforeach; ?>
+	        <!-- PUB -->
+	        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	        <!-- Bloc dessous Twitter main page -->
+	        <ins class="adsbygoogle"
+	             style="display:inline-block;width:260px;height:250px"
+	             data-ad-client="ca-pub-7641333057933876"
+	             data-ad-slot="9141917816"></ins>
+	        <script>
+		        (adsbygoogle = window.adsbygoogle || []).push({});
+	        </script>
 
   </div>
 
@@ -262,6 +285,7 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
 			var commentid = $(this).data('commentid');
 			$.post("<?php echo $this->Html->url(array('plugin'=>'comment','controller'=>'comments','action'=>'addOne'),true) ?>", {comment : commentid})
 					.done(function(response){
+						alert(response);
 					if(response == 1)
 					{
 						var nb = parseInt($("#comment-nb-up-"+commentid)[0].innerHTML) + 1 ;

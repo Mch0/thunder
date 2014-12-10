@@ -5,7 +5,9 @@ class frenchDateHelper extends AppHelper{
     public $months	 = array('Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre');
 
     function french($datetime){
-    	$tmstamp = strtotime($datetime); 
+    	$tmstamp = strtotime($datetime);
+	    var_dump($datetime);
+	    die("ici");
     	$date = $this->days[date('N',$tmstamp)-1]." ".date('d',$tmstamp).' '.$this->months[date('n',$tmstamp)-1].' '.date('Y',$tmstamp);
     	return $date; 
     }
