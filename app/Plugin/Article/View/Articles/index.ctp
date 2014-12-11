@@ -66,11 +66,12 @@
 <!-- /SLIDER -->
 
 <!-- PUB -->
-<div class="row">
+<div class="row" >
 	<div class="col-lg-12">
+		<img  class="noadblock hidden" src="/img/noadblock/noadblock.png" style="margin-left: 38%" />
 		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		<!-- Bannière ThunderBot -->
-		<ins class="adsbygoogle"
+		<ins class="adsbygoogle" id="pub-1"
 		     style="display:inline-block;width:100%;height:90px"
 		     data-ad-client="ca-pub-7641333057933876"
 		     data-ad-slot="9076369016"></ins>
@@ -275,7 +276,7 @@ foreach ($articles as $key => $article) {
 
 	<!-- RIGHT SIDE BAR -->
     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-
+	    <img  class="noadblock hidden" src="/img/noadblock/noadblock.png" />
 
 	    <!-- PUB -->
 	    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -331,6 +332,7 @@ foreach ($articles as $key => $article) {
         </div>
 
 	    <!-- PUB -->
+	    <img  class="noadblock hidden" src="/img/noadblock/noadblock.png" />
 	    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	    <!-- Bloc dessous Twitter main page -->
 	    <ins class="adsbygoogle"
@@ -347,5 +349,6 @@ foreach ($articles as $key => $article) {
 </div>
 </div>
 </div>
+
 
 

@@ -20,6 +20,7 @@
     <?php  echo $this->Html->css('/design/css/main5'); ?>
     <?php  echo $this->Html->css('/design/css/style'); ?>
     <?php  echo $this->Html->script('/design/js/videoplayer/videoplayer'); ?>
+    <?php  echo $this->Html->script('/design/js/adblock/nopub'); ?>
     <?php  echo $this->Html->script('/design/js/bootstrap.min'); ?>
     <?php  echo $this->Html->css('/design/css/font-awesome'); ?>
 </head>

@@ -1797,3 +1797,7 @@ form .row:first-child .floating-label-form-group {
 {
     font-size: 20px;
 }
+.noadblock
+{
+    width: 260px;
+}
