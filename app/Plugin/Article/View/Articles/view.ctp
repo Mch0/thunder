@@ -24,6 +24,7 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
     <div class="row">
         <!-- ARTICLE -->
         <div class="col-xs-12 col-sm-9 col-sm9 col-lg-9">
+	        <img  class="noadblock hidden" src="/img/noadblock/noadblock.png" />
 	        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	        <!-- Bannière Article -->
 	        <ins class="adsbygoogle"
@@ -258,6 +259,7 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
             <hr/>
       <?php endforeach; ?>
 	        <!-- PUB -->
+	        <img  class="noadblock hidden" src="/img/noadblock/noadblock.png" />
 	        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	        <!-- Bloc dessous Twitter main page -->
 	        <ins class="adsbygoogle"

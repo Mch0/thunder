@@ -58,19 +58,8 @@ $menus['AuthAclUserseditAccount'] = 5;
 <script src="<?php echo $this->webroot; ?>admin/bootstrap/js/bootstrap.min.js"></script>
 <script src="<?php echo $this->webroot; ?>admin/bootstrap-modal/js/bootstrap.modal.js"></script>
 <script src="<?php echo $this->webroot; ?>admin/bootstrap-modal/js/jquery.easing.1.3.js"></script>
-
-
-
-
-<link rel="shortcut icon" href="img/favicon.png">
+<link rel="icon" href="/favicon_new.ico">
 <?php echo $this->Html->meta('favicon');?>
-
-
-
-
-
-
-
 </head>
 <body>
 
@@ -221,7 +210,22 @@ $menus['AuthAclUserseditAccount'] = 5;
 						</li>
 						<?php } ?>
 
-
+						<?php if($this->Acl->check('Guides','admin_index','Guide') == true)
+						{
+						?>
+						<li
+							class="dropdown <?php if(isset($menu[$strAction]) && (int)$menu[$strAction] == 8){?> active <?php }?>">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#"><?php echo __('Guides'); ?>
+								<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="nav-header"><?php echo __('Guides Manager'); ?></li>
+								<?php if ($this->Acl->check('Guides','admin_index','Guide') == true){?>
+								<li><?php echo $this->Html->link(__('Guides'), array('plugin' => 'guide','controller' => 'guides','action' => 'admin_index')); ?></li>
+								<?php } ?>
+							</ul>
+						</li>
+						<?php } ?>
 
 
 

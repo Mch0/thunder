@@ -3,6 +3,7 @@
 	<h2>
 		<?php echo __('Article Manager'); ?>
 	</h2>
+	<!-- nav tabs -->
 	<div class="row-fluid show-grid" id="tab_user_manager">
 		<div class="span12">
 			<ul class="nav nav-tabs">
@@ -15,6 +16,8 @@
 			</ul>
 		</div>
 	</div>
+	<!-- /nav tabs -->
+	<!-- add article button -->
 	<div class="row-fluid show-grid">
 		<?php if ($this->Acl->check('Articles','admin_add','Article') == true){?>
 		<div class="span12" style="text-align: right;">
@@ -26,6 +29,9 @@
 		</div>
 		<?php }?>
 	</div>
+	<!-- /add article button -->
+
+	<!-- filter form article -->
 	<?php echo $this->Form->create('Article', array('action' => 'admin_index','class'=>' form-signin form-horizontal')); ?>
 	<div class="row-fluid show-grid">
 		<div class="span12">
@@ -41,20 +47,24 @@
 		</div>
 	</div>
 	<?php echo $this->Form->end(); ?>
+	<!-- /filter form article -->
 
-<?php echo $this->Html->link(__('COMMENT'), array('plugin' => 'comment','controller' => 'comments','action' => 'admin_index'),array('class'=>'btn btn-info')); ?>
+	<!-- comment button -->
+	<?php echo $this->Html->link(__('COMMENT'), array('plugin' => 'comment','controller' => 'comments','action' => 'admin_index'),array('class'=>'btn btn-info')); ?>
+	<!-- /comment button -->
 
+	<!-- liste article -->
 	<div class="row-fluid show-grid">
 		<div class="span12">
 		<div class="pagination">
-				<ul>
-					<?php
-					echo $this->Paginator->prev('&larr; ' . __('previous'),array('tag' => 'li','escape' => false));
-					echo $this->Paginator->numbers(array('separator' => '','tag'=>'li'));
-					echo $this->Paginator->next(__('next') . ' &rarr;', array('tag' => 'li','escape' => false));
-					?>
-				</ul>
-			</div>
+			<ul>
+				<?php
+				echo $this->Paginator->prev('&larr; ' . __('previous'),array('tag' => 'li','escape' => false));
+				echo $this->Paginator->numbers(array('separator' => '','tag'=>'li'));
+				echo $this->Paginator->next(__('next') . ' &rarr;', array('tag' => 'li','escape' => false));
+				?>
+			</ul>
+		</div>
 			<table class="table table-bordered table-hover list table-condensed table-striped">
 				<thead>
 					<tr>
@@ -140,7 +150,7 @@
 	));
 	?>
 			</p>
-
+			<!-- paginatnion -->
 			<div class="pagination">
 				<ul>
 					<?php
@@ -150,8 +160,11 @@
 					?>
 				</ul>
 			</div>
+			<!-- /pagination -->
 		</div>
 	</div>
+	<!-- /liste article -->
+
 </div>
 <script type="text/javascript">
 function cancelSearch(){

@@ -17,6 +17,7 @@
                         <div class="slide">
                                 <a href="<?php echo $this->Html->url($thumbarticle['Article']['link']); ?>">
                                     <?php $srcImg = "/files/article/photo/" . $thumbarticle['Article']['photo_dir'] . "/" . $thumbarticle['Article']['photo'] ;?>
+	                                <?php $src="http://".$_SERVER['SERVER_NAME']."/thumb.php?src=/files/article/photo/".$thumbarticle['Article']['photo_dir']."/".$thumbarticle['Article']['photo']."&w=900&h=400&q=98";?>
                                     <?php $alt = $thumbarticle['Article']['article_title']; ?>
                                     <img src="<?php echo $srcImg ?>" alt="<?php echo $alt ?>" class="desktop_img"/>
                                     <span class="zone-txt">
@@ -167,6 +168,7 @@ foreach ($articles as $key => $article) {
                                 src="http://www.thunderbot.gg/thumb.php?src=/files/article/photo/<?php echo $article['Article']['photo_dir'] ?>/<?php echo $article['Article']['photo'] ?>&w=270&h=166&zc=1"></img></a>
                     </div>
                     <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+
                         <a class="" href="<?php echo $this->Html->url($article['Article']['link']); ?>">
                             <strong class="strong_comment_redacteur"><em><?php echo h($article['Category']['category_name']); ?></em></strong>
 
@@ -197,7 +199,7 @@ foreach ($articles as $key => $article) {
     <article>
         <div class="picture">
             <a href="<?= $this->Html->url($article['Article']['link']); ?>">
-	            <?php $src="http://".$_SERVER['SERVER_NAME']."/thumb.php?src=/files/article/photo/".$article['Article']['photo_dir']."/".$article['Article']['photo']."&w=250&h=150";?>
+	            <?php $src="http://".$_SERVER['SERVER_NAME']."/thumb.php?src=/files/article/photo/".$article['Article']['photo_dir']."/".$article['Article']['photo']."&w=600&h=400";?>
                 <img alt="<?= $title; ?>"
                      src="<?php echo $src?>" />
             </a>
