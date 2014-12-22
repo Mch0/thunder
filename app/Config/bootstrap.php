@@ -167,3 +167,5 @@ $default = array(
 );
 Configure::write('Plugin.Comment', (Configure::read('Plugin.Comment') ? Configure::read('Plugin.Comment') : array()) + $default);
 
+
+CakePlugin::load('Guide', array('bootstrap' => false, 'routes' => false));
