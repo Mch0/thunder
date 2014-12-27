@@ -51,7 +51,7 @@
 </div>
 
 <nav class="navbar navbar-fixed-top navbar-inverse big-menu" role="navigation">
-    <div class="container">
+    <div>
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                 <span class="sr-only">Toggle navigation</span>
