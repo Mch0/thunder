@@ -25,7 +25,7 @@ Router::parseExtensions('rss');
 	/**
 	 * Guides
 	 */
-		Router::connect('/guides/', array('controller'=>'guides','action'=>'index' ,'plugin' => 'guide'));
+		Router::connect('/guides', array('controller'=>'guides','action'=>'index' ,'plugin' => 'guide'));
 		Router::connect('/guides/:id-:slug',array('controller'=>'guides','action'=>'view' ,'plugin' => 'guide'),array('pass'=> array('id','slug'), 'id'=>'[0-9]+','slug' =>'[a-z0-9\-]+'));
 	/**
 	 * Champions

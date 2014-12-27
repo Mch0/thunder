@@ -12,7 +12,7 @@ class Guide extends AppModel {
 		),
 		'Role' => array(
 			'className' => 'Role',
-			'foreginKey' => 'role_id'
+			'foreignKey' => 'role_id'
 		)
 	);
 

@@ -1,4 +1,4 @@
-<style type="text/css">
+
 html{
     height: 100%;
 }
@@ -270,7 +270,6 @@ div.comment_content {
     text-align: justify;
 }
 .comment_username {
-    color
     font-family: Tahoma,Geneva,sans-serif;
     font-weight: bold;
     line-height: normal;
@@ -292,7 +291,6 @@ div.comment_content {
     text-align: justify;
 }
 .comment_username {
-    color
     font-family: Tahoma,Geneva,sans-serif;
     font-weight: bold;
     line-height: normal;
@@ -733,8 +731,6 @@ div.social{
 }
 
 
-
-
 div.banniere_stream {
     position: relative;
     margin-top: -8px;
@@ -747,12 +743,6 @@ span.social_link {
     left: 45px;
     top: 50px;
 }
-
-
-
-
-
-
 
 /**
  *Sidebar
@@ -897,8 +887,8 @@ span.video_live_view {
 div.programme{ 
     width: 97.5%;
     margin-left:5px;
-}  
+}
 
-
-
-</style>
+input{
+     height: 30px!important;
+ }

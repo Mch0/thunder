@@ -12,7 +12,8 @@ class GuidesController extends GuidesAppController {
 			'Guide.online',
 			'Guide.created',
 			'Guide.modified',
-			'Champion.name'
+			'Champion.name',
+			'Role.role'
 	));
 	public function beforeFilter() {
 		parent::beforeFilter();
@@ -26,7 +27,6 @@ class GuidesController extends GuidesAppController {
 		$this->layout = 'default';
 		$d['guides'] = $this->Guide->find('first',array(
 			'conditions' => array('Guide.id' => 1),
-			'recursive'  => 0
 		));
 		$this->set($d);
 	}
@@ -53,7 +53,30 @@ class GuidesController extends GuidesAppController {
 
 	function admin_add()
 	{
+		$errors = array();
+		$this->request->data['Guide']['user_id'] = $this->Auth->user('id');
+		//var_dump($this->request->data);
+		if($this->request->is('get'))
+		{
+			//Récupération des roles sous forme de liste
+			//http://book.cakephp.org/2.0/fr/models/retrieving-your-data.html#find-list
+			$this->loadModel('Role');
+			$d['roles'] = $this->Role->find('list',array('fields' => array('Role.role')));
 
+			//Récupération des champions
+			$this->loadModel('Champion');
+			$d['champions'] = $this->Champion->find('list',array('fields' => array('Champion.name')));
+			$this->set($d);
+		}
+		if ($this->request->is('post')) {
+			$this->Guide->create();
+			if ($this->Guide->save($this->request->data)) {
+				$this->Cookie->delete('srcPassArg');
+				$this->redirect(array('action' => 'admin_index'));
+			} else {
+				$errors = $this->Article->validationErrors;
+			}
+		}
 	}
 
 	function admin_edit()

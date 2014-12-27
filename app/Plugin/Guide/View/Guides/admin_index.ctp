@@ -10,7 +10,7 @@
 		<?php if ($this->Acl->check('Guides','admin_add','Guide') == true){?>
 		<div class="span12" style="text-align: right;">
 			<button class="btn btn-success" type="button"
-			        onclick="showAddArticlePage();">
+			        onclick="showAddGuidePage();">
 				<i class="icon-plus icon-white"></i>
 				<?php echo __('Guide'); ?>
 			</button>
@@ -37,12 +37,11 @@
 				</thead>
 				<tbody>
 				<?php foreach($guides as $guide) { ?>
-				<?php debug($guide) ?>
 					<tr>
 						<td><?= $guide['Guide']['id'] ?></td>
 						<td><?= $guide['Guide']['title'] ?></td>
 						<td><?= $guide['Champion']['name'] ?></td>
-						<td><? echo 'poste' ?></td>
+						<td><?= $guide['Role']['role'] ?></td>
 						<td><?= $guide['Guide']['nb_acces'] ?></td>
 						<td><?= $guide['Guide']['created'] ?></td>
 						<td><?= $guide['Guide']['modified'] ?></td>
@@ -60,3 +59,8 @@
 	</div>
 	<!-- /liste guide -->
 </div>
+		<script>
+			function showAddGuidePage() {
+				window.location = "<?php echo Router::url(array('plugin' => 'guide','controller' => 'guides','action' => 'admin_add')); ?>";
+			}
+		</script>
