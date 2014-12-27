@@ -4,6 +4,7 @@
 
 class GuidesController extends GuidesAppController {
 
+
 	public $paginate = array(
 		'fields' => array(
 			'Guide.id',
@@ -15,11 +16,15 @@ class GuidesController extends GuidesAppController {
 			'Champion.name',
 			'Role.role'
 	));
+
 	public function beforeFilter() {
 		parent::beforeFilter();
 		$this->Auth->allow('index');
 	}
 
+/*=======================================================================*/
+/*								FRONT									 */
+/*=======================================================================*/
 	function index(){
 
 
