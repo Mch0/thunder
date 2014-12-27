@@ -124,6 +124,7 @@ class GuideSchema extends CakeSchema {
 		'created' => array('type' => 'date', 'null' => false, 'default' => null),
 		'modified' => array('type' => 'datetime', 'null' => false, 'default' => null),
 		'champion_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 20),
+		'role_id' => array('type' => 'integer', 'null' => false, 'default' => null),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1)
 		),
