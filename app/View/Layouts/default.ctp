@@ -89,29 +89,35 @@
                         Webtv
                     </a>-->
 	                <a href="#">
-		                <span class="hidden-xs hidden-sm"> <i class="fa fa-desktop fa-2x"></i></span>
+		                <span class="hidden-xs hidden-sm"> <i class="fa fa-desktop fa-2x visible-lg"></i></span>
 		                Webtv
 	                </a>
                 </li>
+	            <li class="divider-vertical visible-lg"></li>
+	            <li>
+		            <a href="<?php echo $this->Html->url(array('controller' => 'guides', 'action' => 'index' , 'plugin' => 'guide'), true);?>">
+			            <span class="hidden-xs hidden-sm" id="guides-icon"><i class="fa fa-book fa-2x visible-lg"></i></span>
+			            Guides
+		            </a>
+	            </li>
                 <li class="divider-vertical visible-lg"></li>
                 <li>
-
                     <a href="<?php echo $this->Html->url(array('controller' => 'equipes', 'action' => 'index','plugin' => 'equipe'), true); ?>">
-                        <span class="hidden-xs hidden-sm"><i class="fa fa-users fa-2x visibe-lg"></i></span>
+                        <span class="hidden-xs hidden-sm" id="equipe-icon"><i class="fa fa-users fa-2x visibe-lg"></i></span>
                             Équipe
                     </a>
                 </li>
                 <li class="divider-vertical visible-lg"></li>
                 <li>
                     <a href="#" >
-                       <span class="hidden-xs hidden-sm"> <i class="fa fa-suitcase fa-2x visibe-lg"></i></span>
+                       <span class="hidden-xs hidden-sm" id="sponsors-icon"> <i class="fa fa-suitcase fa-2x visibe-lg"></i></span>
                         Sponsors
                     </a>
                 </li>
                 <li class="divider-vertical visible-lg "></li>
                 <li>
                     <a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'wall_sup','plugin' => 'auth_acl'), true); ?>">
-                        <span class="hidden-xs hidden-sm"><i class="fa fa-file fa-2x visibe-lg"></i></span>
+                        <span class="hidden-xs hidden-sm" id="mur-icon"><i class="fa fa-file fa-2x visibe-lg"></i></span>
                         Mur
                     </a>
                 </li>

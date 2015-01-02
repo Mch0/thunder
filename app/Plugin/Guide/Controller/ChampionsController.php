@@ -11,12 +11,7 @@
 		public function index()
 		{
 			$this->layout = 'default';
-			$d['champions'] = $this->Champion->find('first',array(
-				'fields' => array(
-					"Champion.name",
-					"Champion.slug",
-				),
-			));
+			$d['champions'] = $this->Champion->find('first');
 			var_dump($d);
 			die();
 			$this->set($d);

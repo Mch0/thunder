@@ -39,15 +39,17 @@
 			<div class="control-group">
 				<label class="control-label"><?= __('Role') ?> :</label>
 				<div class="controls">
-					<?php echo $this->Form->select('role_id' , array(
-					'options' => $roles)) ?>
+					<?php echo $this->Form->input('role_id' , array(
+					'options' => $roles,
+					'label' => false)) ?>
 				</div>
 			</div>
 			<div class="control-group">
 				<label class="control-label"><?= __('Champion') ?> : </label>
 				<div class="controls">
-					<?php echo $this->Form->select('champion_id' , array(
-					'options' => $champions)) ?>
+					<?php echo $this->Form->input('champion_id' , array(
+					'options' => $champions,
+					'label' => false))  ?>
 				</div>
 			</div>
 
