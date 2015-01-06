@@ -21,6 +21,7 @@
 		{
 			parent::beforeFilter();
 			$this->Auth->allow('index');
+			$this->Auth->allow('view');
 		}
 
 		/*=======================================================================*/
@@ -34,8 +35,18 @@
 			$this->set($d);
 		}
 
-		function view()
+		function view($id = null, $slug = null)
 		{
+			$this->set('title_for_layout', __($slug));
+			$this->layout = 'default';
+			$this->Guide->updateAll(array('Guide.nb_acces'=>'Guide.nb_acces +1'));
+			if(!$id)
+			{
+				//pas d'id faire quelque chose
+				$this->redirect(array('action' => 'index'));
+			}
+			$d['guide'] = $this->Guide->find('first', array('conditions' => array('Guide.id' => $id)));
+			$this->set($d);
 
 		}
 		/*=======================================================================*/
@@ -67,7 +78,7 @@
 
 				//Récupération des champions
 				$this->loadModel('Champion');
-				$d['champions'] = $this->Champion->find('list', array('fields' => array('Champion.name')));
+				$d['champions'] = $this->Champion->find('list', array('order' => 'Champion.name','fields' => array('Champion.name')));
 				$this->set($d);
 			}
 			if ($this->request->is('post')) {

@@ -95,7 +95,7 @@
                 </li>
 	            <li class="divider-vertical visible-lg"></li>
 	            <li>
-		            <a href="<?php echo $this->Html->url(array('controller' => 'guides', 'action' => 'index' , 'plugin' => 'guide'), true);?>">
+		            <a href="<?php echo $this->Html->url(array('controller' => 'champions', 'action' => 'index' , 'plugin' => 'guide'), true);?>">
 			            <span class="hidden-xs hidden-sm" id="guides-icon"><i class="fa fa-book fa-2x visible-lg"></i></span>
 			            Guides
 		            </a>

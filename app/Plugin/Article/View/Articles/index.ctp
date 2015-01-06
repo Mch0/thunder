@@ -200,7 +200,7 @@ foreach ($articles as $key => $article) {
         <div class="picture">
             <a href="<?= $this->Html->url($article['Article']['link']); ?>">
 	            <?php $src="http://".$_SERVER['SERVER_NAME']."/thumb.php?src=/files/article/photo/".$article['Article']['photo_dir']."/".$article['Article']['photo']."&w=600&h=400";?>
-                <img alt="<?= $title; ?>"
+                <img class="img-responsive img-thumbnail" alt="<?= $title; ?>"
                      src="<?php echo $src?>" />
             </a>
         </div>

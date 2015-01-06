@@ -6,13 +6,13 @@ class Guide extends AppModel {
 
 
 	public $belongsTo = array(
-		'Champion' => array(
-			'className' => 'Champion',
-			'foreignKey' => 'champion_id'
-		),
 		'Role' => array(
 			'className' => 'Role',
 			'foreignKey' => 'role_id'
+		),
+		'Champion' => array(
+			'className' => 'Champion',
+			'foreignKey' => 'champion_id'
 		)
 	);
 

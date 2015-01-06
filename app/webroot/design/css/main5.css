@@ -1804,3 +1804,34 @@ form .row:first-child .floating-label-form-group {
 {
     width: 260px;
 }
+
+
+/*****GUIDES******/
+
+.champion-header, .champion-img, .champion, .champion-bloc
+{
+    padding-right: 0!important;
+    padding-left: 0!important;
+
+}
+.champion-guide-link
+{
+    padding-left: 10px!important;
+}
+.champion-guide-link a{
+    margin-bottom: 10px;
+}
+.champion-guide-link .btn{
+    width: 100%;
+
+}
+.champion-bloc{
+   /* border: 1px solid black;*/
+/*    margin-right: 10px;*/
+    margin-bottom: 40px;
+}
+.champion-header h1
+{
+    font-size: 20px;
+    text-align: left;
+}
