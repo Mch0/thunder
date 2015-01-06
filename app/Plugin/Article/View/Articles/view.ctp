@@ -287,7 +287,6 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
 			var commentid = $(this).data('commentid');
 			$.post("<?php echo $this->Html->url(array('plugin'=>'comment','controller'=>'comments','action'=>'addOne'),true) ?>", {comment : commentid})
 					.done(function(response){
-						alert(response);
 					if(response == 1)
 					{
 						var nb = parseInt($("#comment-nb-up-"+commentid)[0].innerHTML) + 1 ;
