@@ -1825,13 +1825,36 @@ form .row:first-child .floating-label-form-group {
     width: 100%;
 
 }
+#content-champions > div.champion-bloc
 .champion-bloc{
    /* border: 1px solid black;*/
 /*    margin-right: 10px;*/
     margin-bottom: 40px;
+    padding-left: 0px!important;
 }
 .champion-header h1
 {
     font-size: 20px;
     text-align: left;
+}
+#guide .bloc
+{
+    height: 150px;
+}
+
+#guide .champion-img-unfold
+{
+    float:left;
+}
+
+div.link-guide
+{
+    float: left;
+    width: 50%;
+    padding-left: 15px;
+}
+#content-champions .bloc.unfold{
+    height: 150px;
+    width: 25%;
+    padding-right: 0px!important;
 }
