@@ -24,16 +24,6 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
     <div class="row">
         <!-- ARTICLE -->
         <div class="col-xs-12 col-sm-9 col-sm9 col-lg-9">
-	        <img  class="noadblock hidden" src="/img/noadblock/noadblock.png" />
-	        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	        <!-- Bannière Article -->
-	        <ins class="adsbygoogle"
-	             style="display:inline-block;width:728px;height:90px"
-	             data-ad-client="ca-pub-7641333057933876"
-	             data-ad-slot="6467653010"></ins>
-	        <script>
-		        (adsbygoogle = window.adsbygoogle || []).push({});
-	        </script>
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
@@ -190,7 +180,8 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
                                             <span class="article-comment-timeago"><?= $this->Time->timeAgoInWords($comment['Comment']['created']); ?></span>
                                         <br>
                                         <p>
-                                            <?= nl2br(h($comment['Comment']['content'])); ?>
+
+	                                <?php echo nl2br($comment['Comment']['content']); ?>
                                         </p>
                                     </p>
                                 </div>
@@ -258,18 +249,6 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
             </article>
             <hr/>
       <?php endforeach; ?>
-	        <!-- PUB -->
-	        <img  class="noadblock hidden" src="/img/noadblock/noadblock.png" />
-	        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	        <!-- Bloc dessous Twitter main page -->
-	        <ins class="adsbygoogle"
-	             style="display:inline-block;width:260px;height:250px"
-	             data-ad-client="ca-pub-7641333057933876"
-	             data-ad-slot="9141917816"></ins>
-	        <script>
-		        (adsbygoogle = window.adsbygoogle || []).push({});
-	        </script>
-
   </div>
 
     </div>

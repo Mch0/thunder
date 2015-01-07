@@ -36,7 +36,7 @@
 		<label class="control-label"><?php echo __('Contenu du guide'); ?>
 		</label>
 		<div class="controls">
-			<?php echo $this->Form->input('article_content',array('div' => false,'label'=>false,'error'=>false,'rows' => '15')); ?>
+			<?php echo $this->Form->input('content',array('div' => false,'label'=>false,'error'=>false,'rows' => '15')); ?>
 		</div>
 	</div>
 	<div class="form-actions">

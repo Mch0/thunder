@@ -23,6 +23,7 @@
 						<?php
 						foreach($champion['Guide'] as $guide)
 						{
+
 						if(!empty($guide['link']) || $guide['online'] == 1)
 						{
 						?>
