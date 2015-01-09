@@ -14,21 +14,16 @@
     <title><?php echo 'ThunderBot - '.$title_for_layout; ?></title>
 
     <?php echo $scripts_for_layout;?>
-    <?php echo $this->fetch('css'); ?>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <?php  echo $this->Html->css('/design/css/bootstrap'); ?>
     <?php  echo $this->Html->css('/design/css/main5'); ?>
-    <?php  echo $this->Html->css('/design/css/style'); ?>
     <?php  echo $this->Html->script('/design/js/videoplayer/videoplayer'); ?>
-    <?php  echo $this->Html->script('/design/js/adblock/nopub'); ?>
     <?php  echo $this->Html->script('/design/js/bootstrap.min'); ?>
+    <?php  echo $this->Html->script('/design/js/jquery-1.11.2.min'); ?>
     <?php  echo $this->Html->css('/design/css/font-awesome'); ?>
 </head>
 
 <body>
-
 <!-- MODAL  -->
-
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -250,57 +245,23 @@
 
 <script>
 
-    function ResetPwd()
-    {
-        $.post('<?php echo Router::url(array('plugin' => 'auth_acl','controller' => 'users','action' => 'resetPassword')); ?>',{data:{User:{user_email:$('#user_email').val()}}},function(o){
-        if (o.send_link == 1){
-            $('#myModal').find('.alert-error').remove()
-            $('.modal-body').prepend('<div class="alert alert-success" style="padding:8px;"><?php echo __('Nous vous avons envoyé un mail.'); ?></div>');
-            step =2;
-        }else{
-            alert('Erreur');
-            step =1;
-            $('#myModal').find('.alert-error').remove();
+	function ResetPwd()
+	{
+		$.post('<?php echo Router::url(array('plugin' => 'auth_acl','controller' => 'users','action' => 'resetPassword')); ?>',{data:{User:{user_email:$('#user_email').val()}}},function(o){
+		if (o.send_link == 1){
+			$('#myModal').find('.alert-error').remove()
+			$('.modal-body').prepend('<div class="alert alert-success" style="padding:8px;"><?php echo __('Nous vous avons envoyé un mail.'); ?></div>');
+			step =2;
+		}else{
+			alert('Erreur');
+			step =1;
+			$('#myModal').find('.alert-error').remove();
 
-            $('.modal-body').prepend('<div class="alert alert-error alert-danger" style="padding:8px;"><?php echo __('<strong>Erreur</strong> !, Email non valide.'); ?></div>');
-        }
-    },'json');
-    }
-
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-42387963-1', 'thunderbot.gg');
-    ga('send', 'pageview');
+			$('.modal-body').prepend('<div class="alert alert-error alert-danger" style="padding:8px;"><?php echo __('<strong>Erreur</strong> !, Email non valide.'); ?></div>');
+		}
+	},'json');
+	}
 </script>
-
-<script type="text/javascript">
-            $(document).ready(function() {
-                $(window).scroll(function(){
-                    var topDist = jQuery(this).scrollTop();
-                    if (topDist > 100){
-                        $('.navbar-brand-1').addClass('hidden');
-
-                        $('.navbar-brand-2').removeClass('hidden');
-                        $('.navbar-brand-2').addClass('visible-lg visible-md');
-                        //$('#recherche').addClass('hidden').fadeOut(3000);
-                    }
-                    else {
-                        $('.navbar-brand-1').removeClass('hidden');
-                        $('.navbar-brand-2').addClass('hidden');
-                        $('.navbar-brand-2').removeClass("visible-md visible-lg");
-                        //$('#recherche').removeClass('hidden').fadeIn(3000);
-                    }
-                });
-            });
-</script>
+<?php  echo $this->Html->script('/design/js/index'); ?>
 </body>
 </html>
