@@ -19,7 +19,7 @@
                                     <?php $srcImg = "/files/article/photo/" . $thumbarticle['Article']['photo_dir'] . "/" . $thumbarticle['Article']['photo'] ;?>
 	                                <?php $src="http://".$_SERVER['SERVER_NAME']."/thumb.php?src=/files/article/photo/".$thumbarticle['Article']['photo_dir']."/".$thumbarticle['Article']['photo']."&w=900&h=400&q=98";?>
                                     <?php $alt = $thumbarticle['Article']['article_title']; ?>
-                                    <img src="<?php echo $srcImg ?>" alt="<?php echo $alt ?>" class="desktop_img"/>
+                                    <img src="<?php echo $srcImg ?>" alt="<?php echo $alt ?>" class="desktop_img" width="900" height="400"/>
                                     <span class="zone-txt">
                                         <h2 class="title"><?php echo $thumbarticle['Article']['article_title'] ?></h2>
 
@@ -65,26 +65,6 @@
     });
 </script>
 <!-- /SLIDER -->
-
-<!-- PUB -->
-<div class="row" >
-	<div class="col-lg-12">
-		<img  class="noadblock hidden" src="/img/noadblock/noadblock.png" style="margin-left: 38%" />
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<!-- Bannière ThunderBot -->
-		<ins class="adsbygoogle" id="pub-1"
-		     style="display:inline-block;width:100%;height:90px"
-		     data-ad-client="ca-pub-7641333057933876"
-		     data-ad-slot="9076369016"></ins>
-		<script>
-			(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
-	</div>
-</div>
-
-
-
-
 
     <?php if($error != false)
     { ?>
@@ -140,7 +120,6 @@
 <div class="col-lg-12">
 
     <div >
-        <!--<h4 class="line-title-high-tech"><span>ACTUALITES</span></h4>-->
 	    <h4><span class="col-lg-5 col-md-5 col-sm-5 col-xs-4 line-title-high-tech">&nbsp;</span>
 		    <span class="col-lg-2 col-md-2 col-sm-2 col-xs-4 big-title">ARTICLES</span>
 		    <span  class="col-lg-5 col-md-5 col-sm-5 col-xs-4 line-title-high-tech">&nbsp;</span>
@@ -201,7 +180,7 @@ foreach ($articles as $key => $article) {
             <a href="<?= $this->Html->url($article['Article']['link']); ?>">
 	            <?php $src="http://".$_SERVER['SERVER_NAME']."/thumb.php?src=/files/article/photo/".$article['Article']['photo_dir']."/".$article['Article']['photo']."&w=600&h=400";?>
                 <img class="img-responsive img-thumbnail" alt="<?= $title; ?>"
-                     src="<?php echo $src?>" />
+                     src="<?php echo $src?>" width="600" height="400"/>
             </a>
         </div>
         <div class="entete">
@@ -278,29 +257,12 @@ foreach ($articles as $key => $article) {
 
 	<!-- RIGHT SIDE BAR -->
     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-	    <img  class="noadblock hidden" src="/img/noadblock/noadblock.png" />
-
-	    <!-- PUB -->
-	    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	    <!-- Rectangle 1 ThunderBot -->
-	    <ins class="adsbygoogle"
-	         style="display:inline-block;width:260px;height:250px"
-	         data-ad-client="ca-pub-7641333057933876"
-	         data-ad-slot="1553102210"></ins>
-	    <script>
-		    (adsbygoogle = window.adsbygoogle || []).push({});
-	    </script>
-
-
-
         <div id="riot">
-
 		        <div >
 			        <h5><span class="col-lg-3 col-sm-5 col-md-3 col-xs-5 line-title-high-tech">&nbsp;</span>
 				        <span class="col-lg-6 col-sm-2 col-md-6 col-xs-2 big-title">RIOT NEWS</span>
 				        <span  class="col-lg-3 col-sm-5 col-md-3 col-xs-5 line-title-high-tech">&nbsp;</span>
 			        </h5>
-<!--			        <h5 class="line-title-high-tech"><span>RIOT NEWS</span></h5>-->
 		        </div>
             <br/>
 <ul>
@@ -332,19 +294,6 @@ foreach ($articles as $key => $article) {
             <a class="twitter-timeline"  href="https://twitter.com/MyThunderBot"  data-widget-id="363309093869477888">Tweets de @MyThunderBot</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>
-
-	    <!-- PUB -->
-	    <img  class="noadblock hidden" src="/img/noadblock/noadblock.png" />
-	    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	    <!-- Bloc dessous Twitter main page -->
-	    <ins class="adsbygoogle"
-	         style="display:inline-block;width:260px;height:250px"
-	         data-ad-client="ca-pub-7641333057933876"
-	         data-ad-slot="9141917816"></ins>
-	    <script>
-		    (adsbygoogle = window.adsbygoogle || []).push({});
-	    </script>
-
     </div>
 
 <!-- /RIGHT SIDE BAR -->
