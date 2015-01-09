@@ -32,8 +32,6 @@
 					}
 
 					$data[$key]['Guide'][$k] = $d;
-
-
 				}
 			}
 			return $data;
