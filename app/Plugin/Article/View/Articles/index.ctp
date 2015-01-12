@@ -37,33 +37,7 @@
         </div>
     </div>
 </div>
-<script type="text/javascript">
-    $(document).ready(function() {
-        var slider = $('.slider1').show().bxSlider({
-            auto: true,
-            pause: 5000,
-            speed: 1500,
-            pager: false,
-            slideWidth: 1170,
-            minSlides: 1,
-            maxSlides: 1,
-            slideMargin: 0
-            /*preloadImages: 'all'*/
-        });
-
-        $('.right_fader').click(function() {
-            slider.goToNextSlide();
-            slider.stopAuto();
-            return false;
-        });
-
-        $('.left_fader').click(function() {
-            slider.goToPrevSlide();
-            slider.stopAuto();
-            return false;
-        });
-    });
-</script>
+<?php echo $this->Html->script('/design/js/bxslider/index'); ?>
 <!-- /SLIDER -->
 
     <?php if($error != false)
@@ -77,6 +51,10 @@
 <!-- WEBTV -->
 
 <?php if(count($webtv) > 0) { ?>
+<script>
+	//id du stream pour l'utiliser dans le js youtube
+	var idVideo = "<?php echo $webtv[0]['Webtv'][iframe_video_thumb] ?>" ;
+</script>
 <div class="hidden-xs">
     <div class="row">
 	    <div class="col-lg-12">
@@ -93,26 +71,45 @@
                 class="glyphicon glyphicon-chevron-down"></span> Ouvrir
         </button></span>
     </div>
-
-    <div class="row" id="player">
+	    <div class="row">
+    <div id="player">
         <div class="col-xs-8 col-sm-8 col-lg-8">
             <div class="">
                 <div id="webtv" class="panel-body">
-                    <?php echo $webtv[0]['Webtv'][iframe_video_thumb] ?>
+                    <?php
+
+						if($webtv[0]['Webtv'][iframe_video_thumb])
+						{
+                            echo $webtv[0]['Webtv'][iframe_video_thumb];
+                         }
+                     ?>
                 </div>
             </div>
         </div>
         <div class="col-xs-4 col-sm-4 col-lg-4">
             <div class="">
                 <div id="webchat" class="panel-body">
-                    <?php echo $webtv[0]['Webtv'][iframe_chat] ?>
+
+                    <?php
+                        if($webtv[0]['Webtv'][iframe_chat])
+                        {
+                            echo $webtv[0]['Webtv'][iframe_chat];
+                         }
+                    ?>
                 </div>
             </div>
         </div>
     </div>
     </div>
+    </div>
 </div>
-<?php } ?>
+<?php
+	if(strlen($webtv[0]['Webtv'][iframe_video_thumb]) < 25)
+	{
+			echo $this->Html->script('/design/js/videoplayer/youtubePlayer');
+}
+
+} ?>
 <!-- /WEBTV -->
 
 <!-- CONTENT SIDE-->
@@ -198,12 +195,10 @@ foreach ($articles as $key => $article) {
                 </a>
             </div>
             <div class="partage">
-                <!--https://www.facebook.com/sharer/sharer.php?u=-->
                 <span class="glyphicon glyphicon-comment"></span><span class="comment-count"> <?= $article['Article']['comment_count'] ?></span>
                 <a class="link-facebook-small popup" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?= $this->Html->url($article['Article']['link'],true) ?>">
                     <?= $this->Html->image('social/mini-facebook.jpg', array('alt' => 'share')) ?>
                 </a>
-                <!--http://twitter.com/share?text=-->
                 <a class="link-tweeter-small popup" target="_blank" href="http://twitter.com/share?text=<?= $title; ?>&url=<?= $this->Html->url($article['Article']['link'],true) ?>">
                     <?= $this->Html->image('social/mini-twitter.jpg', array('alt' => 'share')) ?>
                 </a>
@@ -218,11 +213,9 @@ foreach ($articles as $key => $article) {
                 </h3>
             </header>
             <div>
-
                     <a href="<?= $this->Html->url($article['Article']['link']); ?>">
                         <?= $this->Text->truncate($article['Article']['article_summary'],175,array('exact'=>false,'html'=>true));?>
                     </a>
-
             </div>
         </div>
     </article>
