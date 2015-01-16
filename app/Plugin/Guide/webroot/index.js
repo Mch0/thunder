@@ -11,14 +11,14 @@ jQuery(function($){
 
     var bloc = portfolio.find('.bloc:first');
     var cssi = {width:bloc.width(),height:bloc.height()};
-    var cssf = null;
+    var cssf = {width:270,height:bloc.height()};
 
     portfolio.find('a.thumb').click(function(e){
         var elem = $(this);
-
+        console.log(cssf);
+        console.log(cssi);
         var fold = portfolio.find('.unfold').removeClass('unfold').css(cssi);
         var unfold = elem.parent().addClass('unfold').css(cssf);
-        //portfolio.masonry('reload');
         portfolio.masonry("reloadItems");
         portfolio.masonry();
         if(cssf == null){
