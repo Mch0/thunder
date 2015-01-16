@@ -1693,9 +1693,12 @@ margin-left: 3px;
     margin-top: 10px;
 }
 
-#article, #equipe, #mur,#guides-detail, #guide
+#article, #equipe, #mur,#guides-detail
 {
     margin-top: 60px;
+}
+#guide {
+    margin-top : 80px
 }
 .error-message
 {
@@ -1827,8 +1830,6 @@ form .row:first-child .floating-label-form-group {
 }
 #content-champions > div.champion-bloc
 .champion-bloc{
-   /* border: 1px solid black;*/
-/*    margin-right: 10px;*/
     margin-bottom: 40px;
     padding-left: 0px!important;
 }
@@ -1855,7 +1856,7 @@ div.link-guide
 }
 #content-champions .bloc.unfold{
     height: 150px;
-    width: 25%;
+    width: 45%!important;
     padding-right: 0px!important;
     margin-left: 5px!important;
 }
