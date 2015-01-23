@@ -19,7 +19,6 @@
     <?php  echo $this->Html->css('/design/css/main5'); ?>
     <?php  echo $this->Html->script('/design/js/videoplayer/videoplayer'); ?>
     <?php  echo $this->Html->script('/design/js/bootstrap.min'); ?>
-
     <?php  echo $this->Html->css('/design/css/font-awesome'); ?>
 </head>
 
@@ -86,7 +85,7 @@
                     </a>-->
 	                <a href="#">
 		                <span class="hidden-xs hidden-sm"> <i class="fa fa-desktop fa-2x visible-lg"></i></span>
-		                Webtv
+	                    Webtv
 	                </a>
                 </li>
 	            <li class="divider-vertical visible-lg"></li>
@@ -189,6 +188,14 @@
                                     </strong>
                                         <?php echo $this->Form->password('user_password',array('div' => false,'label'=>false,'id' => 'password','placeholder'=>__('Mot de passe'),'class'=>'form-control')); ?>
                                 </div>
+	                            <div class="form-group">
+		                            <strong class="remember">
+			                            <label for="remember_me" >
+				                            <?php echo __('Rester connecté'); ?>
+			                            </label>
+			                            <?php echo $this->Form->input('remember_me',array('type' => 'checkbox', 'div' => false, 'label' => false, 'id' => 'remember_me')); ?>
+		                            </strong>
+	                            </div>
                                 <div class="control-group">
                                     <br>
                                     <div class="form-actions">

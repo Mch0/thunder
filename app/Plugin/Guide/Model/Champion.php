@@ -8,6 +8,7 @@
 			'Guide' => array(
 				'className' => 'Guide',
 				'foreignKey' => 'champion_id',
+				'conditions' => array('online' => 1)
 			)
 		);
 

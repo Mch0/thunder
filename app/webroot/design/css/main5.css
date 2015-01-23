@@ -23,6 +23,27 @@ body {
 {
     font-family: Akashi;
 }
+@media (max-width: 1120px)
+{
+    .menu-dynamique li {
+        margin-right: -5px!important;
+        margin-top: 4px!important;
+    }
+    .navbar-ex1-collapse .pull-right{
+        float:right!important;
+        margin-right: 19%!important;
+    }
+}
+@media (min-width: 1140px)
+{
+    .menu-dynamique li {
+        margin-right: -5px!important;
+    }
+    .navbar-ex1-collapse .pull-right{
+        float:right!important;
+    }
+}
+
 @media screen and (max-width: 200px) {
   .row-offcanvas {
     position: relative;

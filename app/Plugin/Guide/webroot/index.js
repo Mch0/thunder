@@ -15,8 +15,6 @@ jQuery(function($){
 
     portfolio.find('a.thumb').click(function(e){
         var elem = $(this);
-        console.log(cssf);
-        console.log(cssi);
         var fold = portfolio.find('.unfold').removeClass('unfold').css(cssi);
         var unfold = elem.parent().addClass('unfold').css(cssf);
         portfolio.masonry("reloadItems");
