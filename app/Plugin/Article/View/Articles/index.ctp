@@ -47,69 +47,25 @@
 </div>
     <?php   $error = ""; unset($error);}
     ?>
-
-<div class="col-lg-12">
-<p>test pub</p>
-	<script type="text/javascript">
-		sas_tmstp=Math.round(Math.random()*10000000000);
-		sas_pageid='68386/520877';		// Page : Thunderbot/hp
-		var sas_formatids = '10192,1391,920,922,14930,14609';
-		sas_target='';			// Targeting
-		document.write('<scr'+'ipt  src="http://www.smartadserver.com/call2/pubjall/' + sas_pageid + '/' + sas_formatids + '/' + sas_tmstp + '/' + escape(sas_target) + '?"></scr'+'ipt>');
-	</script>
-	<script type="text/javascript">
-		if (typeof sas_manager != 'undefined') {
-			sas_manager.render(10192);	// Format : Footer 0x0
-		}
-	</script>
-	<noscript>
-		<a href="http://www.smartadserver.com/call/pubjumpi/68386/520877/10192/M/[timestamp]/?" target="_blank">
-			<img src="http://www.smartadserver.com/call/pubi/68386/520877/10192/M/[timestamp]/?" border="0" alt="" /></a>
-	</noscript>
-
-	<script type="text/javascript">
-		if (typeof sas_manager != 'undefined') {
-			sas_manager.render(1391);	// Format : Habillage 0x0
-		}
-	</script>
-	<noscript>
-		<a href="http://www.smartadserver.com/call/pubjumpi/68386/520877/1391/S/[timestamp]/?" target="_blank">
-			<img src="http://www.smartadserver.com/call/pubi/68386/520877/1391/S/[timestamp]/?" border="0" alt="" /></a>
-	</noscript>
-
-	<script type="text/javascript">
-		if (typeof sas_manager != 'undefined') {
-			sas_manager.render(922);	// Format : Pave300 300x250
-		}
-	</script>
-	<noscript>
-		<a href="http://www.smartadserver.com/call/pubjumpi/68386/520877/922/S/[timestamp]/?" target="_blank">
-			<img src="http://www.smartadserver.com/call/pubi/68386/520877/922/S/[timestamp]/?" border="0" alt="" /></a>
-	</noscript>
-
-	<script type="text/javascript">
-		if (typeof sas_manager != 'undefined') {
-			sas_manager.render(14930);	// Format : Postroll VAST 0x0
-		}
-	</script>
-	<noscript>
-		<a href="http://www.smartadserver.com/call/pubjumpi/68386/520877/14930/S/[timestamp]/?" target="_blank">
-			<img src="http://www.smartadserver.com/call/pubi/68386/520877/14930/S/[timestamp]/?" border="0" alt="" /></a>
-	</noscript>
-
-	<script type="text/javascript">
-		if (typeof sas_manager != 'undefined') {
-			sas_manager.render(14609);	// Format : Preroll VAST 0x0
-		}
-	</script>
-	<noscript>
-		<a href="http://www.smartadserver.com/call/pubjumpi/68386/520877/14609/S/[timestamp]/?" target="_blank">
-			<img src="http://www.smartadserver.com/call/pubi/68386/520877/14609/S/[timestamp]/?" border="0" alt="" /></a>
-	</noscript>
-
-	<!-- RAPPEL: fonction générique à coller dans la page web hp. -->
-
-
+<div class="row">
+	<div class="col-lg-12" id="pub-hp-haut">
+		<script type="text/javascript">
+			sas_tmstp=Math.round(Math.random()*10000000000);
+			sas_pageid='68386/520877';		// Page : Thunderbot/hp
+			var sas_formatids = '10192,1391,920,922,14930,14609';
+			sas_target='';			// Targeting
+			document.write('<scr'+'ipt  src="http://www.smartadserver.com/call2/pubjall/' + sas_pageid + '/' + sas_formatids + '/' + sas_tmstp + '/' + escape(sas_target) + '?"></scr'+'ipt>');
+		</script>
+		<script type="text/javascript">
+			if (typeof sas_manager != 'undefined') {
+				sas_manager.render(920);	// Format : Pave300 728x90
+			}
+		</script>
+		<noscript>
+			<a href="http://www.smartadserver.com/call/pubjumpi/68386/520877/922/S/[timestamp]/?" target="_blank">
+				<img src="http://www.smartadserver.com/call/pubi/68386/520877/922/S/[timestamp]/?" border="0" alt="" /></a>
+		</noscript>
+	</div>
 </div>
 
 <!-- WEBTV -->
@@ -316,6 +272,15 @@ foreach ($articles as $key => $article) {
 
 	<!-- RIGHT SIDE BAR -->
     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+	    <script type="text/javascript">
+		    if (typeof sas_manager != 'undefined') {
+			    sas_manager.render(922);	// Format : Pave300 300x250
+		    }
+	    </script>
+	    <noscript>
+		    <a href="http://www.smartadserver.com/call/pubjumpi/68386/520877/922/S/[timestamp]/?" target="_blank">
+			    <img src="http://www.smartadserver.com/call/pubi/68386/520877/922/S/[timestamp]/?" border="0" alt="" /></a>
+	    </noscript>
         <div id="riot">
 		        <div >
 			        <h5><span class="col-lg-3 col-sm-5 col-md-3 col-xs-5 line-title-high-tech">&nbsp;</span>
@@ -353,6 +318,17 @@ foreach ($articles as $key => $article) {
             <a class="twitter-timeline"  href="https://twitter.com/MyThunderBot"  data-widget-id="363309093869477888">Tweets de @MyThunderBot</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>
+	    <!-- PUB -->
+
+	    <script type="text/javascript">
+		    if (typeof sas_manager != 'undefined') {
+			    sas_manager.render(922);	// Format : Pave300 300x250
+		    }
+	    </script>
+	    <noscript>
+		    <a href="http://www.smartadserver.com/call/pubjumpi/68386/520877/922/S/[timestamp]/?" target="_blank">
+			    <img src="http://www.smartadserver.com/call/pubi/68386/520877/922/S/[timestamp]/?" border="0" alt="" /></a>
+	    </noscript>
     </div>
 
 <!-- /RIGHT SIDE BAR -->

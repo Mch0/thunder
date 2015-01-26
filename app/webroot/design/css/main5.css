@@ -24,7 +24,7 @@ body {
     font-family: Akashi;
     padding-right: 2.5%;
 }
-@media (max-width: 1024px)
+@media (max-width: 1024px)s
 {
     .menu-dynamique li {
         margin-right: -5px!important;
@@ -1881,4 +1881,9 @@ div.link-guide
     width: 37%;
     padding-right: 0px!important;
     margin-left: 5px!important;
+}
+
+#pub-hp-haut iframe,#pub-rg-haut iframe{
+    display : block;
+    margin : 0 auto;
 }

@@ -19,12 +19,31 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
     $title = substr($title, 2);
 ?>
 
-
+    <script type="text/javascript">
+	    sas_tmstp=Math.round(Math.random()*10000000000);
+	    sas_pageid='68386/520878';		// Page : Thunderbot/rg
+	    var sas_formatids = '10192,1391,920,922,14930,14609';
+	    sas_target='';			// Targeting
+	    document.write('<scr'+'ipt  src="http://www.smartadserver.com/call2/pubjall/' + sas_pageid + '/' + sas_formatids + '/' + sas_tmstp + '/' + escape(sas_target) + '?"></scr'+'ipt>');
+    </script>
 <div class="container" id="article">
     <div class="row">
         <!-- ARTICLE -->
         <div class="col-xs-12 col-sm-9 col-sm9 col-lg-9">
             <div class="row">
+	            <!-- PUB -->
+	            <div class="col-lg-12" id="pub-rg-haut">
+		            <script type="text/javascript">
+			            if (typeof sas_manager != 'undefined') {
+				            sas_manager.render(920);	// Format : Pave300 728x90
+			            }
+		            </script>
+		            <noscript>
+			            <a href="http://www.smartadserver.com/call/pubjumpi/68386/520878/922/S/[timestamp]/?" target="_blank">
+				            <img src="http://www.smartadserver.com/call/pubi/68386/520878/922/S/[timestamp]/?" border="0" alt="" /></a>
+		            </noscript>
+	            </div>
+
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
                     <!-- HEADER ARTICLE -->
@@ -249,6 +268,15 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
             </article>
             <hr/>
       <?php endforeach; ?>
+	        <script type="text/javascript">
+		        if (typeof sas_manager != 'undefined') {
+			        sas_manager.render(922);	// Format : Pave300 300x250
+		        }
+	        </script>
+	        <noscript>
+		        <a href="http://www.smartadserver.com/call/pubjumpi/68386/520878/922/S/[timestamp]/?" target="_blank">
+			        <img src="http://www.smartadserver.com/call/pubi/68386/520878/922/S/[timestamp]/?" border="0" alt="" /></a>
+	        </noscript>
   </div>
 
     </div>
