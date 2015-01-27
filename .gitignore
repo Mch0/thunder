@@ -1,5 +1,13 @@
 # User specific & automatically generated files #
 #################################################
+app/webroot/cache/*
+app/webroot/files/article/*
+app/webroot/files
+/app/webroot/index.php
+app/webroot/files/*
+/app/Config/database.php
+/app/Config/bootstrap.php
+/app/Config/core.php
 .editorconfig
 .htaccess
 .htpasswd
@@ -19,6 +27,8 @@ app/webroot/files/*
 app/Config/database.php
 app/Config/bootstrap.php
 app/Config/core.php
+clearCache.sh
+createTmpDirectory.sh
 maintenance.php
 
 # OS generated files #

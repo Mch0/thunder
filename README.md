@@ -47,4 +47,12 @@ class DATABASE_CONFIG {
 
 > dans cache créer un dossier models et persistent
 
-> donner les droits 777 a cache et sous dossier chmod 777 -R cache
+> mkdir -p tmp/cache/models
+
+> mkdir -p tmp/cache/persistent
+
+> mkdir -p tmp/logs
+
+> donner les droits 777 a cache et sous dossier
+
+> chmod 777 -R cache/
