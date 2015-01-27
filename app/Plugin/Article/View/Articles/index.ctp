@@ -3,7 +3,13 @@
 <div class="container">
 <?php  echo $this->Html->css('/design/css/bxslider/jquery.bxslider'); ?>
 <?php  echo $this->Html->script('/design/js/bxslider/jquery.bxslider.min'); ?>
-
+<script type="text/javascript">
+	sas_tmstp=Math.round(Math.random()*10000000000);
+	sas_pageid='68386/520877';		// Page : Thunderbot/hp
+	var sas_formatids = '10192,1391,920,922,14930,14609';
+	sas_target='';			// Targeting
+	document.write('<scr'+'ipt  src="http://www.smartadserver.com/call2/pubjall/' + sas_pageid + '/' + sas_formatids + '/' + sas_tmstp + '/' + escape(sas_target) + '?"></scr'+'ipt>');
+</script>
 <!-- SLIDER -->
 <div class="row visible-lg visible-md" id="caroussel">
     <div class="slider text-center" id="thunderbot">
@@ -47,91 +53,14 @@
 </div>
     <?php   $error = ""; unset($error);}
     ?>
-<div class="row">
-	<div class="col-lg-12" id="pub-hp-haut">
-		<script type="text/javascript">
-			sas_tmstp=Math.round(Math.random()*10000000000);
-			sas_pageid='68386/520877';		// Page : Thunderbot/hp
-			var sas_formatids = '10192,1391,920,922,14930,14609';
-			sas_target='';			// Targeting
-			document.write('<scr'+'ipt  src="http://www.smartadserver.com/call2/pubjall/' + sas_pageid + '/' + sas_formatids + '/' + sas_tmstp + '/' + escape(sas_target) + '?"></scr'+'ipt>');
-		</script>
-		<script type="text/javascript">
-			if (typeof sas_manager != 'undefined') {
-				sas_manager.render(920);	// Format : Pave300 728x90
-			}
-		</script>
-		<noscript>
-			<a href="http://www.smartadserver.com/call/pubjumpi/68386/520877/922/S/[timestamp]/?" target="_blank">
-				<img src="http://www.smartadserver.com/call/pubi/68386/520877/922/S/[timestamp]/?" border="0" alt="" /></a>
-		</noscript>
-	</div>
-</div>
+<!-- PUB Large -->
+<?php echo $this->element('pubLargeHp');?>
+
+
 
 <!-- WEBTV -->
 
-<?php if(count($webtv) > 0) { ?>
-<script>
-	//id du stream pour l'utiliser dans le js youtube
-	var idVideo = "<?php echo $webtv[0]['Webtv'][iframe_video_thumb] ?>" ;
-</script>
-<div class="hidden-xs">
-    <div class="row">
-	    <div class="col-lg-12">
-		    <div >
-			    <h4><span class="col-lg-5 col-md-5 col-sm-5 col-xs-4 line-title-high-tech">&nbsp;</span>
-				    <span class="col-lg-2 col-md-2 col-sm-2 col-xs-4 big-title">WEB TV</span>
-				    <span  class="col-lg-5 col-md-5 col-sm-5 col-xs-4 line-title-high-tech">&nbsp;</span>
-			    </h4>
-		    </div>
-	    </div>
-    <div class="col-xs-12 col-sm-12 col-lg-12" id="controlPlayer">
-        <span id="closePlayer" style="color:white"><button class="btn btn-thunder2"><span
-                class="glyphicon glyphicon-remove"></span> Fermer
-        </button></span>
-        <span id="openPlayer" style="color:white;display:none"><button class="btn btn-thunder2"><span
-                class="glyphicon glyphicon-chevron-down"></span> Ouvrir
-        </button></span>
-    </div>
-	    <div class="row">
-    <div id="player">
-        <div class="col-xs-8 col-sm-8 col-lg-8">
-            <div class="">
-                <div id="webtv" class="panel-body">
-                    <?php
-
-						if($webtv[0]['Webtv'][iframe_video_thumb])
-						{
-                            echo $webtv[0]['Webtv'][iframe_video_thumb];
-                         }
-                     ?>
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-4 col-sm-4 col-lg-4">
-            <div class="">
-                <div id="webchat" class="panel-body">
-
-                    <?php
-                        if($webtv[0]['Webtv'][iframe_chat])
-                        {
-                            echo $webtv[0]['Webtv'][iframe_chat];
-                         }
-                    ?>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-</div>
-<?php
-	if(strlen($webtv[0]['Webtv'][iframe_video_thumb]) < 25)
-	{
-			echo $this->Html->script('/design/js/videoplayer/youtubePlayer');
-}
-
-} ?>
+<?php echo $this->element('webtv'); ?>
 <!-- /WEBTV -->
 
 <!-- CONTENT SIDE-->
@@ -272,63 +201,14 @@ foreach ($articles as $key => $article) {
 
 	<!-- RIGHT SIDE BAR -->
     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-	    <script type="text/javascript">
-		    if (typeof sas_manager != 'undefined') {
-			    sas_manager.render(922);	// Format : Pave300 300x250
-		    }
-	    </script>
-	    <noscript>
-		    <a href="http://www.smartadserver.com/call/pubjumpi/68386/520877/922/S/[timestamp]/?" target="_blank">
-			    <img src="http://www.smartadserver.com/call/pubi/68386/520877/922/S/[timestamp]/?" border="0" alt="" /></a>
-	    </noscript>
-        <div id="riot">
-		        <div >
-			        <h5><span class="col-lg-3 col-sm-5 col-md-3 col-xs-5 line-title-high-tech">&nbsp;</span>
-				        <span class="col-lg-6 col-sm-2 col-md-6 col-xs-2 big-title">RIOT NEWS</span>
-				        <span  class="col-lg-3 col-sm-5 col-md-3 col-xs-5 line-title-high-tech">&nbsp;</span>
-			        </h5>
-		        </div>
-            <br/>
-<ul>
-                <?php foreach($riotLinks as $link) { ?>
-	<li>
-            <div class="row">
-
-                    <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
-                       <?php echo $this->Html->Image('logo_news_riot.png') ?>
-                    </div>
-                    <div class="col-sm-10 col-xs-10 col-md-10 col-lg-10">
-                       <?= $link ?>
-                    </div>
-            </div>
-	</li>
-            <hr/>
-                <?php } ?>
-</ul>
-        </div>
-        <div id="twit">
-	        <div>
-		        <h5>
-			        <span class="col-lg-3 col-md-3 col-sm-5 col-xs-5 line-title-high-tech">&nbsp;</span>
-			        <span class="col-lg-6 col-md-6 col-sm-2 col-xs-2 big-title">DERNIERS TWEETS</span>
-			        <span class="col-lg-3 col-md-3 col-sm-5 col-xs-5 line-title-high-tech">&nbsp;</span>
-		        </h5>
-	        </div>
-            <br/>
-            <a class="twitter-timeline"  href="https://twitter.com/MyThunderBot"  data-widget-id="363309093869477888">Tweets de @MyThunderBot</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-        </div>
-	    <!-- PUB -->
-
-	    <script type="text/javascript">
-		    if (typeof sas_manager != 'undefined') {
-			    sas_manager.render(922);	// Format : Pave300 300x250
-		    }
-	    </script>
-	    <noscript>
-		    <a href="http://www.smartadserver.com/call/pubjumpi/68386/520877/922/S/[timestamp]/?" target="_blank">
-			    <img src="http://www.smartadserver.com/call/pubi/68386/520877/922/S/[timestamp]/?" border="0" alt="" /></a>
-	    </noscript>
+	    <!-- PUB PAVE -->
+		<?php echo $this->element('pubPaveHp'); ?>
+		<!-- RIOT NEWS -->
+	    <?php echo $this->element('riotNews'); ?>
+		<!-- FIL TWITTER -->
+	    <?php echo $this->element('twitterFil');?>
+	    <!-- PUB PAVE -->
+	    <?php echo $this->element('pubPaveHp'); ?>
     </div>
 
 <!-- /RIGHT SIDE BAR -->
