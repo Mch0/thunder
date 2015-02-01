@@ -1887,3 +1887,7 @@ div.link-guide
     display : block;
     margin : 0 auto;
 }
+#tv
+{
+    background: url("../img/thundersplashart.jpg");
+}

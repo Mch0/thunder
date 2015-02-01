@@ -9,6 +9,7 @@
 				</h4>
 			</div>
 		</div>
+		<div id="">
 		<div class="col-xs-12 col-sm-12 col-lg-12" id="controlPlayer">
         <span id="closePlayer" style="color:white ;float:right"><button class="pull-right btn btn-thunder2"><span
 		        class="glyphicon glyphicon-remove"></span>
@@ -17,7 +18,8 @@
 		        class="glyphicon glyphicon-chevron-down"></span>
         </button></span>
 		</div>
-		<div class="row">
+		<div class="row" >
+			<div class="col-lg-12" id="tv">
 			<div id="player">
 				<div class="col-xs-8 col-sm-8 col-lg-8">
 					<div class="">
@@ -46,6 +48,8 @@
 					</div>
 				</div>
 			</div>
+			</div>
+		</div>
 		</div>
 	</div>
 </div>
