@@ -83,7 +83,7 @@
                        <span class="hidden-xs hidden-sm"> <i class="fa fa-desktop fa-2x"></i></span>
                         Webtv
                     </a>
-                </li>git
+                </li>
 	            <li class="divider-vertical visible-lg"></li>
 	            <li>
 		            <a href="<?php echo $this->Html->url(array('controller' => 'champions', 'action' => 'index' , 'plugin' => 'guide'), true);?>">
