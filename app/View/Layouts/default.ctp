@@ -79,15 +79,11 @@
             <ul class="nav navbar-nav menu-dynamique">
 
                 <li>
-                    <!--<a href="<?php echo $this->Html->url(array('controller' => 'webtvs', 'action' => 'index2','plugin' => 'webtv'), true); ?>">
+                    <a href="<?php echo $this->Html->url(array('controller' => 'webtvs', 'action' => 'index2','plugin' => 'webtv'), true); ?>">
                        <span class="hidden-xs hidden-sm"> <i class="fa fa-desktop fa-2x"></i></span>
                         Webtv
-                    </a>-->
-	                <a href="#">
-		                <span class="hidden-xs hidden-sm"> <i class="fa fa-desktop fa-2x visible-lg"></i></span>
-	                    Webtv
-	                </a>
-                </li>
+                    </a>
+                </li>git
 	            <li class="divider-vertical visible-lg"></li>
 	            <li>
 		            <a href="<?php echo $this->Html->url(array('controller' => 'champions', 'action' => 'index' , 'plugin' => 'guide'), true);?>">

@@ -10,11 +10,11 @@
 			</div>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-lg-12" id="controlPlayer">
-        <span id="closePlayer" style="color:white"><button class="btn btn-thunder2"><span
-		        class="glyphicon glyphicon-remove"></span> Fermer
+        <span id="closePlayer" style="color:white ;float:right"><button class="pull-right btn btn-thunder2"><span
+		        class="glyphicon glyphicon-remove"></span>
         </button></span>
-        <span id="openPlayer" style="color:white;display:none"><button class="btn btn-thunder2"><span
-		        class="glyphicon glyphicon-chevron-down"></span> Ouvrir
+        <span id="openPlayer" style="float:right;color:white;display:none"><button class="pull-right btn btn-thunder2"><span
+		        class="glyphicon glyphicon-chevron-down"></span>
         </button></span>
 		</div>
 		<div class="row">
