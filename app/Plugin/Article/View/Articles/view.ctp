@@ -70,7 +70,7 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="img-article">
 	                    <!-- 788 * 390 -->
-	                    <?php $srcImg = "http://".$_SERVER['SERVER_NAME']."/thumb.php?src=/files/article/photo/".$article['Article']['photo_dir']."/".$article['Article']['photo']."&w=400&h=200" ?>
+	                    <?php $srcImg = "http://".$_SERVER['SERVER_NAME']."/files/article/photo/".$article['Article']['photo_dir']."/".$article['Article']['photo'] ?>
                         <!--<?php echo $this->html->image('/files/article/photo/'.($article['Article']['photo_dir'].'/'.$article['Article']['photo']), array('class' => 'img-responsive', 'alt' => $title)); ?>-->
                         <img src="<?php echo $srcImg ?>" class="img-responsive" alt="$title" />
                     </div>

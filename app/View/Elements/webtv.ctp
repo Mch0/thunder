@@ -1,8 +1,4 @@
 <?php if(count($webtv) > 0) { ?>
-<script>
-	//id du stream pour l'utiliser dans le js youtube
-	var idVideo = "<?php echo $webtv[0]['Webtv'][iframe_video_thumb] ?>" ;
-</script>
 <div class="hidden-xs">
 	<div class="row">
 		<div class="col-lg-12">
@@ -53,10 +49,8 @@
 		</div>
 	</div>
 </div>
-<?php
-	if(strlen($webtv[0]['Webtv'][iframe_video_thumb]) < 25)
-	{
-			echo $this->Html->script('/design/js/videoplayer/youtubePlayer');
-}
 
+
+
+<?php
 } ?>

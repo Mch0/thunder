@@ -30,7 +30,7 @@ class Article extends ArticleAppModel {
 	        'message' => 'jpg, png ou jpeg',
 			    'rule' => array('isBelowMaxSize', 5000000),
 			    'message' => 'image trop grosse',
-			        'rule' => array('isBelowMaxWidth', 1000, 1000),
+			        'rule' => array('isBelowMaxWidth', 1500, 1500),
 			        'message' => 'image trop grande'
 	    ),
 		'slug' => array(

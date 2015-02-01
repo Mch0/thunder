@@ -92,7 +92,7 @@ foreach ($articles as $key => $article) {
                         <a class="" href="<?php echo $this->Html->url($article['Article']['link']); ?>"><img
                                 class="img-responsive"
                                 alt="<?php echo substr($this->Text->truncate($title , 35,array('exact'=>false,'html'=>true)), 2); ?>"
-                                src="http://www.thunderbot.gg/thumb.php?src=/files/article/photo/<?php echo $article['Article']['photo_dir'] ?>/<?php echo $article['Article']['photo'] ?>&w=270&h=166&zc=1"></img></a>
+                                src="http://www.thunderbot.gg/thumb.php?src=/files/article/photo/<?php echo $article['Article']['photo_dir'] ?>/<?php echo $article['Article']['photo'] ?>&w=270&h=166&zc=1"/></a>
                     </div>
                     <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
 
@@ -126,7 +126,7 @@ foreach ($articles as $key => $article) {
     <article>
         <div class="picture">
             <a href="<?= $this->Html->url($article['Article']['link']); ?>">
-	            <?php $src="http://".$_SERVER['SERVER_NAME']."/thumb.php?src=/files/article/photo/".$article['Article']['photo_dir']."/".$article['Article']['photo']."&w=600&h=400";?>
+	            <?php $src="http://".$_SERVER['SERVER_NAME']."/files/article/photo/".$article['Article']['photo_dir']."/".$article['Article']['photo'];?>
                 <img class="img-responsive img-thumbnail" alt="<?= $title; ?>"
                      src="<?php echo $src?>" width="600" height="400"/>
             </a>
