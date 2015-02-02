@@ -28,7 +28,7 @@
 			</div>
 
 			<?php } ?>
-			<?php echo $this->Form->create('Webtv',array('class'=>'form-horizontal')); ?>
+			<?php echo $this->Form->create('Webtv',array('class'=>'form-inline')); ?>
 			<?php echo $this->Form->input('id',array('div' => false,'label'=>false,'error'=>false)); ?>
 			
 
@@ -44,15 +44,15 @@
 
 			<div class="control-group">
 				<div class="controls">
-					<?php echo $this->Form->input('slug'); ?>
+					<?php echo $this->Form->input('slug',array('label' => 'slug : ')); ?>
 				</div>
 			</div>
 
 			<div class="control-group">
-				<label class="control-label"><?php echo __('Date'); ?>
+				<label class="control-label"><?php echo __('Date de publication '); ?>
 				</label>
 				<div class="controls">
-		        <?php echo $this->Form->input('created',array('label'=>"Date de publication",'dateFormat' => 'DMY','timeFormat' => 24)); ?>
+		        <?php echo $this->Form->input('created',array('label' => false,'dateFormat' => 'DMY','timeFormat' => 24)); ?>
 				</div>
 			</div>
 
@@ -110,14 +110,20 @@
 			</div>
 
 
-
-			<div class="control-group">
-				<label class="control-label"><?php echo __('online'); ?>
+			<div>
+				<label>
+					<?php echo __('Publié'); ?> :
 				</label>
-				<div class="controls">
-					<?php echo $this->Form->input('online',array('label'=>"online ?",'type'=>'checkbox')); ?>
-				</div>
+					<?php echo $this->Form->input('online',array('type'=>'checkbox', 'label' => false ,'div' => false, 'style' => 'margin-top:-2px;margin-left:5px')); ?>
 			</div>
+
+			<div>
+				<label>
+					<?php echo __('Publié sur la home page'); ?> :
+				</label>
+				<?php echo $this->Form->input('onlinehp',array('type'=>'checkbox', 'label' => false ,'div' => false, 'style' => 'margin-top:-2px;margin-left:5px')); ?>
+			</div>
+
 
 
 			<div class="form-actions">

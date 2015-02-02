@@ -1,14 +1,6 @@
-<?php if(count($webtv) > 0) { ?>
+<?php if(count($webtv) > 0 && $webtv[0]['Webtv']['onlinehp'] == 1 ) { ?>
 <div class="hidden-xs">
 	<div class="row">
-		<div class="col-lg-12">
-			<div >
-				<h4><span class="col-lg-5 col-md-5 col-sm-5 col-xs-4 line-title-high-tech">&nbsp;</span>
-					<span class="col-lg-2 col-md-2 col-sm-2 col-xs-4 big-title">WEB TV</span>
-					<span  class="col-lg-5 col-md-5 col-sm-5 col-xs-4 line-title-high-tech">&nbsp;</span>
-				</h4>
-			</div>
-		</div>
 		<div id="">
 		<div class="col-xs-12 col-sm-12 col-lg-12" id="controlPlayer">
         <span id="closePlayer" style="color:white ;float:right"><button class="pull-right btn"><span

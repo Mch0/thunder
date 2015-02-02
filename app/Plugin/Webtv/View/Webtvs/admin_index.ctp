@@ -51,7 +51,7 @@
 
 
 
-
+			<p ><h1 class="alert-danger"> hp = Home Page</h1></p>
 			<table class="table table-bordered table-hover list table-condensed table-striped">
 				<thead>
 					<tr>
@@ -89,7 +89,7 @@
 					</td>
 					<td style="text-align: center;"><?php echo h($webtv['Category']['category_name']); ?></td>
 					<td style="text-align: center;"><?php echo h($webtv['EventType']['name']); ?>&nbsp;</td>
-					<td><?php echo h($webtv['Webtv']['online'])=='0'?'<span class="label important">Hors ligne</span>':'<span class="label success">En ligne</span>'; ?>&nbsp;-&nbsp;
+					<td><?php echo h($webtv['Webtv']['onlinehp'])=='0'?'<span class="label important">Hors ligne hp</span>':'<span class="label success">En ligne hp</span>'; ?>&nbsp;-&nbsp;<?php echo h($webtv['Webtv']['online'])=='0'?'<span class="label important">Hors ligne</span>':'<span class="label success">En ligne</span>'; ?>&nbsp;-&nbsp;
 						<?php echo h($webtv['Webtv']['live'])=='0'?'<span class="label important">OFF</span>':'<span class="label success">LIVE</span>'; ?></td>
 
 					<?php if ($this->Acl->check('Webtvs','admin_view','Webtv') == true || $this->Acl->check('Webtvs','admin_edit','Webtv') == true || $this->Acl->check('Webtvs','edit_admin','Webtv') == true || $this->Acl->check('Webtvs','admin_delete','Webtv') == true){ ?>
