@@ -1,4 +1,4 @@
-<div class="container" id="guide">
+<div  id="guide">
 
 <div class="row">
 	<input type="text" name="search-champ" id="search-champ" value="" placeholder="Recherche"/>

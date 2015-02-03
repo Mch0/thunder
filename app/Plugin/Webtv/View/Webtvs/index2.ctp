@@ -2,7 +2,7 @@
 <?php $events_next = $this->requestAction(array('controller' => 'events', 'action' => 'webtv_bar','plugin' => 'full_calendar','admin'=>false)); ?>
 
 
-<div id="webtv">
+<div  id="webtv">
     <?php $this->html->meta ('description', 'ThunderBot WebTV - Admirez le skill ! ThunderBot TV c\'est les meilleurs
     joueurs League of Legends, Chaîne sur laquelle vous pouvez retrouver les meilleurs joueurs français en activité sur
     League of Legends ainsi que John \'HyrqBot\' Velly.', array('inline' =>false));?>

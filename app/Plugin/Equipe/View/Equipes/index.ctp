@@ -1,4 +1,4 @@
-<div class="container" id="equipe">
+<div id="equipe">
     <div class="row">
         <div class="col-lg-10" id="portfolio">
             <?php foreach ($equipes as $equipe): ?>

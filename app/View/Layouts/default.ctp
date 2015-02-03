@@ -216,8 +216,8 @@
     </div>
 </nav>
 
-<div class="container">
-    <div class="thunderbot">
+<div class="container" id="content">
+
         <?php
               if (method_exists($this, 'fetch')){
               echo $this->fetch('content');
@@ -225,7 +225,7 @@
         echo $content_for_layout;
         }
         ?>
-    </div>
+
 </div>
 
 <footer class="well">

@@ -5,7 +5,6 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.js"></script>
 <script type="text/javascript" src="http://www.thunderbot.gg/js/polls/poll/app.js"></script>
 <script type="text/javascript" src="http://www.thunderbot.gg/js/polls/poll/controller.js"></script> -->
-    <!--  -->
     <script type="text/javascript">
 	    sas_tmstp=Math.round(Math.random()*10000000000);
 	    sas_pageid='68386/520878';		// Page : Thunderbot/rg
@@ -26,7 +25,7 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
 ?>
 
 
-<div class="container" id="article">
+<div  id="article">
     <div class="row">
         <!-- ARTICLE -->
         <div class="col-xs-12 col-sm-9 col-sm9 col-lg-9">

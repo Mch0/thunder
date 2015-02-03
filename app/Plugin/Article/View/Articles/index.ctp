@@ -1,6 +1,6 @@
 <!-- Article/view/articles/index.ctp -->
 <?php $this->html->meta ('description', 'ThunderBot c\'est l\'actualité, la web TV, les guides et l\'expertise des progamers sur League of Legends.', array('inline' =>false)); ?>
-<div class="container">
+<div class="" id="home">
 <?php  echo $this->Html->css('/design/css/bxslider/jquery.bxslider'); ?>
 <?php  echo $this->Html->script('/design/js/bxslider/jquery.bxslider.min'); ?>
 <script type="text/javascript">

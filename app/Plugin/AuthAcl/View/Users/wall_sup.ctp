@@ -8,7 +8,7 @@ $this->html->meta ('description', 'ThunderBot WebTV - Admirez le skill ! Thunder
 <?php $this->set('title_for_layout', $image['Image']['title']) ?>
 
  <!-- ARTICLE -->
-<div class="container" id="mur">
+<div id="mur">
     <div class="row" id="wall">
             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
                 <div class="page-header">
