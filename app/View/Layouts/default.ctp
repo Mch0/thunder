@@ -73,6 +73,7 @@
                 <img  src="<?php echo $this->Html->url('/design/css/img/logo.png'); ?>" alt="Thunderbot logo"
                       style="height: 50px" /><span style="margin-left: 5px">ThunderBot</span>
             </a>
+	        <img class="logo-azubu-mobile visible-xs visible-sm" src="<?php echo $this->Html->url('/img/Azubu_Logo.png') ?>" height="50px"/>
         </div>
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -122,6 +123,7 @@
                 <li class="divider-vertical visible-lg"></li>
             </ul>
 
+	            <img class="logo-azubu hidden-xs hidden-sm" src="<?php echo $this->Html->url('/img/Azubu_Logo.png') ?>"  height="50px"/>
 
             <ul class="nav pull-right navbar-nav navbar-right">
                     <li>
