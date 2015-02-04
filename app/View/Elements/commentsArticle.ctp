@@ -7,7 +7,7 @@
 			<div class="article-comment">
 
 				<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-					<div class="row">
+					<div class="row col-lg-12">
 						<div class="col-xs-9 col-sm-9 col-md-9 col-lg-7">
 							<?php
                                   if ($comment['User']['avatar']) {
