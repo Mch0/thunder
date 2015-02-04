@@ -139,10 +139,10 @@
                     <li class="dropdown">
 
                         <?php if($this->Session->read('Auth.User.id')) { ?>
-                        <a  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'logout','plugin' => 'auth_acl'), true); ?>"><span class="glyphicon glyphicon-ok"></span> Se deconnecter</a>
+
                         <!--<a  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'editAccount','plugin' => 'auth_acl'), true); ?>"><span class="glyphicon glyphicon-user"></span> Mon compte</a>-->
                         <a class="dropdown-toggle" data-toggle="dropdown"  href="#"><span class="glyphicon glyphicon-user"></span> Mon compte <strong class="caret"></strong></a>
-                        <div class="dropdown-menu" id="account">
+                        <div class="dropdown-menu" id="account-menu">
                             <ul>
                                 <li>
                                     <a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'editAccount','plugin' => 'auth_acl'), true); ?>">
@@ -150,8 +150,11 @@
                                         Mon compte
                                     </a>
                                 </li>
+	                            <li>
+		                            <a  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'logout','plugin' => 'auth_acl'), true); ?>"><span class="glyphicon glyphicon-ok"></span> Déconnexion</a>
+	                            </li>
                                 <?php if ($this->Acl->check('Articles','admin_index','Article') == true ){?>
-                                <li><?php echo $this->Html->link(__('Admin'), array('plugin' => 'article','controller' =>
+                                <li><span class="glyphicon glyphicon-lock"></span><?php echo $this->Html->link(__(' Admin'), array('plugin' => 'article','controller' =>
                                     'articles','action' => 'admin_index'));
 
                                     ?>

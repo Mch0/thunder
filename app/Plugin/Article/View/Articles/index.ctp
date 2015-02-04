@@ -74,7 +74,7 @@
 	    </h4>
     </div>
 </div>
-    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 <?php  //debug($articles) ?>
 
 <?php
@@ -200,15 +200,19 @@ foreach ($articles as $key => $article) {
 
 
 	<!-- RIGHT SIDE BAR -->
-    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 	    <!-- PUB PAVE -->
-		<?php echo $this->element('pubPaveHp'); ?>
+	    <div class="pave-pub">
+			<?php echo $this->element('pubPaveHp'); ?>
+	    </div>
 		<!-- RIOT NEWS -->
 	    <?php echo $this->element('riotNews'); ?>
 		<!-- FIL TWITTER -->
 	    <?php echo $this->element('twitterFil');?>
 	    <!-- PUB PAVE -->
-	    <?php echo $this->element('pubPaveHp'); ?>
+	    <div class="pave-pub">
+	        <?php echo $this->element('pubPaveHp'); ?>
+	    </div>
     </div>
 
 <!-- /RIGHT SIDE BAR -->

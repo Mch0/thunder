@@ -28,7 +28,7 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
 <div  id="article">
     <div class="row">
         <!-- ARTICLE -->
-        <div class="col-xs-12 col-sm-9 col-sm9 col-lg-9">
+        <div class="col-xs-12 col-sm-8 col-sm-8 col-lg-8">
             <div class="row">
 	            <!-- PUB -->
 				<?php echo $this->element('pubLargeRg'); ?>
@@ -89,7 +89,7 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
 			<?php echo $this->element('shareArticle'); ?>
             </div>
 
-
+	        <?php echo $this->element('pubLargeRg');?>
             <!-- COMMMENT -->
         <div class="row">
             <!-- FORM COMMENT -->
@@ -103,7 +103,7 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
     </div>
 
         <!-- SIDEBAR -->
-        <div class="col-xs-12 col-sm-3 col-sm-3 col-lg-3">
+        <div class="col-xs-12 col-sm-4 col-sm-4 col-lg-4">
 
 	        <div >
 		        <h5>
@@ -116,7 +116,9 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
 	        </div>
             <br/>
 			<?php echo $this->element('threeArticles'); ?>
+	        <div class="pave-pub hidden-xs hidden-sm">
 	        <?php echo $this->element('pubPaveRg'); ?>
+		        </div>
   </div>
 
     </div>

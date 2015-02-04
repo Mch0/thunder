@@ -42,7 +42,7 @@ body {
 {
     font-family: Akashi;
     padding-right: 2.5%;
-    padding-left : 8.5%;
+    padding-left : 18.4%;
 }
 @media (max-width: 1024px)
 {
@@ -1071,10 +1071,7 @@ div.thunderbox img {
     background: none;
     color : #d90008;
 }
-#account
-{
-    margin-top: 55px;
-}
+
 .menu
 {
     margin-left: -7%;
@@ -1916,4 +1913,34 @@ div.link-guide
 }
 .logo-azubu{
     margin-top: 10px;
+}
+.pave-pub
+{
+    margin-left: 5%;
+}
+#account-menu{
+    background: url(img/list.png) 0 100% repeat-x #333;
+}
+#account-menu ul li a{
+    color : white!important;
+}
+#account.dropdown-menu ul {
+    padding-left: 10px!important;
+    max-width: 150px;
+    min-width: 150px;
+}
+
+#account-menu ul li a:hover {
+color : #d90008!important;
+}
+#account-menu ul{
+    list-style-type: none;
+    padding-left: 10px!important;
+}
+#account-menu
+{
+    max-width: 155px!important;
+    width: 155px!important;
+    min-width: 100px!important;
+
 }
