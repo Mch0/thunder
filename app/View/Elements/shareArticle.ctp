@@ -20,7 +20,7 @@
 			</a>
 		</li>
 		<li>
-			<a class="link-tweeter-small popup" onclick="" target="_blank" href="http://twitter.com/share?text=<?= $title; ?>&url=<?= $this->Html->url($article['Article']['link'],true) ?>">
+			<a class="link-tweeter-small popup" onclick="" target="_blank" href="http://twitter.com/share?text=<?= $article['Article']['article_title']; ?>&url=<?= $this->Html->url($article['Article']['link'],true) ?>">
 				<?= $this->Html->image('social/icon_twitter.png', array('height' => '64', 'width' => '64')) ?>
 			</a>
 		</li>
