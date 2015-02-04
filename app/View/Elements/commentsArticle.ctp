@@ -1,14 +1,13 @@
 <div class="row" id="comment">
-	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding  ">
 
 		<?php foreach ($comments as $k => $comment): ?>
 		<?php //debug($comment); ?>
-		<div class="row">
-			<div class="article-comment">
+		<div class="row  article-comment">
 
-				<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-					<div class="row col-lg-12">
-						<div class="col-xs-9 col-sm-9 col-md-9 col-lg-7">
+				<div class="col-xs-12 col-sm-2 col-md-2 col-lg-3 no-padding">
+					<div class="row">
+						<div class="col-xs-9 col-sm-9 col-md-9 col-lg-7 no-padding">
 							<?php
                                   if ($comment['User']['avatar']) {
                                       echo $this->Html->image($comment['User']['avatar'], array('class' =>
@@ -36,7 +35,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+				<div class="col-xs-12 col-sm-10 col-md-10 col-lg-9">
 					<div class="article-comment-content">
 						<p>
 							<a class="" href="/membre/<?php echo $comment['User']['id'] ?>">
@@ -55,7 +54,6 @@
 						</p>
 					</div>
 				</div>
-			</div>
 		</div>
 		<hr/>
 		<?php endforeach ?>
