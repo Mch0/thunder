@@ -19,12 +19,32 @@ body {
     padding-top: 70px;
 
 }
+#content{
+    border-right: 1px solid darkgray;
+    border-left: 1px solid darkgray;
+}
+.row
+{
+    margin-right: 0px!important;
+    margin-left: 0px!important;
+}
+
+#contact,#webtv
+{
+    margin-top: 50px;
+}
+
+#home, #guide,#webtv, #equipe, #mur, #contact , #article, #content{
+    background-color: white ;
+
+}
 .big-menu, .big-title
 {
     font-family: Akashi;
     padding-right: 2.5%;
+    padding-left : 8.5%;
 }
-@media (max-width: 1024px)s
+@media (max-width: 1024px)
 {
     .menu-dynamique li {
         margin-right: -5px!important;
@@ -38,9 +58,16 @@ body {
 }
 @media (width: 1024px)
 {
-    .navbar-ex1-collapse .pull-right{
+    ul.navbar .navbar-right{
         float:left!important;
-        padding-left: 17%;
+        padding-left: 5%;
+    }
+}
+@media (max-width: 1550px){
+    ul.navbar-right{
+        float:left!important;
+        /*margin-right: 19%!important;*/
+        padding-left: 16%;
     }
 }
 
@@ -1886,4 +1913,7 @@ div.link-guide
 #pub-hp-haut iframe,#pub-rg-haut iframe{
     display : block;
     margin : 0 auto;
+}
+.logo-azubu{
+    margin-top: 10px;
 }

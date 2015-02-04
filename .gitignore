@@ -1,6 +1,7 @@
 # User specific & automatically generated files #
 #################################################
 app/webroot/cache/*
+app/webroot/csstoDelete
 app/webroot/files/article/*
 app/webroot/files
 /app/webroot/index.php
