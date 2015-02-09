@@ -164,7 +164,7 @@ foreach ($articles as $key => $article) {
             </header>
             <div>
                     <a href="<?= $this->Html->url($article['Article']['link']); ?>">
-                        <?= $this->Text->truncate($article['Article']['article_summary'],175,array('exact'=>false));?>
+                        <?= strip_tags($this->Text->truncate($article['Article']['article_summary'],175,array('exact'=>false)));?>
                     </a>
             </div>
         </div>
