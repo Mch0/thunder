@@ -57,9 +57,10 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
                             </strong>
                         </p>
                     </div>
-                    <p>
+                    <div>
                         <?php echo strip_tags($article['Article']['article_summary']); ?>
-                    </p>
+                    </div>
+	                </br>
                     <?php foreach ($tags as $tag): ?>
                         <span class="label label-primary"><?php echo $tag['Tag']['name'] ?></span>
                     <?php endforeach; ?>
