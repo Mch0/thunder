@@ -32,7 +32,10 @@ Router::parseExtensions('rss');
 	 */
 		Router::connect('/guides/champions', array('controller'=>'champions','action'=>'index' ,'plugin' => 'guide'));
 		Router::connect('/guides/champions/:id-:slug',array('controller'=>'champions','action'=>'view' ,'plugin' => 'guide'),array('pass'=> array('id','slug'), 'id'=>'[0-9]+','slug' =>'[a-z0-9\-]+'));
-
+	/**
+	 * Sponsors
+	 */
+		Router::connect('/sponsors', array('controller' => 'sponsors', 'action' => 'index', 'plugin' => 'sponsor'));
 
 	/**
 	 * Web TV

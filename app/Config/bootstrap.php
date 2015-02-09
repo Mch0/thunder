@@ -169,3 +169,5 @@ Configure::write('Plugin.Comment', (Configure::read('Plugin.Comment') ? Configur
 
 
 CakePlugin::load('Guide', array('bootstrap' => false, 'routes' => false));
+
+CakePlugin::load('Sponsor', array('bootstrap' => false, 'routes' => false));
