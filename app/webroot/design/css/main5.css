@@ -28,13 +28,16 @@ body {
     margin-right: 0px!important;
     margin-left: 0px!important;
 }
-
+#sponsors
+{
+    margin-top: 60px;
+}
 #contact,#webtv
 {
     margin-top: 50px;
 }
 
-#home, #guide,#webtv, #equipe, #mur, #contact , #article, #content{
+#home, #guide,#webtv, #equipe, #mur, #contact , #article, #content, #sponsors{
     background-color: white ;
 
 }

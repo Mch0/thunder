@@ -101,7 +101,7 @@
                 </li>
                 <li class="divider-vertical visible-lg"></li>
                 <li>
-                    <a href="#" >
+                    <a href="<?php echo $this->Html->url(array('controller' => 'sponsors', 'action' => 'index', 'plugin' => 'sponsor'), true); ?>" >
                        <span class="hidden-xs hidden-sm" id="sponsors-icon"> <i class="fa fa-suitcase fa-2x visibe-lg"></i></span>
                         Sponsors
                     </a>

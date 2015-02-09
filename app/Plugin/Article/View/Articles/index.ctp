@@ -135,7 +135,6 @@ foreach ($articles as $key => $article) {
             <div class="date">
                 <small>
                     <?= $this->frenchDate->french($article['Article']['created']); ?> |
-
                 </small>
                 <a href="/membre/<?php echo $article['User']['id']; ?>" target="_blank">
                     <strong class="strong_comment_redacteur">
@@ -165,7 +164,7 @@ foreach ($articles as $key => $article) {
             </header>
             <div>
                     <a href="<?= $this->Html->url($article['Article']['link']); ?>">
-                        <?= $this->Text->truncate($article['Article']['article_summary'],175,array('exact'=>false,'html'=>true));?>
+                        <?= $this->Text->truncate($article['Article']['article_summary'],175,array('exact'=>false));?>
                     </a>
             </div>
         </div>
