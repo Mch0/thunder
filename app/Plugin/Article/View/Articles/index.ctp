@@ -5,11 +5,12 @@
 <?php  echo $this->Html->script('/design/js/bxslider/jquery.bxslider.min'); ?>
 <script type="text/javascript">
 	sas_tmstp=Math.round(Math.random()*10000000000);
-	sas_pageid='68386/520877';		// Page : Thunderbot/hp
-	var sas_formatids = '10192,1391,920,922,14930,14609';
-	sas_target='';			// Targeting
+	sas_pageid='68386/520877';              // Page : Thunderbot/hp
+	var sas_formatids = '10192,1391,920,19175,922,19176,14930,14609';
+	sas_target='';                  // Targeting
 	document.write('<scr'+'ipt  src="http://www.smartadserver.com/call2/pubjall/' + sas_pageid + '/' + sas_formatids + '/' + sas_tmstp + '/' + escape(sas_target) + '?"></scr'+'ipt>');
 </script>
+
 <!-- SLIDER -->
 <div class="row visible-lg visible-md" id="caroussel">
     <div class="slider text-center" id="thunderbot">

@@ -7,9 +7,9 @@
 <script type="text/javascript" src="http://www.thunderbot.gg/js/polls/poll/controller.js"></script> -->
     <script type="text/javascript">
 	    sas_tmstp=Math.round(Math.random()*10000000000);
-	    sas_pageid='68386/520878';		// Page : Thunderbot/rg
-	    var sas_formatids = '10192,1391,920,922,14930,14609';
-	    sas_target='';			// Targeting
+	    sas_pageid='68386/520878';              // Page : Thunderbot/rg
+	    var sas_formatids = '10192,1391,920,19175,922,19176,14930,14609';
+	    sas_target='';                  // Targeting
 	    document.write('<scr'+'ipt  src="http://www.smartadserver.com/call2/pubjall/' + sas_pageid + '/' + sas_formatids + '/' + sas_tmstp + '/' + escape(sas_target) + '?"></scr'+'ipt>');
     </script>
 <?php $this->set('title_for_layout', $article['Article']['article_title']) ?>
@@ -90,7 +90,7 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
 			<?php echo $this->element('shareArticle'); ?>
             </div>
 
-	        <?php echo $this->element('pubLargeRg');?>
+
             <!-- COMMMENT -->
         <div class="row">
             <!-- FORM COMMENT -->
@@ -118,7 +118,7 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
             <br/>
 			<?php echo $this->element('threeArticles'); ?>
 	        <div class="pave-pub hidden-xs hidden-sm">
-	        <?php echo $this->element('pubPaveRg'); ?>
+
 		        </div>
   </div>
 
