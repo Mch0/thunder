@@ -1961,3 +1961,7 @@ color : #d90008!important;
     padding-right: 0px!important;
     padding-left: 0px!important ;
 }
+#sponsor,#guide {
+min-height : 900px;
+}
+
