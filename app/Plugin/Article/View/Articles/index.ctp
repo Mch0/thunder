@@ -203,6 +203,7 @@ foreach ($articles as $key => $article) {
     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 	    <!-- PUB PAVE -->
 	    <div class="pave-pub">
+		    <img  class="noadblock hidden" src="/img/noadblock/noadblock.png" style="margin-left: 38%" />
 			<?php echo $this->element('pubPaveHp'); ?>
 	    </div>
 		<!-- RIOT NEWS -->
@@ -211,7 +212,17 @@ foreach ($articles as $key => $article) {
 	    <?php echo $this->element('twitterFil');?>
 	    <!-- PUB PAVE -->
 	    <div class="pave-pub">
-	        <?php echo $this->element('pubPaveHp'); ?>
+		    <img  class="noadblock hidden" src="/img/noadblock/noadblock.png" style="margin-left: 38%" />
+		    <script type="text/javascript">
+			    if (typeof sas_manager != 'undefined') {
+				    sas_manager.render(19176);      // Format : Pave300_Bas 300x250
+			    }
+		    </script>
+		    <noscript>
+			    <a href="http://www.smartadserver.com/call/pubjumpi/68386/520877/19176/S/[timestamp]/?" target="_blank">
+				    <img src="http://www.smartadserver.com/call/pubi/68386/520877/19176/S/[timestamp]/?" border="0" alt="" /></a>
+		    </noscript>
+
 	    </div>
     </div>
 

@@ -3,7 +3,7 @@ $('document').ready(function(){
     var pubs = $('.adsbygoogle').is(":hidden");
     if(pubs)
     {
-    //on affiche l'iamge
+    //on affiche l'image
     $('.noadblock').removeClass('hidden');
     }
     });
