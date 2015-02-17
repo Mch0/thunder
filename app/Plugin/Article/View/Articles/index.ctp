@@ -202,8 +202,8 @@ foreach ($articles as $key => $article) {
 	<!-- RIGHT SIDE BAR -->
     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 	    <!-- PUB PAVE -->
-	    <div class="pave-pub">
-		    <img  class="noadblock hidden" src="/img/noadblock/noadblock.png" style="margin-left: 38%" />
+	    <div class="pave-pub-carre">
+
 			<?php echo $this->element('pubPaveHp'); ?>
 	    </div>
 		<!-- RIOT NEWS -->

@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="col-lg-12" id="pub-hp-haut">
-
+		<img  class="noadblock hidden" src="/img/noadblock/noadblock.png" style="margin-left: 38%" />
 		<script type="text/javascript">
 			if (typeof sas_manager != 'undefined') {
 				sas_manager.render(920);	// Format : Pave300 728x90

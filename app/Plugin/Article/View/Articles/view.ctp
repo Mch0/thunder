@@ -117,8 +117,8 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
 	        </div>
             <br/>
 			<?php echo $this->element('threeArticles'); ?>
-	        <div class="pave-pub hidden-xs hidden-sm">
-
+	        <div class="pave-pub-carre hidden-xs hidden-sm">
+		        <?php echo $this->element('pubPaveRg'); ?>
 		        </div>
   </div>
 
