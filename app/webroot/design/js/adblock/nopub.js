@@ -5,10 +5,17 @@ $('document').ready(function(){
     classpubs.forEach(function(y){
 
         var currentPub = $(y);
-        console.log(currentPub.height());
-        if(currentPub.height() < 10 )
+
+        if(currentPub.height() == null)
         {
-            $('.noadblock').removeClass('hidden');
+            //si taille est null correspond a pub large RG
+
+        }else {
+            console.log(currentPub.height());
+            if (currentPub.height() < 10) {
+                console.log("est inferieru")
+                $('.noadblock').removeClass('hidden');
+            }
         }
 
     });
