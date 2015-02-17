@@ -43,16 +43,4 @@ class DATABASE_CONFIG {
 
 ========================================================
 
-> dans app/ créer un dossier cache
-
-> dans cache créer un dossier models et persistent
-
-> mkdir -p tmp/cache/models
-
-> mkdir -p tmp/cache/persistent
-
-> mkdir -p tmp/logs
-
-> donner les droits 777 a cache et sous dossier
-
-> chmod 777 -R cache/
+> sh createTmpDirectory.sh => va créer les dossier tmp/cache/persistent tmp/cache/models tmp/logs en 777
