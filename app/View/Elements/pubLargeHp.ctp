@@ -1,5 +1,5 @@
 <div class="row">
-	<div class="col-lg-12" id="pub-hp-haut">
+	<div class="col-lg-12 mega-ban" id="pub-hp-haut">
 		<img  class="noadblock hidden" src="/img/noadblock/noadblock.png" style="margin-left: 38%" />
 		<script type="text/javascript">
 			if (typeof sas_manager != 'undefined') {

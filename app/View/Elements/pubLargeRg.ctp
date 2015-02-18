@@ -1,4 +1,4 @@
-<div class="col-lg-12" id="pub-rg-haut">
+<div class="col-lg-12 mega-ban" id="pub-rg-haut">
 	<img  class="noadblock hidden" src="/img/noadblock/noadblock.png" style="margin-left: 14%" />
 	<script type="text/javascript">
 		if (typeof sas_manager != 'undefined') {

@@ -1,23 +1,19 @@
 
 $('document').ready(function(){
-    var classpubs = ['#pub-hp-haut','.pave-pub-carre','#pub-rg-haut'];
+    var classpubs = '#pub-hp-haut';
+//,'.pave-pub-carre','#pub-rg-haut'
 
-    classpubs.forEach(function(y){
-
-        var currentPub = $(y);
-
-        if(currentPub.height() == null)
-        {
-            //si taille est null correspond a pub large RG
-
-        }else {
-            console.log(currentPub.height());
-            if (currentPub.height() < 10) {
-                console.log("est inferieru")
-                $('.noadblock').removeClass('hidden');
-            }
-        }
-
-    });
+    var currentPub = $('.mega-ban');
+    var idad = '#cg_728x90_atf';
+    var child = currentPub.children(idad);
+    if(child.length > 0)
+    {
+        console.log('il y a bien une pub mega ban, adblock desactive');
+    }
+    else
+    {
+        console.log('il n\'y as pas de pub mega ban, adblock active');
+        $('.noadblock').removeClass('hidden');
+    }
         });
 
