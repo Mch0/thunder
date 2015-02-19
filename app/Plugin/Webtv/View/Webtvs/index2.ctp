@@ -79,6 +79,21 @@
                                     </div>
                                 </div>
                                 <div class="tab-pane" id="Programme">
+	                                <div class="row">
+		                                <div class="col-xs-0 col-sm-3 col-md-3 col-lg-3">
+		                                <span class="poste">
+			                                En ce moment
+		                                </span>
+			                                </div>
+		                                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+			                                <?php
+                            if (isset($events_now[0]['EventType']['photo']))
+                                echo $this->Html->image('http://www.thunderbot.gg/files/event_type/photo/'.($events_now[0]['EventType']['photo_dir'].'/'.$events_now[0]['EventType']['photo']),
+			                                array('class' => 'img-responsive'));
+			                                ?>
+		                                </div>
+	                                </div>
+	                                </br>
                                     <?php foreach ($events_next as $event): ?>
                                     <div class="row">
                                         <div class="col-xs-0 col-sm-3 col-md-3 col-lg-3">
