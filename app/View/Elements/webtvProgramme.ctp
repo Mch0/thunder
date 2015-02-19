@@ -6,6 +6,8 @@
 		</h5>
 	</div>
 	<br/>
+	<?php if(count($eventNow) > 0)
+	{ ?>
 	<div class="row">
 		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 no-padding horaires">
 		                                <span class="poste ">
@@ -21,7 +23,12 @@
 		</div>
 	</div>
 	</br>
-	<?php foreach ($eventsNext as $event): ?>
+	<?php } ?>
+	<?php
+
+	if(count($eventsNext) > 0)
+	{
+	foreach ($eventsNext as $event): ?>
 	<div class="row">
 		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 no-padding horaires">
                                 <span class="poste">
@@ -35,6 +42,6 @@
 		</div>
 	</div>
 	</br>
-	<?php endforeach; ?>
+	<?php endforeach; } ?>
 	</ul>
 </div>
