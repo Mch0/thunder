@@ -206,6 +206,8 @@ foreach ($articles as $key => $article) {
 
 			<?php echo $this->element('pubPaveHp'); ?>
 	    </div>
+	    <!-- WEBTV PROGRAMME -->
+		<?php echo $this->element('webtvProgramme'); ?>
 		<!-- RIOT NEWS -->
 	    <?php echo $this->element('riotNews'); ?>
 		<!-- FIL TWITTER -->

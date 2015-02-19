@@ -15,7 +15,6 @@
 
     <?php echo $scripts_for_layout;?>
 	<?php  echo $this->Html->script('/design/js/jquery-1.11.2.min'); ?>
-	<?php  echo $this->Html->script('/design/js/adblock/nopub'); ?>
     <?php  echo $this->Html->css('/design/css/bootstrap'); ?>
     <?php  echo $this->Html->css('/design/css/main5'); ?>
     <?php  echo $this->Html->script('/design/js/videoplayer/videoplayer'); ?>
@@ -273,5 +272,6 @@
 	}
 </script>
 <?php  echo $this->Html->script('/design/js/index'); ?>
+<?php  echo $this->Html->script('/design/js/adblock/nopub'); ?>
 </body>
 </html>
