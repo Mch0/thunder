@@ -58,12 +58,6 @@
 <?php echo $this->element('pubLargeHp');?>
 
 
-
-<!-- WEBTV -->
-
-<?php echo $this->element('webtv'); ?>
-<!-- /WEBTV -->
-
 <!-- CONTENT SIDE-->
 <div class="row">
 <div class="col-lg-12">
@@ -206,6 +200,12 @@ foreach ($articles as $key => $article) {
 
 			<?php echo $this->element('pubPaveHp'); ?>
 	    </div>
+	    <!-- WEBTV -->
+
+	    <?php echo $this->element('webtv'); ?>
+	    <!-- /WEBTV -->
+		<?php $hp = true; ?>
+
 	    <!-- WEBTV PROGRAMME -->
 	    <?php if(count($eventNow) > 0 || count($eventsNext) > 0)
 	    {
@@ -217,7 +217,7 @@ foreach ($articles as $key => $article) {
 	    <?php echo $this->element('twitterFil');?>
 	    <!-- PUB PAVE -->
 	    <div class="pave-pub">
-		    <img  class="noadblock hidden" src="/img/noadblock/noadblock.png" style="margin-left: 38%" />
+		   <!-- <img  class="noadblock hidden" src="/img/noadblock/noadblock.png" style="margin-left: 38%" />
 		    <script type="text/javascript">
 			    if (typeof sas_manager != 'undefined') {
 				    sas_manager.render(19176);      // Format : Pave300_Bas 300x250
@@ -226,7 +226,7 @@ foreach ($articles as $key => $article) {
 		    <noscript>
 			    <a href="http://www.smartadserver.com/call/pubjumpi/68386/520877/19176/S/[timestamp]/?" target="_blank">
 				    <img src="http://www.smartadserver.com/call/pubi/68386/520877/19176/S/[timestamp]/?" border="0" alt="" /></a>
-		    </noscript>
+		    </noscript>-->
 
 	    </div>
     </div>
