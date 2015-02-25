@@ -66,14 +66,23 @@ body {
         padding-left: 5%;
     }
 }
-@media (max-width: 1550px){
+/*@media (max-width: 1550px){
     ul.navbar-right{
         float:left!important;
-        /*margin-right: 19%!important;*/
+        *//*margin-right: 19%!important;*//*
         padding-left: 16%;
     }
+}*/
+@media (max-width: 1510px)
+{
+    .big-menu{
+        padding-left: 0%;
+    }
+    .navbar-right{
+        float: none;
+        padding-left: 0%;
+    }
 }
-
 
 @media screen and (max-width: 200px) {
   .row-offcanvas {
