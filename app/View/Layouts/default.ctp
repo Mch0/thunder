@@ -92,13 +92,13 @@
 			            Guides
 		            </a>
 	            </li>
-                <li class="divider-vertical visible-lg"></li>
+                <!--<li class="divider-vertical visible-lg"></li>
                 <li>
                     <a href="<?php echo $this->Html->url(array('controller' => 'equipes', 'action' => 'index','plugin' => 'equipe'), true); ?>">
                         <span class="hidden-xs hidden-sm" id="equipe-icon"><i class="fa fa-users fa-2x visibe-lg"></i></span>
                             Équipe
                     </a>
-                </li>
+                </li>-->
                 <li class="divider-vertical visible-lg"></li>
                 <li>
                     <a href="<?php echo $this->Html->url(array('controller' => 'sponsors', 'action' => 'index', 'plugin' => 'sponsor'), true); ?>" >
