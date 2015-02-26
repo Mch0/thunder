@@ -195,22 +195,24 @@ foreach ($articles as $key => $article) {
 
 	<!-- RIGHT SIDE BAR -->
     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+
+	    <!-- WEBTV -->
+
+	    <?php echo $this->element('webtv'); ?>
+	    <!-- /WEBTV -->
+	    <?php $hp = true; ?>
+
+	    <!-- WEBTV PROGRAMME -->
+	    <?php if(count($eventNow) > 0 || count($eventsNext) > 0)
+	    {
+	    echo $this->element('webtvProgramme');
+	    }  ?>
 	    <!-- PUB PAVE -->
 	    <div class="pave-pub-carre">
 
 			<?php echo $this->element('pubPaveHp'); ?>
 	    </div>
-	    <!-- WEBTV -->
 
-	    <?php echo $this->element('webtv'); ?>
-	    <!-- /WEBTV -->
-		<?php $hp = true; ?>
-
-	    <!-- WEBTV PROGRAMME -->
-	    <?php if(count($eventNow) > 0 || count($eventsNext) > 0)
-	    {
-		 echo $this->element('webtvProgramme');
-	    }  ?>
 		<!-- RIOT NEWS -->
 	    <?php echo $this->element('riotNews'); ?>
 		<!-- FIL TWITTER -->
