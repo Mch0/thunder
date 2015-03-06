@@ -1,16 +1,8 @@
 <?php if(count($webtv) > 0 && $webtv[0]['Webtv']['onlinehp'] == 1 ) { ?>
 <div class="hidden-xs">
-	<div class="row">
-		<div>
-		<div class="col-xs-12 col-sm-12 col-lg-12" id="controlPlayer">
-        <span id="closePlayer" style="color:white ;float:right"><button class="pull-right btn"><span
-		        class="glyphicon glyphicon-remove"></span>
-        </button></span>
-        <span id="openPlayer" style="float:right;color:white;display:none"><button class="pull-right btn"><span
-		        class="glyphicon glyphicon-chevron-down"></span>
-        </button></span>
-		</div>
-			<div class="col-lg-12 no-padding">
+	<div class="row" style="max-height: 230px">
+		<div class="col-xs-12 col-sm-12 col-lg-12" >
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
 			<div id="player">
 				<div id="webtv">
 							<?php
