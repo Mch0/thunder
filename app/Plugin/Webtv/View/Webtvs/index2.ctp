@@ -39,7 +39,11 @@
 
                     </div>
                     <div class="row" id="tv-info">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+		                    <p style="text-align: center">Fais un don à HyrqBot et passe ton message en live !</p>
+		                    <p style="text-align: center"><a href="https://www.twitchalerts.com/donate/hyrqbot" target="_blank" class="btn btn-thunder2">Faire un don</a></p>
+	                    </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                             <ul class="nav nav-tabs" role="tablist">
                                 <li class="active"><a href="#MyThunderBot" role="tab" data-toggle="tab">@MyThunderBot</a></li>
                                 <li><a href="#ThunderBot" role="tab" data-toggle="tab">#ThunderBot</a></li>
