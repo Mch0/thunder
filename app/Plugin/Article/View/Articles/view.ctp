@@ -6,11 +6,12 @@
 <script type="text/javascript" src="http://www.thunderbot.gg/js/polls/poll/app.js"></script>
 <script type="text/javascript" src="http://www.thunderbot.gg/js/polls/poll/controller.js"></script> -->
     <script type="text/javascript">
-	    sas_tmstp=Math.round(Math.random()*10000000000);
-	    sas_pageid='68386/520878';              // Page : Thunderbot/rg
-	    var sas_formatids = '10192,1391,920,19175,922,19176,14930,14609';
-	    sas_target='';                  // Targeting
-	    document.write('<scr'+'ipt  src="http://www.smartadserver.com/call2/pubjall/' + sas_pageid + '/' + sas_formatids + '/' + sas_tmstp + '/' + escape(sas_target) + '?"></scr'+'ipt>');
+	    sas.call("onecall", {
+		    siteId:		68386,	//
+		    pageId:		520878,	// Page : Thunderbot/rg
+		    formatId:	'10192,1391,920,19175,922,19176,14930,14609',
+		    target:		''			// Ciblage
+	    });
     </script>
 <?php $this->set('title_for_layout', $article['Article']['article_title']) ?>
 <?php 
@@ -86,6 +87,8 @@ $this->html->meta ('description', $article['Article']['article_summary'] , array
 
             <!-- SHARE ARTICLE -->
             <hr class="rouge"/>
+
+	        <?php echo $this->element('pubLargeRgBas'); ?>
             <div class="row" id="social-article">
 			<?php echo $this->element('shareArticle'); ?>
             </div>

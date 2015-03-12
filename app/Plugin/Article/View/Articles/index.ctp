@@ -3,13 +3,14 @@
 <div class="" id="home">
 <?php  echo $this->Html->css('/design/css/bxslider/jquery.bxslider'); ?>
 <?php  echo $this->Html->script('/design/js/bxslider/jquery.bxslider.min'); ?>
-<script type="text/javascript">
-	sas_tmstp=Math.round(Math.random()*10000000000);
-	sas_pageid='68386/520877';              // Page : Thunderbot/hp
-	var sas_formatids = '10192,1391,920,19175,922,19176,14930,14609';
-	sas_target='';                  // Targeting
-	document.write('<scr'+'ipt  src="http://www.smartadserver.com/call2/pubjall/' + sas_pageid + '/' + sas_formatids + '/' + sas_tmstp + '/' + escape(sas_target) + '?"></scr'+'ipt>');
-</script>
+	<script type="text/javascript">
+		sas.call("onecall", {
+			siteId:		68386,	//
+			pageId:		520877,	// Page : Thunderbot/hp
+			formatId:	'10192,1391,920,19175,922,19176,14930,14609',
+			target:		''			// Ciblage
+		});
+	</script>
 
 <!-- SLIDER -->
 <div class="row visible-lg visible-md" id="caroussel">
@@ -172,6 +173,7 @@ foreach ($articles as $key => $article) {
   }
 }
 ?>
+ <?php echo $this->element('pubLargeHpBas');?>
 <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-6-offset-3 col-lg-6 col-lg-offset-3">
 <div class="pagination pagination-large">
@@ -218,18 +220,8 @@ foreach ($articles as $key => $article) {
 		<!-- FIL TWITTER -->
 	    <?php echo $this->element('twitterFil');?>
 	    <!-- PUB PAVE -->
-	    <div class="pave-pub">
-		   <!-- <img  class="noadblock hidden" src="/img/noadblock/noadblock.png" style="margin-left: 38%" />
-		    <script type="text/javascript">
-			    if (typeof sas_manager != 'undefined') {
-				    sas_manager.render(19176);      // Format : Pave300_Bas 300x250
-			    }
-		    </script>
-		    <noscript>
-			    <a href="http://www.smartadserver.com/call/pubjumpi/68386/520877/19176/S/[timestamp]/?" target="_blank">
-				    <img src="http://www.smartadserver.com/call/pubi/68386/520877/19176/S/[timestamp]/?" border="0" alt="" /></a>
-		    </noscript>-->
-
+	    <div class="pave-pub-carre">
+		    <?php echo $this->element('pubPaveHpBas'); ?>
 	    </div>
     </div>
 

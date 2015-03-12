@@ -20,6 +20,14 @@
     <?php  echo $this->Html->script('/design/js/videoplayer/videoplayer'); ?>
     <?php  echo $this->Html->script('/design/js/bootstrap.min'); ?>
     <?php  echo $this->Html->css('/design/css/font-awesome'); ?>
+	<script src='http://www.smartadserver.com/config.js?nwid=104' type="text/javascript"></script>
+	<script type="text/javascript">
+		sas.setup({ domain: 'http://www.smartadserver.com', async: false, renderMode: 0});
+		//  renderMode define when ads must be rendered :
+		//  	- DEFAULT		(0) : as soon as ad is ready
+		//  	- READY			(1) : render ads when document is ready
+		//  - ON_DEMAND		(2) : user must call sas.callAds()
+	</script>
 </head>
 
 <body>
